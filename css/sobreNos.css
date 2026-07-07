@@ -1,0 +1,227 @@
+/*a partir daqui*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body{
+  background: #FFFAF7;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFAF7;
+}
+
+.logo{
+  width: 90px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.nav:hover{
+  text-decoration: underline;
+  color: #fcc02a;
+  font-weight: 600;
+}
+
+.conectese a{
+  color: white;
+  font-weight: 600;
+}
+
+.conectese{
+  background: linear-gradient(to bottom, rgba(252, 192, 42, 1),rgba(252, 192, 42, 0.5));
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MAIN - SOBRE NÓS */
+
+.div-titulos{
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.div-titulos h2{
+  color: #1980E6;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.div-titulos img{
+  width: 80px;
+}
+
+.container-sobre{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudo p{
+  font-size: 1.25rem;
+  padding-bottom: 20px;
+}
+
+.conteudo{
+  max-width: 560px;
+  color: #6B6661;
+}
+
+.conteudo h4{
+  font-size: 1.5rem;
+  font-weight: 600; 
+  padding-bottom: 10px;
+  color: black;
+}
+
+.imagem-sobre{
+  width: 100%;
+}
+
+.texto-pqescolher{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #6B6661;
+  padding-bottom: 30px;
+}
+
+.cards-pqescolher{
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card{
+  background: white;
+  border-radius: 30px;
+  height: 250px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+.quadradinho{
+  display: flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(25, 128, 230, 0.1);
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+}
+
+.titulo-card{
+  font-size: 1.25rem;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.descricao-card{
+  font-size: 1rem;
+  color: #6B6661;
+}
+
+.missao-visao{
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 70px;
+}
+
+.missao-visao h3{
+  font-size: 2.25rem;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.missao-visao p{
+  color: #6B6661;
+}
+
+.valores{
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.valores h3{
+  font-size: 2.25rem;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.valores p{
+  color: #6B6661;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.cards-mvv{
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.card-mvv{
+  display: flex;
+  background: white;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+.card-mvv img{
+  height: 30px;
+  padding-right: 10px;
+}

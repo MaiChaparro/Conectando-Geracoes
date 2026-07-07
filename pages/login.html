@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/imglogoM.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/login.css">
+  <title>Login - Conectando Gerações</title>
+</head>
+<body>
+ <div class="main-container">
+  <main class="form-section">
+    <div class="logo-box">
+      <img src="../assets/Logo árvore.png" alt="Conectando Gerações Logo">
+      <img src="../assets/Logo escrita.png" alt="Conectando Gerações Logo">
+    </div>
+    <div class="text-welcome">
+      <h1>Bem-vindo(a) <span class="green-text">de volta!</span></h1>
+      <p>Faça login para continuar fazendo a diferença.</p>
+    </div>
+    <form onsubmit="event.preventDefault();">
+      <div class="input-group">
+        <label for="email-cpf">E-mail ou CPF</label>
+        <div class="input-wrapper">
+          <img src="../assets/letter.png" alt="">
+          <input type="text" id="email-cpf" placeholder="Digite seu e-mail ou CPF">
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <div class="input-wrapper">
+          <img src="../assets/cadeado.png" alt="" class="input-icon-left">
+          <input type="password" id="password" placeholder="Digite sua senha">
+          <img src="../assets/olho.png" alt="Mostrar Senha" class="input-icon-right">
+        </div>
+      </div>
+
+      <div class="radio-container">
+        <label class="radio-item">
+        <input type="radio" name="perfil" value="voluntario"><span>Voluntário</span></label>
+            <label class="radio-item">
+            <input type="radio" name="perfil" value="beneficiario"><span>Beneficiário</span></label>
+      </div>
+
+      <div class="forgot-password-box">
+        <a href="#">Esqueci minha senha</a>
+      </div>
+      <button type="submit"class="btn-submit">Entrar</button> 
+    </form>
+
+    <div class="divider">Ou</div> <!--aquele neogocio que separa o de baixo eo de cima-->
+    <button class="btn-google">
+      <img src="../assets/image 10.png" alt="Google Logo">
+      Entrar com o Google
+    </button>
+
+    <p class="signup-text">Ainda não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
+  </main>
+
+  <section class="info-section">
+    <div class="info-item">
+      <img src="../assets/coracao.png" alt="">
+      <p>Pequenas ações podem transformar <span class="icons-highlight">histórias.</span></p>
+    </div>
+    <hr class="info-divider">
+    <div class="info-item">
+      <img src="../assets/icon-park-solid_peoples.png" alt="">
+      <p>Junte-se a centenas de voluntários e <span class="icons-highlight">impacte vidas!</span></p>
+    </div>
+    <hr class="info-divider">
+    <div class="info-item">
+       <img src="../assets/escudoverde.png" alt="">
+      <p>Ambiente <span class="icons-highlight">seguro</span> e <span class="icons-highlight">confiável</span> para todos os voluntários.</p>
+    </div>
+  </section>
+  
+  <section class="image-section">
+    <img src="../assets/fotofamilia.png" alt="">
+            </section>
+ </div>
+</body>
+</html>
