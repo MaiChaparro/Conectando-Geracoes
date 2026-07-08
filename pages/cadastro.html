@@ -3,142 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
   <link rel="shortcut icon" href="../assets/imglogoM.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/cadastro.css">
-  <title>Cadastro - Conectando Gerações</title>
+  <title>Conectando Gerações - Crie sua conta</title>
 </head>
 <body>
-  
-  <div class="main-container">
-    <aside class="left-panel">
-      <div class="panel-image">
-        <img src="../assets/fotofundocad.png" alt="Pessoas utilizando tablet">
-      </div>
-      <div class="panel-content">
-        <h2>Faça parte de uma comunidade que <span class="text-yellow">transforma vidas.</span></h2>
-      </div>
-      <hr class="divider">
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-photo"></div>
+     <div class="sidebar-content">
+      <h2>Faça parte de uma comunidade que <br><span>transforma vidas.</span></h2>
+     </div>
 
-      <ul class="beneficios-list">
-        <li>
-          <div class="icon-bg">
-            <img src="../assets/Star.png" alt="">
-          </div>
-          <p>Tenha <span class="text-yellow">certificados</span> e acompanhe seu impacto.</p>
-        </li>
-        <li>
-          <div class="icon-bg"> 
-            <img src="../assets/prancheta.png" alt="">
-          </div>
-          <p>Encontre <span class="text-yellow">missões</span> que combinam com você.</p>
-        </li>
-        <li>
-        <div class="icon-bg">
-           <img src="../assets/pessoas.png" alt="Solicitações">
-        </div>
-          <p>Envie <span class="text-yellow">solicitações de ajuda</span> quando quiser.</p></li>
-      </ul>
-  </div>
+     <ul class="beneficios-list">
+      <li class="beneficios-item">
+        <img src="../assets/Star.png" alt="Estrela">
+        <p>Tenha <strong>certificados</strong> e acompanhe seu impacto.</p>
+      </li>
+      <li class="beneficios-item">
+        <img src="../assets/prancheta.png" alt="Prancheta">
+        <p>Encontre <strong>missões</strong> que combinam com você.</p>
+      </li>
+      <li class="beneficios-item">
+        <img src="../assets/pessoas.png" alt="Usuário">
+        <p>Envie <strong>solicitações de ajuda</strong> quando quiser.</p>
+      </li>
+     </ul>
   </aside>
 
-  <main class="direito-panel">
-    <header class="form-header">
-      <img src="../assets/Logo árvore.png" alt="">
-      <img src="../assets/Logo escrita.png" alt="">
-      <div class="header-titles" >
-        <h1>Crie <span class="text-yellow">sua conta</span></h1>
+  <main class="main-content">
+    <header class="header-forms">
+      <img src="../assets/Logo árvore.png" alt="Logo Conectando Gerações" class="logo">
+      <img src="../assets/Logo escrita.png" alt="Logo Conectando Gerações" class="logo">
+      <div class="title-area">
+        <h1>Crie <span>sua conta</span></h1>
         <p>Junte-se a nós e faça a diferença!</p>
       </div>
     </header>
-    <form class="signup-form">
-      <div class="input-group colmn-6">
-        <label>Nome completo</label>
-        <div class="input-wrapper">
-          <img src="../assets/pessoas.png" class="icon-left"alt="">
-          <input type="text" placeholder="Digite seu nome completo" class="padding-left-icon">
-        </div>
-      </div>
-      <div class="input-group colmn-6">
-        <label>E-mail</label>
-        <div class="input-wrapper">
-          <img src="../assets/letter.png" class="icon-left" alt="">
-          <input type="email" placeholder="Digite seu e-mail" class="padding-left-icon">
-        </div>
-      </div>
 
-      <div class="input-group colmn-4">
-        <label>Telefone/ Celular</label>
-        <input type="text" placeholder="Ex: (11) 9 9999-9999">
-      </div>
+    <form  action="#" method="POST">
+      <div class="form-grid">
 
-      <div class="input-group colmn-4">
-        <label>CPF</label>
-        <input type="text"placeholder="Ex: 000.000.000-00">
-      </div>
-    <div class="input-group colmn-4">
-        <label>Data de Nascimento</label>
-        <input type="text"placeholder="Ex: 00/00/0000">
-      </div>
-      <div class="input-group colmn-7">
-        <label>Endereço</label>
-        <input type="text" placeholder="Ex: Rua Conectando Gerações">
-        </div> <div class="input-group colmn-5"> <label>Bairro</label>
-        <input type="text" placeholder="Ex: Jardim Gerações">
-        </div>
-        <div class="input-group  colmn-2">
-          <label>Número</label>
-          <input type="text" placeholder="">
+        <div class="input-group coln-nome">
+          <label>Nome completo</label>
+          <div class="input-wrapper has-icon-left">
+            <img src="../assets/pessoas.png" alt="" class="icon-left">
+            <input type="text" placeholder="Digite seu nome completo">
+          </div class="input-group coln-email">
+           <label>E-mail</label>
+           <div class="input-wrapper has-icon-left">
+            <img src="../assets/letter.png" alt="">
+            <input type="email" placeholder="Digite seu e-mail">
+           </div>
         </div>
 
-        <div class="input-group colmn-3">
-          <label>Complemento</label>
-          <input type="text" placeholder="">
-        </div>
-
-        <div class="input-group colmn-3">
-          <label>Cidade</label>
-          <input type="text" placeholder="">
-        </div>
-
-        <div class="input-group colmn-4">
-          <label>Pessoa</label>
-         <select>
-          <option>Selecione</option>
-          <option>Voluntário</option>
-          <option>Beneficiário</option>
-        </select>
-        </div>
-      </div>
-
-      <div class="input-group colmn-6">
-        <label>Senha</label>
-        <div class="input-wrapper">
-          <img src="../assets/cadeado.png" alt="">
-          <input type="password" placeholder="Digite sua senha" class="padding-left-icon padding-right-icon">
-          <img src="../assets/olho.png" class="icon-right" alt="">
-        </div>
-        <div class="input-group colmn-6">
-          <label>Repita sua senha</label>
-          <div class="input-wrapper" >
-             <img src="../assets/cadeado.png" alt="">
-          <input type="password" placeholder="Digite sua senha" class="padding-left-icon padding-right-icon">
-          <img src="../assets/olho.png" class="icon-right" alt="">
+        <div class="input-group coln-tel">
+          <label>Telefone/ Celular</label>
+          <div class="input-wrapper">
+             <input type="text" placeholder="Ex: (11) 9 9999-9999">
           </div>
         </div>
-        <div class="form-actions colmn-12">
-          <button type="submit" class="btn btn-primary">Cadastrar-se</button>
-          <span class="ou-text">ou</span>
-          <button type="button" class="btn btn-google">
-            <img src="../assets/image 10.png" alt="Google">Entrar com o Google </button>
+        <div class="input-group coln-cpf">
+          <label>CPF</label>
+          <div class="input-wrapper">
+             <input type="text" placeholder="Ex: 000.000.000-00">
+          </div>
+        </div>
+        <div class="input-group coln-data">
+          <label>Data de Nascimento</label>
+          <div class="input-wrapper">
+            <input type="text" placeholder="Ex: 00/00/0000">
+          </div>
+        </div>
+        <div class="input-group coln-end">
+          <label>Endereço</label>
+          <div class="input-wrapper">
+            <input type="text" placeholder="Ex: Rua Conectando Gerações">
+          </div>
+        </div>
+        <div class="input-group coln-bairro">
+            <label>Bairro</label>
+             <div class="input-wrapper">
+              <input type="text" placeholder="Ex: Jardim Gerações">
         </div>
       </div>
+      <div class="input-group col-tel">
+        <label>Telefone/Celular</label>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Ex: (11) 9 9999-9999">
+         </div>
+      </div>
+
+      <div>
+        
+      </div>
     </form>
-    <div class="footer-login">
-      <p>Já tem uma conta? Faça <a href="./login.html" class="text-yellow">login</a></p>
-    </div>
-  </main>
+
+  </main>  
+  </div>
 </body>
 </html>
