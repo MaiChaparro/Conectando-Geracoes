@@ -57,7 +57,7 @@ body{
   cursor: pointer;
 }
 
-/* "SOBRE NÓS" - TÍTULO */
+/* "COMO FUNCIONA?" - TÍTULO */
 .div-titulos{
   display: flex;
   padding-top: 100px;
@@ -78,220 +78,30 @@ body{
   margin-bottom: 20px;
 }
 
-/* SECTION "SOBRE NÓS" MAIN */
-
-.container-sobre{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  gap: 80px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.conteudo p{
+/* SECTION "COMO FUNCIONA" MAIN */
+.descricao-comoFunciona{
   font-size: 1.25rem;
-  padding-bottom: 20px;
-}
-
-.conteudo{
-  max-width: 560px;
   color: #6B6661;
-}
-
-.conteudo h4{
-  font-size: 1.5rem;
-  font-weight: 600; 
-  padding-bottom: 10px;
-  color: black;
-}
-
-.imagem-sobre{
-  width: 100%;
-}
-
-/* SECTION "POR QUE ESCOLHER" - MAIN*/
-.texto-pqescolher{
-  display: flex;
-  justify-content: center;
   text-align: center;
-  color: #6B6661;
-  padding-bottom: 30px;
 }
 
-.cards-pqescolher{
-  display: grid;
-  grid-template-columns: repeat(2, 450px);
-  justify-content: center;
-  gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.card{
-  background: white;
-  border-radius: 30px;
-  height: 250px;
-  padding: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
-}
-
-.quadradinho{
+.subtitulo{
   display: flex;
-  width: 56px;
-  height: 56px;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  background-color: rgba(25, 128, 230, 0.1);
-}
-
-.icon{
-  width: 25px;
-  height: 25px;
-}
-
-.titulo-card{
-  font-size: 1.25rem;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.descricao-card{
-  font-size: 1rem;
-  color: #6B6661;
-}
-
-/* SECTION "MVV" - MAIN */
-.missao-visao{
-  display: flex;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  gap: 70px;
-}
-
-.missao-visao h3{
   font-size: 2.25rem;
-  font-weight: 100;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
-.missao-visao p{
-  color: #6B6661;
-}
-
-.valores{
-  display: flex;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.valores h3{
-  font-size: 2.25rem;
-  font-weight: 100;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
-.valores p{
-  color: #6B6661;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-.cards-mvv{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  margin-top: 50px;
 }
 
 .linha{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card-mvv{
-  display: flex;
-  background: white;
-  align-items: center;
-  border-radius: 30px;
-  padding: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
-}
-
-.card-mvv img{
-  height: 30px;
-  padding-right: 10px;
-}
-
-/* SECTION "EQUIPE" - MAIN */
-.descricao-equipe{
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.descricao-equipe h3{
-  font-size: 2.25rem;
-  font-weight: 100;
-  text-align: center;
-  padding-bottom: 15px;
-}
-
-.descricao-equipe p{
-  color: #6B6661;
-  text-align: center;
-  font-size: 1.125rem;
-  margin-bottom: 40px;
-}
-
-.linha-equipe{
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  gap: 60px;
 }
 
-.card-equipe{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 30px;
-  width: 280px;
-  height: 250px;
-}
-
-.foto{
-  background-color: rgba(25, 128, 230, 0.1);
-  width: 220px;
-  height: 140px;
-  border-radius: 10px;
-}
-
-.card-equipe h3{
-  font-size: 1.25rem;
-  text-align: center;
-  margin-top: 15px;
-
-}
-
-.card-equipe p{
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 5px;
+.linha img{
+  width: 400px;
+  height: 340px;
 }
 
 /* SECTION AZUL - MAIN */
