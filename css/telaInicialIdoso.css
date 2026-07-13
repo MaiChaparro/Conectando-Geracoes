@@ -15,10 +15,15 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  background: #FAFAFA;
   z-index: 99;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #FFFAF7;
+}
+
+.logo{
+  width: 90px;
 }
 
 .header-container{

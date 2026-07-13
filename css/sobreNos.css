@@ -270,22 +270,27 @@ body{
   background-color: white;
   padding: 20px;
   border-radius: 30px;
-  width: 280px;
+  width: 250px;
   height: 250px;
 }
 
 .foto{
   background-color: rgba(25, 128, 230, 0.1);
-  width: 220px;
-  height: 140px;
+  width: 200px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.foto img{
+  width: 200px;
+  height: 160px;
   border-radius: 10px;
 }
 
 .card-equipe h3{
   font-size: 1.25rem;
   text-align: center;
-  margin-top: 15px;
-
+  margin-top: 10px;
 }
 
 .card-equipe p{
