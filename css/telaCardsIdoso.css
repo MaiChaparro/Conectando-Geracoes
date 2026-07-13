@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body{
+  background: #FAFAFA;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.logo{
+  width: 90px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.perfil-container{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.perfil-container img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.iconNotificacao{
+  width: 10px;
+}
+
+.perfil-container h4{
+  font-size: 1.125rem;
+  font-weight: 100;
+}
+
+.perfil-container p{
+  font-size: 1.125rem;
+  color: #6B6661;
+  font-weight: 100;
+}
+
+/* CONTEÚDO MAIN */
+.segurarMic{
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  padding: 10px 0px;
+}
+
+.container-mic{
+  display: flex;
+  background-color: #1980E6;
+  height: 80px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 1100px;
+}
+
+.microfone{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px;
+}
+
+.microfone img{
+  background-color: white;
+  border-radius: 50px;
+  align-items: center;
+  padding: 5px;
+}
+
+.microfone p{
+  color: white;
+  font-size: 1rem;
+}

@@ -11,15 +11,10 @@ body{
 
 /* HEADER */
 .header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #FFFAF7;
+  width: 100%;
+  background-color: #FAFAFA;
 }
 
 .logo{
@@ -30,11 +25,8 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 850px;
-}
-
-.logo{
-  width: 90px;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .perfil-container{
@@ -64,7 +56,7 @@ body{
 /* BARRA LATERAL */
 .conteudo{
   justify-content: space-around;
-  width: 550px;
+  width: 1000px;
 }
 
 .container{
@@ -78,9 +70,8 @@ body{
 .div-nav{
   background-color: white;
   width: 250px;
-  height: 1024px;
+  height: 1080px;
   border-radius: 10px;
-  margin-top: 100px;
 }
 
 .navbar-lateral{
@@ -94,7 +85,7 @@ body{
 .alinhamento{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: 280px;
   height: 80px;
   border-radius: 15px;
@@ -108,7 +99,7 @@ body{
 
 .sair{
   align-items: end;
-  margin-top: 450px;
+  margin-top: 500px;
   font-size: 1.5rem;
 }
 
@@ -133,7 +124,6 @@ body{
 /* CONTEÚDO */
 .ola h2{
   font-size: 2.25rem;
-  margin-top: 100px;
 }
 
 .ola p{
@@ -182,8 +172,14 @@ body{
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
   text-align: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.cards a{
+  text-decoration: none;
+  color: black;
 }
 
 /* CARD AZUL */
@@ -191,20 +187,20 @@ body{
   background-color:  rgba(25,128,230,0.1);
   justify-content: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .cardTec img{
-  width: 60px;
+  width: 80px;
 }
 
 .cardTec h5{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .cardTec p{
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #6B6661;
 }
 
@@ -219,20 +215,20 @@ body{
   background-color:  rgba(245,195,69,0.1);
   justify-content: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .cardCompa img{
-  width: 60px;
+  width: 80px;
 }
 
 .cardCompa h5{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .cardCompa p{
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #6B6661;
 }
 
@@ -247,20 +243,20 @@ body{
   background-color:  rgba(227,2,44,0.1);
   justify-content: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .cardSau img{
-  width: 60px;
+  width: 80px;
 }
 
 .cardSau h5{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .cardSau p{
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #6B6661;
 }
 
@@ -275,20 +271,20 @@ body{
   background-color:  rgba(89,0,140,0.1);
   justify-content: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .cardCom img{
-  width: 60px;
+  width: 80px;
 }
 
 .cardCom h5{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .cardCom p{
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #6B6661;
 }
 
@@ -303,20 +299,20 @@ body{
   background-color:  rgba(21,136,65,0.1);
   justify-content: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .cardTra img{
-  width: 60px;
+  width: 80px;
 }
 
 .cardTra h5{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .cardTra p{
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #6B6661;
 }
 
@@ -331,22 +327,22 @@ body{
   background-color:  rgba(0,0,0,0.1);
   justify-content: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .cardOut img{
-  width: 60px;
+  width: 80px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .cardOut h5{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .cardOut p{
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #6B6661;
 }
 
@@ -474,6 +470,7 @@ body{
   background-color:  rgba(25,128,230,0.1);
   border-radius: 20px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .quadroAzulAjuda a{
@@ -498,3 +495,4 @@ body{
 .escritaAjuda p{
   font-size: 1rem;
 }
+

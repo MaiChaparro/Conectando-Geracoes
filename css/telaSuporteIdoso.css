@@ -11,25 +11,22 @@ body{
 
 /* HEADER */
 .header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #FAFAFA;
-  z-index: 99;
   display: flex;
   justify-content: center;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.logo{
+  width: 90px;
 }
 
 .header-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 850px;
-}
-
-.logo{
-  width: 90px;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .perfil-container{
@@ -59,23 +56,22 @@ body{
 /* BARRA LATERAL */
 .conteudo{
   justify-content: space-around;
-  width: 580px;
+  width: 1000px;
 }
 
 .container{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 50px;
   width: 100%;
 }
 
 .div-nav{
   background-color: white;
   width: 250px;
-  height: 1024px;
+  height: 1025px;
   border-radius: 10px;
-  margin-top: 100px;
 }
 
 .navbar-lateral{
@@ -89,7 +85,7 @@ body{
 .alinhamento{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: 280px;
   height: 80px;
   border-radius: 15px;
@@ -103,7 +99,7 @@ body{
 
 .sair{
   align-items: end;
-  margin-top: 450px;
+  margin-top: 460px;
   font-size: 1.5rem;
 }
 
@@ -126,10 +122,6 @@ body{
 }
 
 /* PARTE DE VOLTAR E ESCRITAS - MAIN */
-.conteudo{
-  margin-top: 100px;
-}
-
 .comecin{
   display: flex;
   gap: 5px;
@@ -156,11 +148,11 @@ body{
 .suporte{
   border: solid 1px rgba(128, 128, 128, 0.5);
   height: 350px;
-  width: 285px;
+  width: 500px;
 }
 
 .tituloUm h5{
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   padding: 20px;
 }
 
@@ -170,25 +162,21 @@ body{
   border: solid 1px rgba(128, 128, 128, 0.2);
 }
 
-.perguntas img{
-  width: 2px;
-}
-
 .tituloDois{
-  padding: 20px;
+  padding: 15px;
 }
 
 .tituloDois h5{
-  font-size: 1.125rem;
+  font-size: 1.3rem;
 }
 
 .tituloDois p{
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .info{
   border: solid 1px rgba(128, 128, 128, 0.2);
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .info h6{
@@ -208,18 +196,18 @@ body{
 }
 
 .atendimento h6{
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #1980E6;
 }
 
 .atendimento p{
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #6B6661;
 }
 
 /* CONTAINER SUPORTE */
 .container-suporteDois h3{
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -232,7 +220,7 @@ body{
 .container-chat{
   display: flex;
   gap: 10px;
-  width: 570px;
+  width: 1100px;
 }
 
 .contato{
@@ -278,7 +266,7 @@ body{
   margin-top: 19px;
   border-radius: 10px;
   padding: 10px;
-  width: 300px;
+  width: 735px;
   gap: 10px;
   height: 516px;
 }
@@ -288,11 +276,11 @@ body{
   align-self: flex-start;
   border-radius: 10px;
   padding: 10px;
-  width: 190px;
+  width: 320px;
 }
 
 .esquerda p{
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .direita{
@@ -300,11 +288,15 @@ body{
   align-self: flex-end;
   border-radius: 10px;
   padding: 10px;
-  width: 190px;
+  width: 320px;
 }
 
 .direita p{
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+
+hr{
+  margin-top: 190px;
 }
 
 .campo-mensagem{
@@ -322,11 +314,12 @@ body{
 
 input{
   font-size: 0.7rem;
-  width: 200px;
+  width: 640px;
+  height: 40px;
 }
 
 input::placeholder{
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .mic img{
