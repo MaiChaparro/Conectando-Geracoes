@@ -1,113 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../assets/img/LogoOficial.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/pospatrocinadores.css">
-  <title>Torne-se um Parceiro de Impacto Social</title>
-</head>
-<body>
-  <header class="main-header">
-        <div class="header-container">
-          <div class="logo">
-            <img src="../assets/img/LogoOficial.png" alt="Logo Conectando Gerações">
-            </div>
-            <nav class="main-nav">
-            <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#sobre">Sobre Nós</a></li>
-              <li><a href="#como-funciona">Como Funciona</a></li>
-              <li><a href="#estatisticas">Estatísticas</a></li>
-              <li><a href="#patrocinadores">Patrocinadores</a></li>
-            </ul>
-                <a href="#conecte-se" class="btn-connect">Conecte-se</a>
-            </nav>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/LogoOficial.png"
+      type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/pospatrocinadores.css" />
+    <title>Torne-se um Parceiro de Impacto Social</title>
+  </head>
+  <body>
+
+   <header class="header">
+      <div>
+        <img class="logo" src="../assets/img/LogoOficial.png" alt="Logo" />
+      </div>
+
+      <nav class="navbar" aria-label="Navegação Primária">
+        <a class="nav" href="./index.html">INÍCIO</a>
+        <a class="nav" href="../pages/sobreNos.html">SOBRE NÓS</a>
+        <a class="nav" href="../pages/comoFunciona.html">COMO FUNCIONA</a>
+        <a class="nav" href="../pages/estatisticas.html">ESTATÍSTICAS</a>
+        <a class="nav" href="../pages/patrocinadores.html">PATROCINADORES</a>
+        <a class="nav" href="../login.html">LOGIN</a>
+        <button class="conectese"><a href="../pages/cadastro.html">CONECTE-SE</a></button>
+      </nav>
     </header>
 
     <main class="container">
 
-      <section class="hero-section">
+      <section class="hero-section" id="inicio">
         <h1>Torne-se um <span>Parceiro de Impacto Social</span></h1>
         <p>Sua empresa pode fazer a diferença. Junte-se à nossa rede para combater o isolamento social e promover a alfabetização digital através do projeto Conectando Gerações.</p>
         <p>Conheça as formas de apoio e faça parte dessa transformação.</p>
       </section>
 
-      <section class="support-section"> <!--Parte do icone social amarelo-->
-          <h2 class="section-title">
-            <img src="../assets/icons/iconamarelopessoas.svg" alt="">
-              Formas de Apoio
-          </h2>
+      <section class="support-section">
+        <h2 class="section-title">
+          <img src="../assets/icons/iconamarelopessoas.svg" alt="Ícone duas pessoas">
+          Formas de apoio
+        </h2>
 
-        <div> <!--aqui começa os cards-->
-         <article class="card card-blue">
-            <div class="card-icon bg-blue card-icon-large"> <img src="../assets/icons/azuleduc.svg" alt=""></div>
+        <div class="card-grid">
+
+          <article class="card card-blue">
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="../assets/icons/iconEduc.svg" alt="Ícone de chapéu de formatura">
+              </div> <!--class="card-icon"-->
               <h3>Apoio Acadêmico & Pesquisa</h3>
-                <p>Fomento a estudos de impacto por meio de apoio financeiro ou infraestrutura para pesquisas acadêmicas voltadas à alfabetização digital, inclusão social e fortalecimento das conexões entre gerações.</p>
+            </div> <!-- class="card-header"-->
+            <div class="card-body">
+              <p>
+                Fomento a estudos de impacto por meio de apoio financeiro ou infraestrutura para pesquisas acadêmicas voltadas à alfabetização digital, inclusão social e fortalecimento das conexões entre gerações.
+              </p>
+            </div>
           </article>
 
           <article class="card card-green">
-            <div class="card-icon bg-blue card-icon-large"><img src="../assets/icons/verdenot.svg" alt=""></div>
-            <h3>Parceria de Tecnologia</h3>
-            <p>Contribua com softwares, equipamentos, plataformas digitais ou suporte técnico para fortalecer as atividades do projeto e ampliar seu alcance.</p>
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="../assets/icons/iconComputador.svg" alt="Ícone de monitor">
+              </div>
+              <h3>Parceria de Tecnologia</h3>
+            </div>
+            <div class="card-body">
+              <p>Contribua com softwares, equipamentos, plataformas digitais ou suporte técnico para fortalecer as atividades do projeto e ampliar seu alcance.</p>
+            </div>
           </article>
 
           <article class="card card-yellow">
-            <div class="card-icon bg-blue card-icon-large">
-              <img src="../assets/icons/amarelofinac.svg" alt="">
-            </div>
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="../assets/icons/iconFinanceiro.svg" alt="Ícone de cifrão">
+              </div> <!--class="card-icon"-->
               <h3>Patrocínio Financeiro</h3>
+            </div> <!--class="card-header"-->
+            <div class="card-body">
               <p>Apoie financeiramente ações, eventos e projetos de inclusão digital, contribuindo para a manutenção e expansão das iniciativas do Conectando Gerações.</p>
+            </div>
           </article>
 
           <article class="card card-purple">
-            <div class="card-icon bg-blue card-icon-large">
-              <img src="../assets/icons/roxopessoas.svg" alt="">
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="../assets/icons/iconSocial.svg" alt="Ícone de pessoas">
               </div>
               <h3>Impacto Social Corporativo</h3>
+            </div> <!--class="card-header"-->
+            <div class="card-body">
               <p>Engaje colaboradores em ações de voluntariado, mentorias e atividades sociais que promovam aprendizado, inclusão e troca de experiências.</p>
+            </div>
           </article>
-        </div>
-      </section>
 
-      <section id="conecte-se" class="contact-section"> <!--aqui é a parte onde vao os dados pra fazer parte-->
-        <div class="contact-header">
-          <img src="../assets/icons/iconChatetc.svg" alt="" class="chat-icon">
-          <h2>Solicite uma conversa com nosso time</h2>
-        </div>
-        <p class="contact-subtitle"> Preencha o formulário abaixo e entraremos em contato para apresentar as possibilidades de parceria e entender como sua empresa pode fazer parte dessa missão.</p>
-        
-        <form action="#" method="POST" class="contact-form">
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Nome do Contato</label>
-              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="company">Nome da Empresa</label>
-              <input type="text" id="company" name="company" placeholder="Digite o nome da empresa" required>
-            </div>
+      </div> <!-- fechamento class="cards-grid"-->
+    </section>
 
-            <div class="form-group">
-              <label for="name">E-mail Corporativo</label>
-              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-            </div>
-            </div>
-            <div class="form-group full-width">
-              <label for="message">Mensagem de Interesse (como deseja apoiar?)</label>
-              <textarea id="message" name="message" rows="4" placeholder="Conte-nos como sua empresa deseja colaborar com o projeto e quais iniciativas despertaram seu interesse." required></textarea>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="btn-submit">
-              <span class="send-icon">
-                <img src="../assets/icons/iconEnviar.svg" alt="">
-              </span> QUERO FAZER PARTE
-              </button>
-            </div>
-        </form>
-      </section>
+    <section id="conecte-se" class="contact-section">
+      <div class="contact-header">
+        <img src="../assets/icons/iconChatetc.svg" alt="">
+        <h2>Solicite uma conversa com nosso time</h2>
+      </div> <!--class="contact-header"-->
+      <p class="contact-subtitle">Preencha o formulário abaixo e entraremos em contato para apresentar as possibilidades de parceria e entender como sua empresa pode fazer parte dessa missão.</p>
+
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Nome do Contato </label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required >
+          </div>
+
+          <div class="form-group">
+            <label for="company">Nome da Empresa</label>
+            <input type="text" id="company" name="company" placeholder="Digite o nome da empresa" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail Corporativo</label>
+            <input type="text" id="company" name="company" placeholder="Digite o nome da empresa" required>
+          </div>
+        </div>
+
+          <div class="form-group full-width">
+          <label for="message">Mensagem de Interesse (como deseja apoiar?)</label>
+          <textarea id="message" name="message" rows="4" placeholder="Conte-nos como sua empresa deseja colaborar com o projeto e quais iniciativas despertaram seu interesse." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">
+            <span class="send-icon">
+              <img src="../assets/icons/iconEnviar.svg" alt="Ícone de enviar">
+            </span> 
+            QUERO FAZER PARTE
+          </button>
+
+        </div> <!--class="form-grid"-->
+      </form>
+
+    </section>
+
     </main>
-</body>
+  
+  </body>
 </html>

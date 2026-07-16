@@ -3,147 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/img/Logo.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../assets/img/LogoOficial.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/patrocinadores.css" />
-    <title>Patrocinadores Oficiais | Conectando Gerações</title>
+    <title>Torne-se um Parceiro de Impacto Social | Conectando Gerações</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <div>
-        <a href="../index.html">
-          <img
-            class="logo"
-            src="../assets/img/LogoOficial.png"
-            alt="Conectando Gerações"
-          />
-        </a>
+        <img
+          class="logo"
+          src="../assets/img/Logo.png"
+          alt="Logo Conectando Gerações"
+        />
       </div>
-      <nav class="main-navbar" aria-label="Navegação Principal">
-        <ul>
-          <li><a class="nav" href="../index.html">INÍCIO</a></li>
-          <li><a class="nav" href="./sobreNos.html">SOBRE NÓS</a></li>
-          <li><a class="nav" href="#services">COMO FUNCIONA</a></li>
-          <li><a class="nav" href="#estatisticas">ESTATÍSTICAS</a></li>
-          <li>
-            <a class="nav" href="./patrocinadores.html">PATROCINADORES</a>
-          </li>
-          <li><a class="nav" href="./login.html">LOGIN</a></li>
-          <li>
-            <a href="./cadastro.html" class="nav-btn-connect">CONECTE-SE</a>
-          </li>
-        </ul>
+      <nav class="navbar" aria-label="Navegação Primária">
+        <a class="nav" href="../index.html">INÍCIO</a>
+        <a class="nav" href="./sobreNos.html">SOBRE NÓS</a>
+        <a class="nav" href="./comoFunciona.html">COMO FUNCIONA</a>
+        <a class="nav" href="./estatisticas.html">ESTATÍSTICAS</a>
+        <a class="nav" href="./patrocinadores.html">PATROCINADORES</a>
+        <a class="nav" href="./pages/login.html">LOGIN</a>
+        <button class="conectese">
+          <a href="../pages/cadastro.html">CONECTE-SE</a>
+        </button>
       </nav>
     </header>
 
-    <main>
-      <section
-        id="patrocinadores"
-        class="sponsors-section"
-        aria-labelledby="sponsors-title"
-      >
-        <div class="container">
-          <header class="section-header">
-            <h1 id="sponsors-title">
-              <span class="text-blue">PATROCINADORES</span>
-              <span class="text-green">OFICIAIS</span>
-            </h1>
-            <p class="subtitle">
-              Nossa rede é sustentada por instituições que acreditam no poder da
-              troca de experiências. Ao unir forças, combatemos o isolamento
-              social e promovemos a alfabetização digital.
-            </p>
-          </header>
+    <main class="main-container">
+      <section class="intro-section">
+        <h1 class="titulo-principal">
+          PATROCINADORES <span class="destaque-verde">OFICIAIS</span>
+        </h1>
+        <p class="descricao-intro">
+          Nossa rede é sustentada por instituições que acreditam no poder da
+          troca de experiências. Ao unir forças, combatemos o isolamento social
+          e promovemos a alfabetização digital.
+        </p>
 
-          <div class="impact-badge">
-            <div>
-              <img
-                src="../assets/icons/coracaoverde.svg"
-                alt=""
-                class="ui-icon"
-                aria-hidden="true"
-              />
-              <div class="badge-text">
-                <strong>Juntos, geramos impacto real.</strong>
-                <span>Conheça quem caminha conosco nessa missão.</span>
-              </div>
-            </div>
+        <div class="card-impacto">
+          <div class="icone-coracao">
+            <img src="../assets/icons/iconCoracao.svg" alt="" />
           </div>
-          <ul class="sponsors-grid">
-            <li class="sponsor-card">
-              <img
-                src="../assets/img/SERASAEXPERIAN.png"
-                alt="Logo Serasa Experian"
-              />
-            </li>
-            <li class="sponsor-card">
-              <img
-                src="../assets/img/USP.png"
-                alt="Logo Universidade de São Paulo"
-              />
-            </li>
-            <li class="sponsor-card">
-              <img
-                src="../assets/img/google_PNG19644 1.png"
-                alt="Logo Google"
-              />
-            </li>
-            <li class="sponsor-card">
-              <img src="../assets/img/MACKENZIE.png" alt="Logo Mackenzie" />
-            </li>
-            <li class="sponsor-card">
-              <img src="../assets/img/BancoBradesco.png" alt="Logo Bradesco" />
-            </li>
-            <li class="sponsor-card">
-              <img src="../assets/img/PUC-SP.png" alt="Logo PUC-SP" />
-            </li>
-            <li class="sponsor-card">
-              <img
-                src="../assets/img/ConectaGeracoes.png"
-                alt="Logo Conecta Gerações"
-              />
-            </li>
-            <li class="sponsor-card">
-              <img
-                src="../assets/img/microsoft-logo-microsoft-icon-transparent-free-png 1.png"
-                alt="Logo Microsoft"
-              />
-            </li>
-          </ul>
+          <!--class="icone-coracao"-->
+          <div class="texto-impacto">
+            <strong>Juntos, geramos impacto real.</strong>
+            <span>Conheça quem caminha conosco nessa missão.</span>
+          </div>
+        </div>
+        <!--class="card-impacto"-->
+      </section>
 
-          <div class="add-partner-wrapper">
-            <button class="btn-add-partner" aria-label="Seja um parceiro">
-              <img
-                src="../assets/icons/iconMais.svg"
-                alt=""
-                class="ui-icon-btn"
-                aria-hidden="true"
-              />
-              <span>Seja um parceiro</span>
-            </button>
-          </div>
-
-          <aside class="cta-banner">
-            <div class="cta-content">
-              <div class="cta-icon-wrapper" aria-hidden="true">
-                <img src="../assets/icons/iconMãocoracao.svg" alt="" />
-              </div>
-              <div class="cta-text">
-                <h2>Sua empresa também pode transformar vidas.</h2>
-                <p>
-                  Faça parte dessa rede de impacto social e contribua para um
-                  futuro mais conectado e humano.
-                </p>
-          </div>
-            </div>
-            <a href="#" class="btn btn-green"
-              >Quero ser um patrocinador</a>
-          </aside>
+      <section class="patrocinadores-grid">
+        <div class="card-logo">
+          <img src="../assets/img/SERASAEXPERIAN.png" alt="Serasa Experian" />
+        </div>
+        <div class="card-logo">
+          <img
+            src="../assets/img/USP.png"
+            alt="USP - Universidade de São Paulo"
+          />
+        </div>
+        <div class="card-logo">
+          <img src="../assets/img/google_PNG19644 1.png" alt="Google" />
+        </div>
+        <div class="card-logo">
+          <img src="../assets/img/mackenzie.png" alt="Mackenzie" />
+        </div>
+        <div class="card-logo">
+          <img src="../assets/img/BancoBradesco.png" alt="Bradesco" />
+        </div>
+        <div class="card-logo">
+          <img src="../assets/img/PUC-SP.png" alt="PUC-SP" />
+        </div>
+        <div class="card-logo">
+          <img src="../assets/img/ConectaGeracoes.png" alt="Conecta Gerações" />
+        </div>
+        <div class="card-logo">
+          <img src="../assets/img/microsoft-logo-microsoft-icon-transparent-free-png 1.png" alt="Microsoft" />
         </div>
       </section>
+
+      <div class="botao-parceiro-container">
+      <a href="../pages/pospatrocinadores.html" class="btn-seja-parceiro">
+        <img src="../assets/icons/iconMais.svg" alt="">
+        Seja um parceiro
+      </a>
+    </div>
+<section class="banner-cta">
+      <div class="cta-conteudo">
+        <div class="cta-icone">
+         <img src="../assets/icons/iconMãocoracao.svg" alt="">
+        </div>
+        <div class="cta-texto">
+          <h3>Sua empresa também pode transformar vidas.</h3>
+          <p>Faça parte dessa rede de impacto social e contribua para um futuro mais conectado e humano.</p>
+        </div>
+      </div>
+      <a href="../pages/pospatrocinadores.html" class="btn-patrocinador">Quero ser um patrocinador</a>
+    </section>
     </main>
   </body>
 </html>
