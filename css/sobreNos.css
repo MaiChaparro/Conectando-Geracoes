@@ -281,10 +281,14 @@ body{
   border-radius: 10px;
 }
 
+
+/* adicionei aqueles dois últimos objects*/
 .foto img{
   width: 200px;
   height: 160px;
   border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-equipe h3{
