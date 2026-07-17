@@ -212,7 +212,7 @@ body{
 
 /* CARD AMARELO */
 .cardCompa{
-  background-color:  rgba(245,195,69,0.1);
+  background-color:  rgba(252,192,42,0.1);
   justify-content: center;
   border-radius: 10px;
   padding: 25px;
@@ -268,7 +268,7 @@ body{
 
 /* CARD ROXO */
 .cardCom{
-  background-color:  rgba(89,0,140,0.1);
+  background-color:  rgba(99,38,120,0.1);
   justify-content: center;
   border-radius: 10px;
   padding: 25px;
@@ -383,13 +383,13 @@ body{
 }
 
 .iconCompanhia{
-  background-color:  rgba(245,195,69,0.1);
+  background-color:  rgba(252,192,42,0.1);
   padding: 10px;
   border-radius: 50px;
 }
 
 .situacaoCompanhia{
-  background-color:  rgba(245,195,69,0.1);
+  background-color:  rgba(252,192,42,0.1);
   border-radius: 10px;
   padding: 10px;
 }
@@ -412,7 +412,6 @@ body{
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
 
 .iconTecnologia{
@@ -445,7 +444,6 @@ body{
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
 
 .iconSaude{
