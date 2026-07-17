@@ -38,37 +38,89 @@
         </div>
 
         <div class="segurarSolicitacao">
-        <div class="card-descricao">
-          <div class="cardTec">
+          <div class="card-descricao">
+            <div class="cardTec">
               <img src="../assets/icons/iconTech.svg" alt="card Tecnologia">
               <h5>Tecnologia</h5>
               <p>Celular, aplicativos, internet</p>
-          </div>
+            </div>
 
-          <div class="descricao">
-            <h4>Trocar Solicitação</h4>
+            <div class="descricao">
+              <h4>Trocar Solicitação</h4>
 
-            <div class="caixa">
-              <input type="text" placeholder="Descreva o que você precisa">
+              <div class="caixa">
+                
+                <input type="text" placeholder="Descreva o que você precisa">
+              </div>
             </div>
           </div>
-        </div></div>
+        </div>
+      </section>
 
+      <section>
+
+        <div class="segurarDados">
+          <div class="informacoes-container">
+            <div class="informacoes">
+              <div class="segurarInfo">
+                <div class="label">
+                  <label for="nome">Nome completo:</label>
+                  <label for="idade">Idade:</label>
+                  <label for="dataHora">Data e Hora:</label>
+                  <label for="endereço">Localização:</label>
+                </div>
+
+                <div class="inputs">
+                  <input id="nome" type="text" placeholder="Nome completo">
+                  <input id="idade" type="number" placeholder="Idade">
+                  <div>
+                    <input id="dataHora" type="date">
+                    <input id="dataHora" type="time">
+                  </div>
+                  <input id="endereço" type="text" placeholder="Endereço">
+                  <div>
+                    <input id="bairro" type="text" placeholder="Bairro">
+                    <input id="cep" type="number" placeholder="CEP">
+                  </div>
+                  <div>
+                    <input id="numero" type="number" placeholder="Número">
+                    <input id="complemento" type="text" placeholder="Complemento">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="botoes"><!-- criar um pop up de certeza antes de enviar ou cancelar -->
+              <div><button id="enviar">Enviar</button></div>
+              <div><a href="../pages/telaInicialIdoso.html"><button id="cancelar">Cancelar solicitação</button></a></div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="segurarQuadroAzul">
+        <div class="quadroAzulAjuda">
+          <a href="../pages/telaSuporteIdoso.html">
+
+            <div class="ajuda-container">
+              <div class="fone">
+                <img src="../assets/icons/iconFones.svg" alt="fones">
+              </div>
+
+              <div class="escritaAjuda">
+                <h3>Precisa de ajuda urgente?</h3>
+                <p>Fale com nossa equipe de apoio</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </footer>
         
 
 
 
-
-
-
-
-      </section>
-
-
-
-
-
     </main>
-  
 </body>
 </html>

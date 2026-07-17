@@ -157,3 +157,148 @@ body{
   background-color: transparent;
   width: 200px;
 }
+
+/* INFORMAÇÕES CONTAINER (eu nao sei pq ta sobrepondo no outro */
+.segurarDados{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px; /* isso que ta fazendo ele nao sobrepor*/
+}
+
+.informacoes-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 1250px;
+  gap: 20px;
+}
+
+.informacoes{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.segurarInfo{
+  display: flex;
+  gap: 10px;
+}
+
+.segurarInfo input{
+  padding-inline: 5px 0px;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label label{
+  font-size: 1.2rem;
+}
+
+.inputs input{
+  padding: 3px;
+  border-color: rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#nome{
+  width: 400px;
+}
+
+#idade{
+  width: 123px;
+}
+
+#dataHora{
+  color: #6B6661;
+}
+
+#bairro{
+  width: 250px;
+}
+
+#cep{
+  width: 150px;
+}
+
+#numero{
+  width: 95px;
+}
+
+#complemento{
+  width: 150px;
+}
+
+.botoes{
+  justify-items: end;
+}
+
+#enviar{
+  background-color: rgba(21, 136, 65, 0.1);
+  padding: 5px;
+  width: 160px;
+  border-radius: 10px;
+  color: #158841;
+  border-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#cancelar{
+  background-color: transparent;
+  padding: 5px;
+  width: 230px;
+  border-radius: 10px;
+  color: #E3022C;
+  border-color: #E3022C;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* QUADRO AZUL AJUDA */
+.segurarQuadroAzul{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.quadroAzulAjuda{
+  background-color:  rgba(25,128,230,0.1);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 1250px;
+}
+
+.quadroAzulAjuda a{
+  text-decoration: none;
+}
+
+.ajuda-container{
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+}
+
+.escritaAjuda{
+  color: #1980E6;
+}
+
+.escritaAjuda h3{
+  font-size: 1.25rem;
+}
+
+.escritaAjuda p{
+  font-size: 1rem;
+}
