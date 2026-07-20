@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/img/LogoOficial.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/cadastro.css">
   <title>Cadastre-se | Conectando Gerações</title>
 </head>
@@ -12,16 +13,148 @@
 
     <section class="painel-info">
       <div class="background-imagem">
-        <img src="../assets/img/fotofundocad.png" alt="Duas mulheres sorrindo enquanto usam um tablet">
+        <img src="../assets/img/fotofundocad.png" alt="Duas mulheres sorrindo enquanto usam um tablet" class="img-banner">
       </div> <!-- fechamento class="background-imagem"-->
 
       <div class="conteudo-info">
         <h2>Faça parte de uma comunidade que <span class="destaque-laranja">transforma vidas.</span></h2>
-      </div> <!-- fechamento class="conteudo-info"-->
+        <hr class="linha-divisoria">
 
+       <ul class="lista-beneficios">
+          <li>
+            <div class="icone-circulo laranja">
+              <img src="../assets/icons/iconEstrela.svg" alt="Icone Estrela">
+            </div>
+            <p>Tenha <strong class="destaque-texto">certificados</strong> e acompanhe seu impacto.</p> 
+          </li>
+          <li>
+            <div class="icone-circulo laranja">
+              <img src="../assets/icons/pranchetaBrancaCads.svg" alt="Icone Prancheta">
+            </div>
+            <p>Encontre <strong class="destaque-texto">missões</strong> que combinam com você.</p>
+          </li>
+          <li>
+            <div class="icone-circulo laranja">
+              <img src="../assets/icons/09-07.svg" alt="Icone Pessoas">
+            </div>
+            <p>Envie <strong class="destaque-texto">solicitações de ajuda</strong> quando quiser.</p>
+          </li>
+        </ul>
+      </div> <!-- fechamento class="conteudo-info"-->
     </section>
 
+    <section class="painel-formulario">
+     <header class="header-form">
+        <div class="logo-site">
+          <img src="../assets/img/Logo árvore.png" alt="Logo Conectando Gerações">
+          <img src="../assets/img/Logo escrita.png" alt="Logo Conectando Gerações">
+        </div> 
 
+        <div class="titulo-form">
+          <h1>Crie <span class="destaque-laranja">sua conta</span></h1>
+          <p>Junte-se a nós e faça a diferença!</p>
+        </div>
+      </header>
+
+      <form action="#" method="POST" class="form-cadastro">
+        
+        <div class="grupo-input campo-grande">
+          <label for="nome">Nome completo</label>
+          <div class="input-com-icone">
+            <img src="../assets/icons/iconeUserCads.svg" alt="" class="icone-input esquerda">
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+          </div>
+        </div> <!-- "grupo-input campo-grande"-->
+
+        <div class="grupo-input campo-grande">
+          <label for="email">E-mail</label>
+          <div class="input-com-icone">
+            <img src="../assets/icons/iconEmail.svg" alt="" class="icone-input esquerda">
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+        </div>
+
+        <div class="grupo-input campo-medio">
+          <label for="telefone">Telefone/ Celular</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Ex: (11) 9 9999-9999">
+        </div>
+
+        <div class="grupo-input campo-medio">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="Ex: 000.000.000-00">
+        </div>
+
+        <div class="grupo-input campo-medio">
+          <label for="nascimento">Data de Nascimento</label>
+          <input type="text" id="nascimento" name="nascimento" placeholder="Ex: 00/00/0000">
+        </div>
+
+        <div class="grupo-input campo-grande">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Ex: Rua Conectando Gerações">
+        </div>
+
+        <div class="grupo-input campo-grande">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" placeholder="Ex: Jardim Gerações">
+        </div>
+
+        <div class="grupo-input campo-pequeno">
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+
+        <div class="grupo-input campo-pequeno">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento">
+        </div>
+
+        <div class="grupo-input campo-pequeno">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+
+        <div class="grupo-input campo-medio">
+          <label for="pessoa">Pessoa</label>
+          <select id="pessoa" name="pessoa">
+            <option value="" disabled selected>Voluntário ou Beneficiário</option>
+            <option value="voluntario">Voluntário</option>
+            <option value="beneficiario">Beneficiário</option>
+          </select>
+        </div>
+
+        <div class="grupo-input campo-grande">
+          <label for="senha">Senha</label>
+          <div class="input-com-icone">
+            <img src="../assets/icons/iconcadeado.svg" alt="" class="icone-input esquerda">
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+          <img src="../assets/icons/iconOlho.svg" alt="" class="icone-input direita">
+          </div>
+        </div>
+
+        <div class="grupo-input campo-grande">
+          <label for="repita-senha">Repita sua senha</label>
+          <div class="input-com-icone">
+            <img src="../assets/icons/iconcadeado.svg" alt="" class="icone-input esquerda">
+          <input type="password" id="repita-senha" name="repita-senha" placeholder="Digite novamente a sua senha" required>
+          <img src="../assets/icons/iconOlho.svg" alt="" class="icone-input direita">
+          </div>
+        </div>
+
+        <div class="acoes-formulario">
+          <button type="submit" class="btn-cadastrar">Cadastrar-se</button>
+          <span class="divisor-ou">ou</span>
+          <button type="button" class="btn-google">
+            <img src="../assets/img/GoogleG.png" alt="Ícone do Google"> Entrar com o Google
+          </button>
+        </div>
+
+      </form>
+
+      <footer class="footer-login">
+        <p>Já tem uma conta? Faça <a href="./login.html">login</a></p>
+      </footer>
+    </section>
 
 
   </main>
