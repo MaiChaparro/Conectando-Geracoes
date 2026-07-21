@@ -46,6 +46,21 @@ body {
   font-weight: 600;
 }
 
+nav a{
+  color: #6B6661;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #FCC02A;
+}
+
+nav a.selecionado{
+  color: #FCC02A;
+  font-weight: bold;
+  border-bottom: solid 2px #FCC02A;
+}
+
 .conectese a{
   color: white;
   font-weight: 600;
