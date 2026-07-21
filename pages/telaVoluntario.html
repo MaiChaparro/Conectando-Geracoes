@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/telaVoluntario.css">
+    <title>Conectando Gerações - voluntário</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <img src="../assets/img/LogoOficial.png" alt="">
+        <div class="menu-usuario-container">
+          <button id="botao-perfil" class="botao-perfil">
+            <img
+              src="../assets/img/fotoJessica.jpeg"
+              alt="Foto de Jessica"
+              class="foto-usuario"
+            />
+            <div class="info-usuario">
+              <strong>Jessica Camily</strong> <br />
+              <small>Voluntário</small>
+            </div>
+            <img
+              src="../assets/icons/iconSetabaixo.svg"
+              alt=""
+              class="seta-baixo"
+            />
+          </button>
+
+          <nav id="perfil-suspenso" class="menu-suspenso">
+            <a href="#" class="item-menu">
+              <img src="../assets/icons/PerfilVoluntarioIdoso.svg" alt="" class="icone-svg" />
+              Perfil
+            </a>
+            <a href="#" class="item-menu">
+              <img src="../assets/icons/pranchetaVerde.svg" alt="" class="icone-svg" />
+              Missões
+            </a>
+            <a href="#" class="item-menu">
+              <img src="../assets/icons/iconAjuda.svg" alt="" class="icone-svg" />
+              Ajuda
+            </a>
+
+            <a href="#" class="item-menu item-destaque">
+              <span class="icone-texto">
+                <img
+                  src="../assets/icons/iconConfig.svg"
+                  alt=""
+                  class="icone-svg"
+                />
+                Configurações
+              </span>
+
+            <hr class="divisor" />
+
+            <a href="login.html" class="item-menu">
+              <img
+                src="../assets/icons/iconSair.svg"
+                alt=""
+                class="icone-svg"
+              />
+              Sair
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <h1>Olá, Jessica!</h1>
+          <p class="subtitulo-boasvindas">
+            Que tal transformar o dia de alguém hoje?
+          </p>
+
+          <div class="banner">
+            <div class="icone-prancheta">
+              <img src="../assets/icons/pranchetaVerde.svg" alt="" />
+            </div>
+            <div>
+              <h2>Ver mural de missões</h2>
+              <p>Veja as oportunidades de ajudar perto de você</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="titulo-secao">
+            <h2>Missões disponíveis</h2>
+            <a href="#" class="link-verde">Ver todos</a>
+          </div>
+          <div class="container-carrossel">
+            <button class="botao-carrossel esquerda" aria-label="Anterior">
+              <img src="../assets/icons/IconSetaEsc.svg" alt="<">
+            </button>
+          <div class="lista-missoes">
+            <article class="cartao-missao">
+              <span class="tag tag-tecnologia">Tecnologia</span>
+
+              <div class="conteudo-cartao">
+                <div class="info-missao">
+                  <h3>Ajuda com celular</h3>
+                  <p>Idoso precisa de ajuda para aprender a usar aplicativos de mensagens</p>
+                </div>
+                <div>
+                  <img src="../assets/img/fotoIdosa.jpg" alt="" class="foto-idoso">
+                  <p class="nome-idoso">Dona Maria<br>72 anos</p>
+                </div>
+              </div>
+
+              <div class="detalhes-local">
+                <span>
+                  <img src="../assets/icons/iconLugar.svg" alt=""> Santana
+                </span>
+                <span>
+                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h - 1h30
+                </span>
+                <span>
+                  <img src="../assets/icons/IconDistancia.svg" alt=""> 2 km de você
+                </span>
+              </div>
+              <button class="botao-aceitar">Aceitar missão</button>
+            </article>
+
+            <article class="cartao-missao">
+              <span class="tag tag-companhia">Companhia</span>
+
+              <div class="conteudo-cartao">
+                <div class="info-missao">
+                  <h3>Companhia para conversar</h3>
+                  <p>Idosa gostaria de conversar sobre livros e jardinagem</p>
+                </div>
+                <div>
+                  <img src="../assets/img/Dona-Clara.jpg" alt="" class="foto-idoso">
+                  <p class="nome-idoso">Dona Clara<br>65 anos</p>
+                </div>
+              </div>
+
+              <div class="detalhes-local">
+                <span>
+                  <img src="../assets/icons/iconLugar.svg" alt=""> Moema
+                </span>
+                <span>
+                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h30 - 2h
+                </span>
+                <span>
+                  <img src="../assets/icons/IconDistancia.svg" alt=""> 5 km de você
+                </span>
+              </div>
+              <button class="botao-aceitar">Aceitar missão</button>
+            </article>
+
+            <article class="cartao-missao">
+              <span class="tag tag-consulta">Consulta</span>
+
+              <div class="conteudo-cartao">
+                <div class="info-missao">
+                  <h3>Consulta médica</h3>
+                  <p>Idoso precisa de ajuda acompanhamento médico</p>
+                </div>
+                <div>
+                  <img src="../assets/img/SeuAntonio.png" alt="" class="foto-idoso">
+                  <p class="nome-idoso">Seu Antônio<br>70 anos</p>
+                </div>
+              </div>
+
+              <div class="detalhes-local">
+                <span>
+                  <img src="../assets/icons/iconLugar.svg" alt=""> Saúde
+                </span>
+                <span>
+                  <img src="../assets/icons/relogioTempo.svg" alt=""> 2h
+                </span>
+                <span>
+                  <img src="../assets/icons/IconDistancia.svg" alt=""> 3 km de você
+                </span>
+              </div>
+              <button class="botao-aceitar">Aceitar missão</button>
+            </article>
+
+            <article class="cartao-missao">
+              <span class="tag tag-tecnologia">Tecnologia</span>
+
+              <div class="conteudo-cartao">
+                <div class="info-missao">
+                  <h3>Ajuda com celular</h3>
+                  <p>Idoso precisa de ajuda para aprender a usar aplicativos de mensagens</p>
+                </div>
+                <div>
+                  <img src="../assets/img/SeuCarlos.jpg" alt="" class="foto-idoso">
+                  <p class="nome-idoso">Seu Carlos<br>73 anos</p>
+                </div>
+              </div>
+
+              <div class="detalhes-local">
+                <span>
+                  <img src="../assets/icons/iconLugar.svg" alt=""> Tatuapé
+                </span>
+                <span>
+                  <img src="../assets/icons/relogioTempo.svg" alt=""> 2h
+                </span>
+                <span>
+                  <img src="../assets/icons/IconDistancia.svg" alt=""> 4 km de você
+                </span>
+              </div>
+              <button class="botao-aceitar">Aceitar missão</button>
+            </article>
+          </div>
+
+          <button class="botao-carrossel direita" aria-label="Próximo">
+              <img src="../assets/icons/Vector (15).svg" alt=">">
+            </button>
+
+        </section>
+
+        <section class="secao-impacto">
+          <h2 class="titulo-impacto">Meu Impacto</h2>
+
+          <div class="caixa-impacto">
+            <div class="item-impacto">
+              <div class="icone-impacto">
+                <img src="../assets/icons/Vector (14).svg" alt="">
+              </div>
+              <h4>12</h4>
+              <p>Missões<br>realizadas</p>
+            </div>
+            <div class="item-impacto">
+              <div class="icone-impacto">
+                <img src="../assets/icons/iconRelogio.svg" alt="">
+              </div>
+              <h4>18h</h4>
+              <p>Horas de<br>interação</p>
+            </div>
+            <div class="item-impacto">
+              <div class="icone-impacto">
+                <img src="../assets/icons/coracaoverde.svg" alt="">
+              </div>
+              <h4>10</h4>
+              <p>Pessoas<br>ajudadas</p>
+            </div>
+            <div class="item-impacto">
+              <div class="icone-impacto icone-estrela">
+                <img src="../assets/icons/iconStarEvaluations.svg" alt="">
+              </div>
+              <h4>5.0</h4>
+              <p>Avaliação<br>média</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="titulo-secao">
+            <h2>Atividades recentes</h2>
+            <a href="#" class="link-verde">Ver histórico completo</a>
+          </div>
+
+          <ul class="lista-atividades">
+            <li class="item-atividade">
+              <div class="icone-check">
+                <img src="../assets/icons/iconConcluido.svg" alt="">
+              </div>
+              <span class="texto-atividade">Você aceitou a missão "Ajuda com celular" de Dona Maria</span>
+              <span class="data-atividade">Hoje - 10h30</span>
+            </li>
+            <li class="item-atividade">
+              <div class="icone-check">
+                <img src="../assets/icons/iconConcluido.svg" alt="">
+              </div>
+              <span class="texto-atividade">Missão "Companhia para conversar" concluída</span>
+              <span class="data-atividade">Ontem - 15h45</span>
+            </li>
+            <li class="item-atividade">
+              <div class="icone-check">
+                <img src="../assets/icons/iconConcluido.svg" alt="">
+              </div>
+              <span class="texto-atividade">Você aceitou a missão "Transporte para consulta" de Seu Antônio</span>
+              <span class="data-atividade">2 dias atrás - 09h20</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div><script>
+      const botao = document.getElementById('botao-perfil');
+      const menu = document.getElementById('perfil-suspenso');
+
+      botao.addEventListener('click', function(event) {
+          menu.classList.toggle('mostrar');
+          event.stopPropagation();
+      });
+
+      window.addEventListener('click', function() {
+          if (menu.classList.contains('mostrar')) {
+              menu.classList.remove('mostrar');
+          }
+      });
+    </script>
+  </body>
+</html>
