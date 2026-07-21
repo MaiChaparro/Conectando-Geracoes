@@ -1,20 +1,38 @@
 // VALIDAR OS CAMPOS
 const botaoSalvar = document.getElementById("salvar");
 
-botaoSalvar.onclick = () => {
-  
+botaoSalvar.onclick = (event) => {
+  event.preventDefault();
+
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
-  const telefone  = document.getElementById("telefone").value;
+  const telefone = document.getElementById("telefone").value;
+  const cidadeEstado = document.getElementById("cidadeEstado").value;
   const senha = document.getElementById("senha").value;
-  
+  const confirmarSenha = document.getElementById("confirmarSenha").value;
 
-if(nome === "" || email === ""){
-  alert("Preencha todos os campos.");
-}else{
-  alert("Alterações salvas!");
+  // Verifica se há campos vazios
+  if (
+    nome === "" ||
+    email === "" ||
+    telefone === "" ||
+    cidadeEstado === "" ||
+    senha === "" ||
+    confirmarSenha === ""
+  ) {
+    alert("Preencha todos os campos.");
+    return;
   }
-}
+
+  // Verifica se as senhas são iguais
+  if (senha !== confirmarSenha) {
+    alert("As senhas não coincidem.");
+    return;
+  }
+
+  // Se estiver tudo certo
+  alert("Alterações salvas com sucesso!");
+};
 
 // FOTO DE PERFIL
 const foto = document.getElementById("foto");
@@ -29,13 +47,26 @@ foto.onchange = () => {
 }
 
 // EXCLUIR CONTA
-const excluir = document.getElementById("excluir");
+const btnExcluir = document.getElementById("btnExcluirConta");
+const popupExcluir = document.getElementById("popupExcluir");
+const cancelarExcluir = document.getElementById("cancelarExcluir");
+const confirmarExcluir = document.getElementById("confirmarExcluir");
 
-excluir.onclick = () => {
-  const resposta = confirm("Tem certeza que deseja excluir sua conta?");
+btnExcluir.addEventListener("click", () => {
+    popupExcluir.style.display = "flex";
+});
 
-  if(resposta){
-    alert("Conta excluída.");
-    window.location.href = "../index.html";
-  }
-}
+cancelarExcluir.addEventListener("click", () => {
+    popupExcluir.style.display = "none";
+});
+
+confirmarExcluir.addEventListener("click", () => {
+    alert("Conta excluída com sucesso!");
+    // Aqui futuramente você colocará a lógica de exclusão.
+});
+
+popupExcluir.addEventListener("click", (e) => {
+    if (e.target === popupExcluir) {
+        popupExcluir.style.display = "none";
+    }
+});

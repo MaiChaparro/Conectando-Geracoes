@@ -1,5 +1,5 @@
 // Elementos da página
-const popup = document.getElementById("popupMicrofone");
+const popupMicrofone = document.getElementById("popupMicrofone");
 const botoes = document.querySelectorAll(".abrirMicrofone");
 const iniciar = document.getElementById("btnIniciar");
 const fechar = document.getElementById("btnFechar");
@@ -10,13 +10,13 @@ const texto = document.getElementById("textoReconhecido");
 botoes.forEach(botao => {
   botao.onclick = (e) => {
     e.preventDefault();
-    popup.style.display = "flex";
+    popupMicrofone.style.display = "flex";
   };
 });
 
 // Fecha o pop-up
 fechar.onclick = () => {
-  popup.style.display = "none";
+  popupMicrofone.style.display = "none";
 };
 
 // Reconhecimento de voz
@@ -48,7 +48,7 @@ reconhecimento.onresult = (evento) => {
     window.location.href = "telaSolicitacaoIdoso.html";
   }
 
-  else if (fala.includes("tecnologia") || fala.includes("celular")) {
+  else if (fala.includes("tecnologia") || fala.includes("celular")|| fala.includes("solicitar") || fala.includes("card")) {
     window.location.href = "telaCardsIdoso.html?tipo=tecnologia";
   }
 
@@ -56,7 +56,7 @@ reconhecimento.onresult = (evento) => {
     window.location.href = "telaCardsIdoso.html?tipo=companhia";
   }
 
-  else if (fala.includes("saúde") || fala.includes("saude")) {
+  else if (fala.includes("saúde")) {
     window.location.href = "telaCardsIdoso.html?tipo=saude";
   }
 
