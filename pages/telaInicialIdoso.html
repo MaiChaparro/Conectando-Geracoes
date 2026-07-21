@@ -39,7 +39,7 @@
 
           <a href="../pages/telaConfiguracaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconConfig.svg" alt="Configurações"/>Configurações</a>
      
-          <a href="../index.html" class="sair alinhamento"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
+          <a href="#" class="sair alinhamento btnSair"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
         </nav>
       </div>
 
@@ -194,6 +194,19 @@
         </div>
       </section>
     </main>
+
+    <!-- POP-UP CONFIRMAR SAÍDA -->
+<div id="popupSair" class="popup-sair">
+  <div class="popup-conteudo-sair">
+    <h2>Deseja sair?</h2>
+    <p>Você tem certeza que deseja encerrar a sessão?</p>
+
+    <div class="botoes-sair">
+      <button id="cancelarSair">Cancelar</button>
+      <button id="confirmarSair">Sair</button>
+    </div>
+  </div>
+</div>
     
     <!-- POP-UP DO MICROFONE -->
     <div id="popupMicrofone" class="popup">
@@ -208,6 +221,7 @@
         </div>
       </div>
     </div>
+    <script src="../js/confirmarSaida.js"></script>
     <script src="../js/microfone.js"></script>
   </body>
 </html>

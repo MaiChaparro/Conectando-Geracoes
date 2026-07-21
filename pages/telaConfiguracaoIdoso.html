@@ -39,7 +39,7 @@
               <p>Configurações</p>
             </a>
       
-            <a href="../index.html" class="sair alinhamento"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
+            <a href="#" class="sair alinhamento btnSair"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
           </nav>
         </div>
 
@@ -56,7 +56,7 @@
             </div>
 
             <div class="container-configuracao">
-              <form class="configuracao">
+              <div class="configuracao">
                 <div class="fotoPerfil">
                   <input type="file" id="foto" accept="image/*" hidden>
                   <label for="foto">Editar</label>
@@ -99,9 +99,9 @@
                     <p>Cidade - Estado</p>
                     <div class="agrupar">
                       <div class="quadro">
-                        <input type="text" id="cidade-estado" value="São Paulo - SP">
+                        <input type="text" id="cidadeEstado" value="São Paulo - SP">
                       </div>
-                      <label for="cidade-estado"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
+                      <label for="cidadeEstado"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
                     </div>
                   </div>
 
@@ -109,7 +109,7 @@
                     <p>Alterar senha</p>
                     <div class="agrupar">
                       <div class="quadro">
-                        <input type="password" id="senha" placeholder="**********">
+                        <input type="password" id="senha" placeholder="Digite a nova senha">
                       </div>
                       <label for="senha"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
                     </div>
@@ -118,31 +118,59 @@
                   <div class="quadro-container">
                     <p>Confirmar nova senha</p>
                     <div class="quadro">
-                      <input type="password" placeholder="**********" id="confirmarSenha">
+                      <input type="password" placeholder="Confirme a senha" id="confirmarSenha">
                     </div>
                   </div>
 
                   <div class="container-botao">
                     <div class="salvar">
-                      <button type="submit">Salvar Alterações</button>
+                      <button type="button" id="salvar">Salvar Alterações</button>
                     </div>
 
                     <div class="excluir">
                       <img src="../assets/icons/iconLixeira.svg" alt="">
-                      <button type="button">Excluir conta</button>
+                      <button type="button" id="btnExcluirConta">Excluir conta</button>
                     </div>
                   </div>
 
                 </div>
-              </form>
+              </div>
             </div>
           </div>
 
           </div>
       </section>
-
-    </div>
   </main>
+
+  <!-- POP-UP EXCLUIR CONTA -->
+<div id="popupExcluir" class="popup-sair">
+  <div class="popup-conteudo-sair">
+    <h2>⚠️ Excluir conta</h2>
+
+    <p>
+      Esta ação é permanente.<br>
+      Todos os seus dados serão removidos.
+    </p>
+
+    <div class="botoes-sair">
+      <button id="cancelarExcluir">Cancelar</button>
+      <button id="confirmarExcluir">Excluir</button>
+    </div>
+  </div>
+</div>
+
+  <!-- POP-UP CONFIRMAR SAÍDA -->
+<div id="popupSair" class="popup-sair">
+  <div class="popup-conteudo-sair">
+    <h2>Deseja sair?</h2>
+    <p>Você tem certeza que deseja encerrar a sessão?</p>
+
+    <div class="botoes-sair">
+      <button id="cancelarSair">Cancelar</button>
+      <button id="confirmarSair">Sair</button>
+    </div>
+  </div>
+</div>
 
   <!-- POP-UP DO MICROFONE -->
     <div id="popupMicrofone" class="popup">
@@ -157,6 +185,8 @@
         </div>
       </div>
     </div>
+    <script src="../js/confirmarSaida.js"></script>
     <script src="../js/microfone.js"></script>
+    <script src="../js/telaConfiguracaoIdoso.js"></script>
 </body>
 </html>

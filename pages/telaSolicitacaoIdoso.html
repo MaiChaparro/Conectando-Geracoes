@@ -39,7 +39,7 @@
 
             <a href="../pages/telaConfiguracaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconConfig.svg" alt="Configurações"/>Configurações</a>
       
-            <a href="../index.html" class="sair alinhamento"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
+            <a href="#" class="sair alinhamento btnSair"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
           </nav>
         </div>
 
@@ -57,15 +57,15 @@
           </div>
 
           <div class="opcoes-container">
-            <button class="aba selecionado">Todas</button>
-            <button class="aba">Em andamento</button>
-            <button class="aba">Concluídas</button>
-            <button class="aba">Canceladas</button>
+            <button class="aba selecionado" data-selecionado="todas">Todas</button>
+            <button class="aba" data-selecionado="andamento">Em andamento</button>
+            <button class="aba" data-selecionado="concluidas">Concluídas</button>
+            <button class="aba" data-selecionado="canceladas">Canceladas</button>
           </div>
 
           <div class="segurarSolicitações">
             
-            <div class="container-companhia">
+            <div class="card andamento container-companhia">
               <div class="companhia">
                 <div class="iconCompanhia">
                   <img class="icon" src="../assets/icons/iconchatamarelo.svg" alt="card Companhia">
@@ -91,7 +91,7 @@
               </div>
             </div>
 
-            <div class="container-tecnologia">
+            <div class="card andamento container-tecnologia">
               <div class="tecnologia">
                 <div class="iconTecnologia">
                   <img class="icon" src="../assets/icons/iconTech.svg" alt="card Tecnologia">
@@ -117,7 +117,7 @@
               </div>
             </div>
 
-            <div class="container-saude">
+            <div class="card concluidas container-saude">
               <div class="saude">
                 <div class="iconSaude">
                   <img class="icon" src="../assets/icons/iconMed.svg" alt="card Saude">
@@ -160,7 +160,7 @@
               </div>   
             </div>
 
-            <div class="container-compras">
+            <div class="card canceladas container-compras">
               <div class="compras">
                 <div class="iconCompras">
                   <img class="icon" src="../assets/icons/iconCarrinho2.svg" alt="card Compras">
@@ -183,6 +183,7 @@
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="quadroAzulAjuda">
@@ -200,12 +201,22 @@
             </div>
           </a>
         </div>
-
-
       </section>
     </div>
-
   </main>
+
+  <!-- POP-UP CONFIRMAR SAÍDA -->
+<div id="popupSair" class="popup-sair">
+  <div class="popup-conteudo-sair">
+    <h2>Deseja sair?</h2>
+    <p>Você tem certeza que deseja encerrar a sessão?</p>
+
+    <div class="botoes-sair">
+      <button id="cancelarSair">Cancelar</button>
+      <button id="confirmarSair">Sair</button>
+    </div>
+  </div>
+</div>
 
   <!-- POP-UP DO MICROFONE -->
     <div id="popupMicrofone" class="popup">
@@ -220,6 +231,8 @@
         </div>
       </div>
     </div>
+    <script src="../js/confirmarSaida.js"></script>
     <script src="../js/microfone.js"></script>
+    <script src="../js/telaSolicitacaoIdoso.js"></script>
 </body>
 </html>

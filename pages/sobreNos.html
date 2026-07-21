@@ -14,11 +14,18 @@
       </div>
 
       <nav class="navbar" aria-label="Navegação Primária">
-        <a class="nav" href="/index.html">INÍCIO</a>
+        <a class="nav" href="../index.html">INÍCIO</a>
         <a class="nav selecionado" href="./sobreNos.html">SOBRE NÓS</a>
         <a class="nav" href="./comoFunciona.html">COMO FUNCIONA</a>
-        <a class="nav" href="../pages/estatisticas.html">ESTATÍSTICAS</a>
-        <a class="nav" href="../pages/patrocinadores.html">PATROCINADORES</a>
+        <a class="nav" href="./estatisticas.html">ESTATÍSTICAS</a>
+        <div class="dropdown">
+          <button class="nav dropdown-btn">PATROCINADORES</button>
+
+          <div class="dropdown-menu">
+            <a href="./patrocinadores.html">Patrocinadores</a>
+            <a href="./pospatrocinadores.html">Como apoiar</a>
+          </div>
+        </div>
         <a class="nav" href="./login.html">LOGIN</a>
         <button class="conectese"><a href="./cadastro.html">CONECTE-SE</a></button>
       </nav>
@@ -349,5 +356,6 @@
         </div>
       </section>
     </footer>
+    <script src="../js/menuDropdown.js"></script>
   </body>
 </html>
