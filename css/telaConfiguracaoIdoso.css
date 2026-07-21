@@ -250,3 +250,66 @@ body{
 button:hover{
   cursor: pointer;
 }
+
+/* FUNDO ESCURO - MICROFONE */
+.popup{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* QUADRO - MICROFONE */
+.popup-conteudo{
+  background: white;
+  width: 420px;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* TÍTULO - MICROFONE */
+.popup h2{
+  color:#1980E6;
+  margin-bottom:15px;
+}
+
+/* TEXTO - MICROFONE */
+#status{
+  margin:20px 0;
+  color:#666;
+  font-size:18px;
+}
+
+#textoReconhecido{
+  margin-bottom:25px;
+  font-size:20px;
+  color:#1980E6;
+  min-height:30px;
+}
+
+/* BOTÕES - MICROFONE */
+.botoesPopup{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.botoesPopup button{
+  padding:10px 25px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#btnIniciar{
+  background:#1980E6;
+  color:white;
+}
+
+#btnFechar{
+  background:#ddd;
+}

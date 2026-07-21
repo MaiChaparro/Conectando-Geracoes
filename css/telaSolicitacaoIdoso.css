@@ -106,7 +106,7 @@ body{
 
 .sair{
   align-items: end;
-  margin-top: 250px;
+  margin-top: 410px;
   font-size: 1.5rem;
 }
 
@@ -414,4 +414,98 @@ body{
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+/* FUNDO ESCURO - MICROFONE */
+.popup{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* QUADRO - MICROFONE */
+.popup-conteudo{
+  background: white;
+  width: 420px;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* TÍTULO - MICROFONE */
+.popup h2{
+  color:#1980E6;
+  margin-bottom:15px;
+}
+
+/* TEXTO - MICROFONE */
+#status{
+  margin:20px 0;
+  color:#666;
+  font-size:18px;
+}
+
+#textoReconhecido{
+  margin-bottom:25px;
+  font-size:20px;
+  color:#1980E6;
+  min-height:30px;
+}
+
+/* QUADRO AZUL AJUDA */
+.quadroAzulAjuda{
+  background-color:  rgba(25,128,230,0.1);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.quadroAzulAjuda a{
+  text-decoration: none;
+}
+
+.ajuda-container{
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+}
+
+.escritaAjuda{
+  color: #1980E6;
+}
+
+.escritaAjuda h3{
+  font-size: 1.25rem;
+}
+
+.escritaAjuda p{
+  font-size: 1rem;
+}
+
+/* BOTÕES - MICROFONE */
+.botoesPopup{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.botoesPopup button{
+  padding:10px 25px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#btnIniciar{
+  background:#1980E6;
+  color:white;
+}
+
+#btnFechar{
+  background:#ddd;
 }

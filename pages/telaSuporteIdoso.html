@@ -32,7 +32,7 @@
 
           <a href="../pages/telaSolicitacaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconPrancheta2.svg" alt="Solicitações"/>Solicitações</a>
 
-          <a href="" class="alinhamento"><img src="../assets/icons/iconMic.svg" alt="Microfone"/>Microfone</a>
+          <a href="#" class="alinhamento abrirMicrofone"><img src="../assets/icons/iconMic.svg" alt="Microfone"/>Microfone</a>
 
           <a href="../pages/telaSuporteIdoso.html" class="alinhamento ativo"><img src="../assets/icons/iconAjuda2.svg" alt="Ajuda"/><p>Ajuda</p></a>
 
@@ -144,5 +144,19 @@
       </section>
 
     </main>
+    <!-- POP-UP DO MICROFONE -->
+    <div id="popupMicrofone" class="popup">
+      <div class="popup-conteudo">
+        <h2>🎤 Assistente por Voz</h2>
+        <p id="status">Clique em "Iniciar" e diga o que você precisa.</p>
+        <p id="textoReconhecido"></p>
+        
+        <div class="botoesPopup">
+          <button id="btnIniciar">Iniciar</button>
+          <button id="btnFechar">Fechar</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/microfone.js"></script>
   </body>
 </html>
