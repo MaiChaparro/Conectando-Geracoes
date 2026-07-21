@@ -54,11 +54,6 @@ body{
 }
 
 /* BARRA LATERAL */
-.conteudo{
-  justify-content: space-around;
-  width: 1000px;
-}
-
 .container{
   display: flex;
   justify-content: center;
@@ -70,7 +65,7 @@ body{
 .div-nav{
   background-color: white;
   width: 250px;
-  height: 1080px;
+  min-height: 100vh;
   border-radius: 10px;
 }
 
@@ -93,13 +88,25 @@ body{
   color: #6B6661;
 }
 
+.alinhamento:hover{
+  transform: translateY(-2px);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
 .alinhamento p{
   color: #1980E6;
 }
 
+.navbar-lateral{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .sair{
   align-items: end;
-  margin-top: 500px;
+  margin-top: 250px;
   font-size: 1.5rem;
 }
 
@@ -162,7 +169,7 @@ body{
 /* COMPANHIA */
 .segurarSolicitações{
   margin-top: 15px;
-  width: 960px;
+  width: 1000px;
 }
 
 .container-companhia{
@@ -210,22 +217,13 @@ body{
   border-radius: 50px;
 }
 
-.situacaoCompanhia{
-  background-color:  rgba(252,192,42,0.1);
-  border-radius: 10px;
-  width: 150px;
-  padding: 10px;
-  margin-bottom: 10px;
-  color: #FCC02A;
-  text-align: center;
-}
-
-.segurar-botoes{
+.segurar-botoes-companhia{
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
-.segurar-botoes button{
+.segurar-botoes-companhia button{
   background-color: rgba(21, 136, 65, 0.1);
   color: #158841;
   padding: 10px;
@@ -235,4 +233,185 @@ body{
   cursor: pointer;
 }
 
+.situacaoCompanhia{
+  background-color:  rgba(128,128,128,0.1);
+  border-radius: 10px;
+  width: 130px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #6B6661;
+  text-align: center;
+}
 
+/* TECNOLOGIA */
+.container-tecnologia{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #6B6661;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+}
+
+.tecnologia{
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.iconTecnologia{
+  background-color:  rgba(25,128,230,0.1);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.segurar-botoes-tecnologia{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.situacaoTecnologia{
+  background-color:  rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+  width: 110px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #6B6661;
+  text-align: center;
+}
+
+.segurar-botoes-tecnologia button{
+  background-color: rgba(227, 2, 44, 0.1);
+  color: #E3022C;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* SAUDE */
+.container-saude{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #6B6661;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+}
+
+.saude{
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.iconSaude{
+  background-color:  rgba(227, 2, 44, 0.1);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.situacaoSaude{
+  background-color:  rgba(21,136,65,0.1);
+  border-radius: 10px;
+  width: 110px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #158841;
+  text-align: center;
+}
+
+.segurar-botoes-saude button{
+  background-color: rgba(227, 2, 44, 0.1);
+  color: #E3022C;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lado-direito{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.alinhar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.avaliacao{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.avaliacao input{
+  display: none;
+}
+
+.avaliacao label{
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.avaliacao label:hover,
+.avaliacao label:hover ~ label,
+.avaliacao input:checked ~ label{
+  color: #FFC107;
+}
+
+/* COMPRAS */
+.container-compras{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #6B6661;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+}
+
+.compras{
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.iconCompras{
+  background-color:  rgba(128,128,128,0.1);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.segurar-botoes-compras{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.situacaoCompras{
+  background-color:  rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+  width: 110px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #6B6661;
+  text-align: center;
+}
+
+.segurar-botoes-compras button{
+  background-color: rgba(227, 2, 44, 0.1);
+  color: #E3022C;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

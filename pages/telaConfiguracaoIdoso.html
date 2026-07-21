@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/telaConfiguracaoIdoso.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações Idoso</title>
+</head>
+<body>
+  <header class="header">
+      <div class="header-container">
+        <div>
+          <a href="../pages/telaInicialIdoso.html"><img class="logo" src="../assets/img/Logo.png" alt="logo"/></a>
+        </div>
+
+        <div class="perfil-container">
+          <img src="../assets/img/fotoIdosa.jpg" alt="foto de perfil" />
+          <div>
+            <h4>Maria</h4>
+            <p>72 anos</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container"> 
+        <div class="div-nav">
+          <nav class="navbar-lateral" aria-label="Barra de navegação lateral">
+            <a href="../pages/telaInicialIdoso.html" class="alinhamento"><img src="../assets/icons/iconHome2.svg" alt="Início">Início</a>
+
+            <a href="../pages/telaSolicitacaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconPrancheta2.svg" alt="Solicitações"/>Solicitações</a>
+
+            <a href="" class="alinhamento"><img src="../assets/icons/iconMic.svg" alt="Microfone"/>Microfone</a>
+
+            <a href="../pages/telaSuporteIdoso.html" class="alinhamento"><img src="../assets/icons/iconAjuda.svg" alt="Ajuda"/>Ajuda</a>
+
+            <a href="../pages/telaConfiguracaoIdoso.html" class="alinhamento ativo"><img src="../assets/icons/iconConfig2.svg" alt="Configurações"/>
+              <p>Configurações</p>
+            </a>
+      
+            <a href="../index.html" class="sair alinhamento"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
+          </nav>
+        </div>
+
+        <section>
+          <div class="conteudo-configuracao">
+            <div class="comecin">
+              <div class="setaVoltar">
+                <a href="../pages/telaInicialIdoso.html"><img src="../assets/icons/iconSeta.svg" alt="seta voltar"></a>
+              </div>
+
+              <div>
+                <h3>Configurações da conta</h3>
+              </div>
+            </div>
+
+            <div class="container-configuracao">
+              <form class="configuracao">
+                <div class="fotoPerfil">
+                  <input type="file" id="foto" accept="image/*" hidden>
+                  <label for="foto">Editar</label>
+                  <img src="../assets/img/fotoIdosa.jpg" alt="foto">
+                </div>
+
+                <div class="inputs-config">
+
+                  <div class="quadro-container">
+                    <p>Nome</p>
+                    <div class="agrupar">
+                      <div class="quadro">
+                        <input type="text" id="nome" value="Maria Silva dos Santos">
+                      </div>
+                      <label for="nome"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
+                    </div>
+                  </div>
+
+                  <div class="quadro-container">
+                    <p>E-mail</p>
+                    <div class="agrupar">
+                      <div class="quadro">
+                        <input type="text" id="email" value="mariasilva72@gmail.com">
+                      </div>
+                      <label for="email"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
+                    </div>
+                  </div>
+                  
+                  <div class="quadro-container">
+                    <p>Telefone</p>
+                    <div class="agrupar">
+                      <div class="quadro">
+                        <input type="tel" id="telefone" value="(11) 9 8765-4321">
+                      </div>
+                      <label for="telefone"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
+                    </div>
+                  </div>
+
+                  <div class="quadro-container">
+                    <p>Cidade - Estado</p>
+                    <div class="agrupar">
+                      <div class="quadro">
+                        <input type="text" id="cidade-estado" value="São Paulo - SP">
+                      </div>
+                      <label for="cidade-estado"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
+                    </div>
+                  </div>
+
+                  <div class="quadro-container">
+                    <p>Alterar senha</p>
+                    <div class="agrupar">
+                      <div class="quadro">
+                        <input type="password" id="senha" placeholder="**********">
+                      </div>
+                      <label for="senha"><img src="../assets/icons/iconLapis.svg" alt="Editar"></label>
+                    </div>
+                  </div>
+
+                  <div class="quadro-container">
+                    <p>Confirmar nova senha</p>
+                    <div class="quadro">
+                      <input type="password" placeholder="**********" id="confirmarSenha">
+                    </div>
+                  </div>
+
+                  <div class="container-botao">
+                    <div class="salvar">
+                      <button type="submit">Salvar Alterações</button>
+                    </div>
+
+                    <div class="excluir">
+                      <img src="../assets/icons/iconLixeira.svg" alt="">
+                      <button type="button">Excluir conta</button>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+          </div>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

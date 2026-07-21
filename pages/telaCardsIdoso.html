@@ -1,23 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/telaCardsIdoso.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Idoso</title>
-</head>
-<body>
-  <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/telaCardsIdoso.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Idoso</title>
+  </head>
+  <body>
+    <header class="header">
       <div class="header-container">
         <div>
-          <a href="../pages/telaInicialIdoso.html"><img class="logo" src="../assets/img/Logo.png" alt="logo"/></a>
+          <a href="../pages/telaInicialIdoso.html"
+            ><img class="logo" src="../assets/img/Logo.png" alt="logo"
+          /></a>
         </div>
 
         <div class="perfil-container">
           <img src="../assets/img/fotoIdosa.jpg" alt="foto de perfil" />
           <div>
-            <h4>Nome</h4>
-            <p>Idade</p>
+            <h4>Maria</h4>
+            <p>72 anos</p>
           </div>
         </div>
       </div>
@@ -28,7 +30,7 @@
         <div class="segurarMic">
           <div class="container-mic">
             <div class="microfone">
-              <img src="../assets/icons/iconMic2.svg" alt="microfone">
+              <img src="../assets/icons/iconMic2.svg" alt="microfone" />
 
               <div>
                 <p>Clique e fale o que você precisa</p>
@@ -39,28 +41,33 @@
 
         <div class="segurarSolicitacao">
           <div class="card-descricao">
-            <div class="cardTec">
-              <img src="../assets/icons/iconTech.svg" alt="card Tecnologia">
-              <h5>Tecnologia</h5>
-              <p>Celular, aplicativos, internet</p>
+            <div class="cardSolicitacao">
+              <img
+                id="iconeSolicitacao"
+                src="../assets/icons/iconTech.svg"
+                alt="Ícone da solicitação"
+              />
+
+              <h5 id="tituloSolicitacao">Tecnologia</h5>
+
+              <p id="descricaoSolicitacao">Celular, aplicativos, internet</p>
             </div>
 
             <div class="descricao">
-              <h4>Trocar Solicitação</h4>
+              <button class="trocarSolicitacao">Trocar Solicitação</button>
 
               <div class="caixa">
-                
-                <input type="text" placeholder="Descreva o que você precisa">
+                <textarea type="text" placeholder="Descreva o que você precisa" maxlength="300"></textarea>
               </div>
+
             </div>
           </div>
         </div>
       </section>
 
       <section>
-
         <div class="segurarDados">
-          <div class="informacoes-container">
+          <form class="informacoes-container">
             <div class="informacoes">
               <div class="segurarInfo">
                 <div class="label">
@@ -71,56 +78,59 @@
                 </div>
 
                 <div class="inputs">
-                  <input id="nome" type="text" placeholder="Nome completo">
-                  <input id="idade" type="number" placeholder="Idade">
+                  <input id="nome" type="text" required placeholder="Nome completo" />
+                  <input id="idade" type="number" placeholder="Idade" />
                   <div>
-                    <input id="dataHora" type="date">
-                    <input id="dataHora" type="time">
+                    <input id="data" required type="date" />
+                    <input id="hora" required type="time" />
                   </div>
-                  <input id="endereço" type="text" placeholder="Endereço">
+                  <input id="endereço" type="text" required placeholder="Endereço" />
                   <div>
-                    <input id="bairro" type="text" placeholder="Bairro">
-                    <input id="cep" type="number" placeholder="CEP">
+                    <input id="bairro" type="text" placeholder="Bairro" />
+                    <input id="cep" type="text" placeholder="CEP" />
                   </div>
                   <div>
-                    <input id="numero" type="number" placeholder="Número">
-                    <input id="complemento" type="text" placeholder="Complemento">
+                    <input id="numero" type="number" placeholder="Número" />
+                    <input
+                      id="complemento"
+                      type="text"
+                      placeholder="Complemento"
+                    />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="botoes"><!-- criar um pop up de certeza antes de enviar ou cancelar -->
-              <div><button id="enviar">Enviar</button></div>
-              <div><a href="../pages/telaInicialIdoso.html"><button id="cancelar">Cancelar solicitação</button></a></div> 
+            <div class="botoes">
+              <!-- criar um pop up de certeza antes de enviar ou cancelar -->
+              <div><button id="enviar" type="submit">Enviar</button></div>
+              <div>
+                <a href="../pages/telaInicialIdoso.html"
+                  ><button id="cancelar" type="button">Cancelar solicitação</button></a>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
 
       <footer>
         <div class="segurarQuadroAzul">
-        <div class="quadroAzulAjuda">
-          <a href="../pages/telaSuporteIdoso.html">
+          <div class="quadroAzulAjuda">
+            <a href="../pages/telaSuporteIdoso.html">
+              <div class="ajuda-container">
+                <div class="fone">
+                  <img src="../assets/icons/iconFones.svg" alt="fones" />
+                </div>
 
-            <div class="ajuda-container">
-              <div class="fone">
-                <img src="../assets/icons/iconFones.svg" alt="fones">
+                <div class="escritaAjuda">
+                  <h3>Precisa de ajuda urgente?</h3>
+                  <p>Fale com nossa equipe de apoio</p>
+                </div>
               </div>
-
-              <div class="escritaAjuda">
-                <h3>Precisa de ajuda urgente?</h3>
-                <p>Fale com nossa equipe de apoio</p>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
       </footer>
-        
-
-
-
     </main>
-</body>
+  </body>
 </html>

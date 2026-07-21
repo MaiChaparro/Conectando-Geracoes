@@ -55,7 +55,6 @@ body{
 
 /* BARRA LATERAL */
 .conteudo{
-  justify-content: space-around;
   width: 1000px;
 }
 
@@ -77,6 +76,7 @@ body{
 .navbar-lateral{
   display: flex;
   flex-direction: column;
+  height: 100%;
   gap: 10px;
   font-size: 1.25rem;
   padding: 20px;
@@ -86,11 +86,17 @@ body{
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 280px;
+  width: 100%;
   height: 80px;
   border-radius: 15px;
   text-decoration: none;
   color: #6B6661;
+}
+
+.alinhamento:hover{
+  transform: translateY(-2px);
+  transition: 0.8s;
+  cursor: pointer;
 }
 
 .alinhamento p{
@@ -99,7 +105,7 @@ body{
 
 .sair{
   align-items: end;
-  margin-top: 500px;
+  margin-top: auto;
   font-size: 1.5rem;
 }
 
@@ -114,7 +120,6 @@ body{
 
 .ativo{
   background: rgba(25,128,230,0.1);
-  width: 210px;
 }
 
 .ativo p{
@@ -179,13 +184,14 @@ body{
 
 .cards a{
   text-decoration: none;
-  color: black;
+  color: inherit;
+  display: block;
+  transition: 0.3s;
 }
 
 /* CARD AZUL */
 .cardTec{
   background-color:  rgba(25,128,230,0.1);
-  justify-content: center;
   border-radius: 10px;
   padding: 25px;
 }
@@ -204,16 +210,15 @@ body{
   color: #6B6661;
 }
 
-.cardTec:hover{
+.cards a:hover{
   transform: translateY(-3px);
-  transition: 0.8s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
 /* CARD AMARELO */
 .cardCompa{
   background-color:  rgba(252,192,42,0.1);
-  justify-content: center;
   border-radius: 10px;
   padding: 25px;
 }
@@ -232,16 +237,9 @@ body{
   color: #6B6661;
 }
 
-.cardCompa:hover{
-  transform: translateY(-3px);
-  transition: 0.8s;
-  cursor: pointer;
-}
-
 /* CARD VERMELHO */
 .cardSau{
   background-color:  rgba(227,2,44,0.1);
-  justify-content: center;
   border-radius: 10px;
   padding: 25px;
 }
@@ -260,16 +258,9 @@ body{
   color: #6B6661;
 }
 
-.cardSau:hover{
-  transform: translateY(-3px);
-  transition: 0.8s;
-  cursor: pointer;
-}
-
 /* CARD ROXO */
 .cardCom{
-  background-color:  rgba(99,38,120,0.1);
-  justify-content: center;
+  background-color: rgba(99,38,120,0.1);
   border-radius: 10px;
   padding: 25px;
 }
@@ -288,16 +279,9 @@ body{
   color: #6B6661;
 }
 
-.cardCom:hover{
-  transform: translateY(-3px);
-  transition: 0.8s;
-  cursor: pointer;
-}
-
 /* CARD VERDE */
 .cardTra{
   background-color:  rgba(21,136,65,0.1);
-  justify-content: center;
   border-radius: 10px;
   padding: 25px;
 }
@@ -316,16 +300,9 @@ body{
   color: #6B6661;
 }
 
-.cardTra:hover{
-  transform: translateY(-3px);
-  transition: 0.8s;
-  cursor: pointer;
-}
-
 /* CARD CINZA */
 .cardOut{
   background-color:  rgba(0,0,0,0.1);
-  justify-content: center;
   border-radius: 10px;
   padding: 25px;
 }
@@ -344,12 +321,6 @@ body{
 .cardOut p{
   font-size: 0.9rem;
   color: #6B6661;
-}
-
-.cardOut:hover{
-  transform: translateY(-3px);
-  transition: 0.8s;
-  cursor: pointer;
 }
 
 /* SOLICITAÇÕES */
