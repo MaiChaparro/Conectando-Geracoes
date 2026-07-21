@@ -65,9 +65,9 @@ body {
 }
 
 .foto-usuario {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
     background-color: #ddd;
     object-fit: cover;
     object-position: center;
@@ -154,16 +154,45 @@ body {
 .banner {
     background-color: var(--cor-primaria);
     color: white;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 20px;
     text-decoration: none;
+    justify-content: space-between;
     margin-bottom: 40px;
     cursor: pointer;
 
 }
+.banner-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.texto-banner h2,
+.texto-banner p {
+    color: white;
+}
+
+.texto-banner h2 {
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.texto-banner p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+.seta-banner {
+    width: 16px;
+    height: auto;
+    margin-left: auto;
+}
+
 .botao-missoes{
     color: #e0e0e0;
 }
@@ -275,6 +304,7 @@ body {
 .tag-tecnologia { background: #e6f4ff; color: #1a88ff; }
 .tag-companhia { background: #fdf6e2; color: #d48806; }
 .tag-consulta { background: #fce8e6; color: #d93829; }
+.tag-compras {background:  #f0f0f0; color: #632678;}
 
 .conteudo-cartao {
     display: flex;
