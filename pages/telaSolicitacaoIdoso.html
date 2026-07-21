@@ -16,32 +16,32 @@
         <div class="perfil-container">
           <img src="../assets/img/fotoIdosa.jpg" alt="foto de perfil" />
           <div>
-            <h4>Nome</h4>
-            <p>Idade</p>
+            <h4>Maria</h4>
+            <p>72 anos</p>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-     <div class="container"> 
-      <div class="div-nav">
-        <nav class="navbar-lateral" aria-label="Barra de navegação lateral">
-          <a href="../pages/telaInicialIdoso.html" class="alinhamento"><img src="../assets/icons/iconHome2.svg" alt="Início">Início</a>
+      <div class="container"> 
+        <div class="div-nav">
+          <nav class="navbar-lateral" aria-label="Barra de navegação lateral">
+            <a href="../pages/telaInicialIdoso.html" class="alinhamento"><img src="../assets/icons/iconHome2.svg" alt="Início">Início</a>
 
-          <a href="../pages/telaSolicitacaoIdoso.html" class="alinhamento ativo"><img src="../assets/icons/iconPrancheta.svg" alt="Solicitações"/>
-            <p>Solicitações</p>
-          </a>
+            <a href="../pages/telaSolicitacaoIdoso.html" class="alinhamento ativo"><img src="../assets/icons/iconPrancheta.svg" alt="Solicitações"/>
+              <p>Solicitações</p>
+            </a>
 
-          <a href="" class="alinhamento"><img src="../assets/icons/iconMic.svg" alt="Microfone"/>Microfone</a>
+            <a href="" class="alinhamento"><img src="../assets/icons/iconMic.svg" alt="Microfone"/>Microfone</a>
 
-          <a href="../pages/telaSuporteIdoso.html" class="alinhamento"><img src="../assets/icons/iconAjuda.svg" alt="Ajuda"/>Ajuda</a>
+            <a href="../pages/telaSuporteIdoso.html" class="alinhamento"><img src="../assets/icons/iconAjuda.svg" alt="Ajuda"/>Ajuda</a>
 
-          <a href="" class="alinhamento"><img src="../assets/icons/iconConfig.svg" alt="Configurações"/>Configurações</a>
-     
-          <a href="../index.html" class="sair alinhamento"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
-        </nav>
-      </div>
+            <a href="../pages/telaConfiguracaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconConfig.svg" alt="Configurações"/>Configurações</a>
+      
+            <a href="../index.html" class="sair alinhamento"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
+          </nav>
+        </div>
 
       <section>
         <div class="div-solicitacao">
@@ -68,7 +68,7 @@
             <div class="container-companhia">
               <div class="companhia">
                 <div class="iconCompanhia">
-                  <img class="icon" src="../assets/icons/iconChat.svg" alt="">
+                  <img class="icon" src="../assets/icons/iconchatamarelo.svg" alt="card Companhia">
                 </div>
 
                 <div class="textoSolicitacao">
@@ -78,12 +78,11 @@
                   <div class="p">
                     <p>Voluntário: </p>
                     <p>Hoje às 14:30</p>
-                  </div>
-                  
+                  </div>               
                 </div>              
               </div>
 
-              <div class="segurar-botoes">
+              <div class="segurar-botoes-companhia">
                 <div class="situacaoCompanhia">
                   <p>Em andamento</p>
                 </div>
@@ -92,66 +91,102 @@
               </div>
             </div>
 
-            <!-- a partir daqui -->
+            <div class="container-tecnologia">
+              <div class="tecnologia">
+                <div class="iconTecnologia">
+                  <img class="icon" src="../assets/icons/iconTech.svg" alt="card Tecnologia">
+                </div>
 
-          <div class="container-tecnologia">
-           <div class="tecnologia">
-            <div class="iconTecnologia">
-              <img class="icon" src="../assets/icons/iconTech.svg" alt="">
+                <div class="textoSolicitacao">
+                  <h6>Ajuda com celular</h6>
+                  <p>Solicitada em 12/05/2026</p>
+
+                  <div class="p">
+                    <p>Voluntário: </p>
+                    <p>Hoje às 10:15</p>
+                  </div>               
+                </div>              
+              </div>
+
+              <div class="segurar-botoes-tecnologia">
+                <div class="situacaoTecnologia">
+                  <p>Confirmada</p>
+                </div>
+              
+                <button class="botao">Cancelar solicitação</button>
+              </div>
             </div>
 
-            <div class="textoSolicitacao">
-              <h6>Ajuda com celular</h6>
-              <p>Solicitada em 10/05/2026 - 10h15</p>
-            </div>              
+            <div class="container-saude">
+              <div class="saude">
+                <div class="iconSaude">
+                  <img class="icon" src="../assets/icons/iconMed.svg" alt="card Saude">
+                </div>
+
+                <div class="textoSolicitacao">
+                  <h6>Consulta médica</h6>
+                  <p>Solicitada em 08/05/2026</p>
+
+                  <div class="p">
+                    <p>Voluntário: </p>
+                    <p>Hoje às 09:00</p>
+                  </div>               
+                </div>              
+              </div>
+
+              <div class="lado-direito">
+                <div class="situacaoSaude">Concluída</div>
+
+                <div class="alinhar">
+                  <p>Avalie o voluntário:</p>
+
+                  <div class="avaliacao">
+                    <input type="radio" id="estrela5" name="nota">
+                    <label for="estrela5">★</label>
+
+                    <input type="radio" id="estrela4" name="nota">
+                    <label for="estrela4">★</label>
+
+                    <input type="radio" id="estrela3" name="nota">
+                    <label for="estrela3">★</label>
+
+                    <input type="radio" id="estrela2" name="nota">
+                    <label for="estrela2">★</label>
+
+                    <input type="radio" id="estrela1" name="nota">
+                    <label for="estrela1">★</label>
+                  </div>
+                </div>
+              </div>   
             </div>
 
-            <div class="situacaoTecnologia">
-              <p>Confirmada</p>
+            <div class="container-compras">
+              <div class="compras">
+                <div class="iconCompras">
+                  <img class="icon" src="../assets/icons/iconCarrinho2.svg" alt="card Compras">
+                </div>
+
+                <div class="textoSolicitacao">
+                  <h6>Ajuda com celular</h6>
+                  <p>Solicitada em 01/04/2026</p>
+
+                  <div class="p">
+                    <p>Cancelada por você</p>
+                  </div>               
+                </div>              
+              </div>
+
+              <div class="segurar-botoes-tecnologia">
+                <div class="situacaoCompras">
+                  <p>Cancelada</p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="container-saude">
-           <div class="saude">
-            <div class="iconSaude">
-              <img class="icon" src="../assets/icons/iconMed.svg" alt="">
-            </div>
-
-            <div class="textoSolicitacao">
-              <h6>Ajuda com celular</h6>
-              <p>Solicitada em 10/05/2026 - 10h15</p>
-            </div>              
-            </div>
-
-            <div class="situacaoSaude">
-              <p>Concluída</p>
-            </div>
-          </div>  
-          
-          
-          
-
-
-
-
-        </div>
-
-
-
-
-
-
         </div>
       </section>
+    </div>
 
-
-
-
-
-
-
-     </div>
-    </main>
-  
+  </main>
 </body>
 </html>
