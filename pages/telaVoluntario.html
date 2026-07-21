@@ -14,12 +14,12 @@
         <div class="menu-usuario-container">
           <button id="botao-perfil" class="botao-perfil">
             <img
-              src="../assets/img/fotoJessica.jpeg"
-              alt="Foto de Jessica"
+              src="../assets/img/fotoJoao.png"
+              alt="Foto de João"
               class="foto-usuario"
             />
             <div class="info-usuario">
-              <strong>Jessica Camily</strong> <br />
+              <strong>João Victor</strong> <br />
               <small>Voluntário</small>
             </div>
             <img
@@ -52,7 +52,8 @@
                 />
                 Configurações
               </span>
-
+              <span style="font-size: 18px; color: white; margin-left: auto;">&gt;</span>
+            </a>
             <hr class="divisor" />
 
             <a href="login.html" class="item-menu">
@@ -69,12 +70,13 @@
 
       <main>
         <section>
-          <h1>Olá, Jessica!</h1>
+          <h1>Olá, João!</h1>
           <p class="subtitulo-boasvindas">
             Que tal transformar o dia de alguém hoje?
           </p>
 
-          <div class="banner">
+
+          <a href="#" class="banner">
             <div class="icone-prancheta">
               <img src="../assets/icons/pranchetaVerde.svg" alt="" />
             </div>
@@ -82,7 +84,7 @@
               <h2>Ver mural de missões</h2>
               <p>Veja as oportunidades de ajudar perto de você</p>
             </div>
-          </div>
+          </a>
         </section>
 
         <section>
@@ -91,7 +93,7 @@
             <a href="#" class="link-verde">Ver todos</a>
           </div>
           <div class="container-carrossel">
-            <button class="botao-carrossel esquerda" aria-label="Anterior">
+            <button class="botao-carrossel esquerda" aria-label="Anterior" id="btn-esquerda" >
               <img src="../assets/icons/IconSetaEsc.svg" alt="<">
             </button>
           <div class="lista-missoes">
@@ -206,9 +208,65 @@
               </div>
               <button class="botao-aceitar">Aceitar missão</button>
             </article>
+
+            <article class="cartao-missao">
+              <span class="tag tag-companhia">Compras</span>
+
+              <div class="conteudo-cartao">
+                <div class="info-missao">
+                  <h3>Ajuda para comprar remédio </h3>
+                  <p>Idosa precisa de ajuda para poder comprar remédios na farmácia</p>
+                </div>
+                <div>
+                  <img src="../assets/img/DonaJoana.png" alt="" class="foto-idoso">
+                  <p class="nome-idoso">Dona Joana<br>67 anos</p>
+                </div>
+              </div>
+
+              <div class="detalhes-local">
+                <span>
+                  <img src="../assets/icons/iconLugar.svg" alt="">    perdizes 
+                </span>
+                <span>
+                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h30 
+                </span>
+                <span>
+                  <img src="../assets/icons/IconDistancia.svg" alt=""> 8 km de você
+                </span>
+              </div>
+              <button class="botao-aceitar">Aceitar missão</button>
+            </article>
+
+          <article class="cartao-missao">
+              <span class="tag tag-companhia">Companhia</span>
+
+              <div class="conteudo-cartao">
+                <div class="info-missao">
+                  <h3>Companhia para conversar</h3>
+                  <p>Idoso gostaria de conversar sobre pesca </p>
+                </div>
+                <div>
+                  <img src="../assets/img/DonaJoana.png" alt="" class="foto-idoso">
+                  <p class="nome-idoso">Seu Hugo<br>74 anos</p>
+                </div>
+              </div>
+
+              <div class="detalhes-local">
+                <span>
+                  <img src="../assets/icons/iconLugar.svg" alt=""> Casa Verde 
+                </span>
+                <span>
+                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h
+                </span>
+                <span>
+                  <img src="../assets/icons/IconDistancia.svg" alt=""> 4 km de você
+                </span>
+              </div>
+              <button class="botao-aceitar">Aceitar missão</button>
+            </article>
           </div>
 
-          <button class="botao-carrossel direita" aria-label="Próximo">
+          <button class="botao-carrossel direita" aria-label="Próximo" id="btn-direita">
               <img src="../assets/icons/Vector (15).svg" alt=">">
             </button>
 
@@ -280,20 +338,6 @@
           </ul>
         </section>
       </main>
-    </div><script>
-      const botao = document.getElementById('botao-perfil');
-      const menu = document.getElementById('perfil-suspenso');
-
-      botao.addEventListener('click', function(event) {
-          menu.classList.toggle('mostrar');
-          event.stopPropagation();
-      });
-
-      window.addEventListener('click', function() {
-          if (menu.classList.contains('mostrar')) {
-              menu.classList.remove('mostrar');
-          }
-      });
-    </script>
+    </div>
   </body>
 </html>
