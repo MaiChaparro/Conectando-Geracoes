@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/img/LogoOficial.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/telaConfigVoluntario.css">
+  <title>Configuração</title>
+</head>
+<body>
+   <div class="container">
+      <header class="cabecalho">
+        <img src="../assets/img/LogoOficial.png" alt="">
+        <div class="menu-usuario-container">
+          <button id="botao-perfil" class="botao-perfil">
+            <img
+              src="../assets/img/fotoJoao.png"
+              alt="Foto de João"
+              class="foto-usuario"
+            />
+            <div class="info-usuario">
+              <strong>João Victor</strong> <br />
+              <small>Voluntário</small>
+            </div>
+            <img
+              src="../assets/icons/iconSetabaixo.svg"
+              alt=""
+              class="seta-baixo"
+            />
+          </button>
+
+          <nav id="perfil-suspenso" class="menu-suspenso">
+            <a href="#" class="item-menu">
+              <img src="../assets/icons/PerfilVoluntarioIdoso.svg" alt="" class="icone-svg" />
+              Perfil
+            </a>
+           <a href="./telaMissoesVoluntario.html" class="item-menu">
+              <img src="../assets/icons/iconPrancheta2.svg" alt="" class="icone-svg" />
+              Missões
+            </a>
+            <a href="#" class="item-menu">
+              <img src="../assets/icons/iconAjuda.svg" alt="" class="icone-svg" />
+              Ajuda
+            </a>
+
+            <a href="#" class="item-menu item-destaque">
+              <span class="icone-texto">
+                <img
+                  src="../assets/icons/iconConfig.svg"
+                  alt=""
+                  class="icone-svg"
+                />
+                Configurações
+              </span>
+            </a>
+            <hr class="divisor" />
+
+            <a href="login.html" class="item-menu">
+              <img
+                src="../assets/icons/iconSair.svg"
+                alt=""
+                class="icone-svg"
+              />
+              Sair
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="conteudo">
+        <div class="titulo-pagina">
+          <a href="#" class="botao-voltar" aria-label="Voltar">
+            </a>
+          <h1>Configurações da conta</h1>
+        </div>
+
+        <div class="painel-configuracao">
+
+          <form class="formulario">
+            <div class="campo-grupo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" value="João Victor">
+            </div>
+
+            <div class="campo-grupo">
+              <label for="email">E-mail</label>
+              <div class="campo-com-acao">
+                <input type="email" id="email" value="gmail.com">
+                <button type="button" class="botao-acao-icone" aria-label="Editar e-mail">
+                  <img src="../assets/icons/iconLapis.svg" alt="">
+                </button>
+              </div>
+            </div>
+
+            <div class="campo-grupo">
+              <label for="telefone">Telefone</label>
+              <div class="campo-com-acao">
+                <input type="text" id="telefone" value="(11) 9 9876-5432">
+                <button type="button" class="botao-acao-icone" aria-label="Editar telefone">
+                <img src="../assets/icons/iconLapis.svg" alt="">
+                </button>
+              </div>
+            </div>
+
+            <div class="campo-grupo">
+              <label for="cidade">Cidade - Estado</label>
+              <div class="campo-com-acao">
+                <input type="text" id="cidade" value="São Paulo - SP">
+                <button type="button" class="botao-acao-icone" aria-label="Editar cidade">
+                    <img src="../assets/icons/iconLapis.svg" alt="">
+                </button>
+              </div>
+            </div>
+
+            <div class="campo-grupo">
+              <label for="senha">Alterar Senha</label>
+              <input type="password" id="senha" value="**********">
+            </div>
+
+            <div class="campo-grupo">
+             <label for="confirma-senha">Confirmar nova senha</label> 
+             <div class="campo-com-acao">
+              <input type="password" id="confirma-senha" value="**********">
+              <button type="button" class="botao-texto">Alterar</button>
+             </div>
+            </div>
+
+            <button type="submit" class="botao-salvar">Salvar Alterações</button>
+            <img src="../assets/icons/iconLixeira.svg" alt=""> Excluir Conta
+          </form>
+
+          <aside class="painel-foto">
+            <div class="foto-container">
+              <img src="../assets/img/fotoJoao.png" alt="">
+              <button type="button" class="botao-editar-foto" aria-label="Alterar foto de perfil">
+                <img src="../assets/icons/iconLapis.svg" alt="">
+              </button>
+            </div>
+          </aside>
+
+        </div>
+      </main>
+
+
+  </div> 
+  <!--container-->
+</body>
+</html>

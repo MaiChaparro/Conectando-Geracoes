@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monrope','Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+.pagina {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+/*terminar*/
