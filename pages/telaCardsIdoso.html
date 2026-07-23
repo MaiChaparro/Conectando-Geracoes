@@ -29,14 +29,15 @@
       <section>
         <div class="segurarMic">
           <div class="container-mic">
-            <div class="microfone">
-              <img src="../assets/icons/iconMic2.svg" alt="microfone" />
+          <div class="microfone abrirMicrofone">
+            <img src="../assets/icons/iconMic2.svg" alt="microfone">
 
-              <div>
-                <p>Clique e fale o que você precisa</p>
-              </div>
-            </div>
+            <div>
+            <p>Microfone</p>
+            <p>Clique e fale o que você precisa</p>
           </div>
+          </div>
+        </div>
         </div>
 
         <div class="segurarSolicitacao">
@@ -132,5 +133,21 @@
         </div>
       </footer>
     </main>
+
+    <!-- POP-UP DO MICROFONE -->
+    <div id="popupMicrofone" class="popup">
+      <div class="popup-conteudo">
+        <h2>🎤 Assistente por Voz</h2>
+        <p id="status">Clique em "Iniciar" e diga o que você precisa.</p>
+        <p id="textoReconhecido"></p>
+        
+        <div class="botoesPopup">
+          <button id="btnIniciar">Iniciar</button>
+          <button id="btnFechar">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/microfone.js"></script>
   </body>
 </html>

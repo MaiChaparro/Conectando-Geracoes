@@ -70,3 +70,15 @@ popupExcluir.addEventListener("click", (e) => {
         popupExcluir.style.display = "none";
     }
 });
+
+// FAZ A FOTO MUDAR
+const inputFoto = document.getElementById("foto");
+const preview = document.getElementById("preview");
+
+inputFoto.addEventListener("change", () => {
+    const arquivo = inputFoto.files[0];
+
+    if (arquivo) {
+        preview.src = URL.createObjectURL(arquivo);
+    }
+});
