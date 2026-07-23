@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/telaSuporteVoluntário.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte Voluntário</title>
+</head>
+<body>
+
+  <header class="header">
+      <div class="header-container">
+        <div>
+          <a href="../pages/telaVoluntario.html"><img class="logo" src="../assets/img/Logo.png" alt="logo"/></a>
+        </div>
+
+        <div class="perfil-container">
+          <img src="../assets/img/fotoJoao.png" alt="foto de perfil" />
+          <div>
+            <h4>João Victor</h4>
+            <p>Voluntário</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+     <div class="container"> 
+        
+      <section class="conteudo">
+        <div class="comecin">
+          <div class="setaVoltar">
+            <a href="../pages/telaVoluntario.html"><img src="../assets/icons/iconSeta.svg" alt="seta voltar"></a>
+          </div>
+
+          <div>
+            <h3>Ajuda</h3>
+            <p>Como podemos te ajudar?</p>
+          </div>
+        </div>
+
+        <div class="container-suporte">
+
+        <div class="suporte">
+          <div class="perguntasFrequentes">
+            <div class="tituloUm"><h5>Perguntas Frequentes</h5></div>
+            <div class="perguntas"><p>Como cancelar uma solicitação</p></div>
+            <div class="perguntas"><p>Como alterar o meu perfil?</p>
+            </div>
+            <div class="perguntas"><p>Como funciona a avaliação?</p></div>
+            <div class="perguntas"><p>Qual é o e-mail do suporte?</p></div>
+          </div>
+        </div>
+
+          <div class="suporte">
+            <div class="tituloDois">
+              <h5>Ainda precisa de ajuda?</h5>
+              <p>Entre em contato com a nossa equipe</p>
+            </div>
+            <div class="info">
+              <h6>Falar com o suporte</h6>
+              <p>Chat online</p>
+            </div>
+            <div class="info">
+              <h6>Enviar e-mail</h6>
+              <p>e-mail: conectandogeracoes2026@gmail.com</p>
+            </div>
+
+            <div class="atendimento">
+              <h6>Horário de atendimento</h6>
+              <p>Segunda à sexta: 09h ás 17h | <br>Sábado: 09h ás 14h</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container-suporteDois">
+          <div>
+            <h3>Suporte</h3>
+            <p>Estamos aqui para te ajudar!</p>
+          </div>
+        </div>
+
+        <div class="container-chat">
+
+            <div class="contato">
+              <h4>Conversas</h4>
+
+              <div class="contatoChat">
+                <div>
+                <img src="../assets/img/Logo.png" alt="logo"> 
+                </div>
+                
+                <div>
+                  <p>Equipe Conectando Gerações</p>
+                  <p class="cor">Online</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat">
+              <div class="esquerda">
+                <p>Olá Maria! <br>Como podemos te ajudar hoje?</p>
+              </div>
+              
+              <div class="direita">
+                <p>Olá! Tenho uma dúvida de como cancelar uma solicitação.</p>
+              </div>
+              
+              <div class="esquerda">
+                <p>Claro! Posso te ajudar com isso. Para cancelar uma solicitação, vá até “Solicitações” e clique em “Cancelar solicitação”.</p>
+              </div>
+              
+              <div class="direita">
+                <p>Entendi. Muito obrigado(a).</p>
+              </div>
+
+              <hr>
+
+              <div class="campo-mensagem">
+                <input type="text" id="mensagemTranscrita" placeholder="Digite sua mensagem...">
+                <button class="mic" id="btnMicrofone"><img src="../assets/icons/iconMic2.svg" alt=""></button>
+                <button id="btnEnviar" class="enviar"><img src="../assets/icons/iconEnviar2.svg" alt=""></button>
+
+              </div>
+              
+            </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- POP-UP CONFIRMAR SAÍDA -->
+<div id="popupSair" class="popup-sair">
+  <div class="popup-conteudo-sair">
+    <h2>Deseja sair?</h2>
+    <p>Você tem certeza que deseja encerrar a sessão?</p>
+
+    <div class="botoes-sair">
+      <button id="cancelarSair">Cancelar</button>
+      <button id="confirmarSair">Sair</button>
+    </div>
+  </div>
+</div>
+
+    <!-- POP-UP DO MICROFONE -->
+    <div id="popupMicrofone" class="popup">
+      <div class="popup-conteudo">
+        <h2>🎤 Assistente por Voz</h2>
+        <p id="status">Clique em "Iniciar" e diga o que você precisa.</p>
+        <p id="textoReconhecido"></p>
+        
+        <div class="botoesPopup">
+          <button id="btnIniciar">Iniciar</button>
+          <button id="btnFechar">Fechar</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/telaSuporteIdoso.js"></script>
+    <script src="../js/confirmarSaida.js"></script>
+    <script src="../js/microfone.js"></script>
+  </body>
+</html>
