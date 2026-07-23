@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Monrope','Inter', sans-serif;
+    font-family: 'Manrope','Inter', sans-serif;
 }
 
 body {
@@ -251,18 +251,27 @@ body {
 .lista-missoes::-webkit-scrollbar {
     display: none; 
 }
-
+.container-carrossel{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 .botao-carrossel {
-    background: transparent ;
-    border: 0px ;
-    width: 40px;
-    height: 36px;
+    background-color: transparent;
+    border: 1px solid var(--cor-borda);
+    border-radius: 50%; 
+    width: 25.5px;
+    height: 25.5px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
     z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12); 
+    transition: all 0.2s ease;
 }
 
 .botao-carrossel img {
@@ -277,6 +286,26 @@ body {
 .botao-carrossel.direita {
     right: -18px;
 }
+
+.botao-carrossel:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-50%) scale(1.08); 
+}
+
+.botao-carrossel img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.botao-carrossel.esquerda {
+    left: -15px;
+}
+
+.botao-carrossel.direita {
+    right: -15px;
+}
+
 
 .cartao-missao {
     background: white;
