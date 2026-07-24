@@ -1,403 +1,251 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
 }
 
-body{
-  background: #FAFAFA;
+body {
+  background: #fafafa;
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* HEADER */
-.header{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #FAFAFA;
+.header {
+  background: #fafafa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.logo{
-  width: 90px;
-}
-
-.header-container{
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1280px;
+  min-height: 90px;
 }
 
-.perfil-container{
+.logo {
+  width: 90px;
+}
+
+.perfil-container {
   display: flex;
-  gap: 5px;
   align-items: center;
+  gap: 12px;
 }
 
-.perfil-container img{
+.perfil-container img {
   width: 70px;
   height: 70px;
-  border-radius: 50px;
-  margin: 10px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.perfil-container h4{
-  font-size: 1.125rem;
-  font-weight: 100;
-}
-
-.perfil-container p{
-  font-size: 1.125rem;
-  color: #6B6661;
-  font-weight: 100;
-}
-
-#linkPerfil{
-  text-decoration: none;
-  color: #6B6661;
-}
-
-/* BARRA LATERAL */
-.conteudo{
-  width: 1000px;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
-/* PARTE DE VOLTAR E ESCRITAS - MAIN */
-.comecin{
-  display: flex;
-  gap: 5px;
-}
-
-.comecin h3{
-  font-size: 2rem;
+.perfil-container h4 {
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
-.comecin p{
-  font-size: 1rem;
-  color: #808080;
+.perfil-container p {
+  color: #6b6661;
 }
 
-/* SUPORTE */
-.container-suporte{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1000px;
-  gap: 40px;
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.suporte{
-  border: solid 1px rgba(128, 128, 128, 0.5);
-  height: 350px;
-  width: 620px;
-}
-
-.tituloUm h5{
-  font-size: 1.3rem;
-  padding: 20px;
-}
-
-.perguntas p{
-  padding: 15px;
-  font-size: 1rem;
-  border: solid 1px rgba(128, 128, 128, 0.2);
-}
-
-.tituloDois{
-  padding: 15px;
-}
-
-.tituloDois h5{
-  font-size: 1.3rem;
-}
-
-.tituloDois p{
-  font-size: 1rem;
-}
-
-.info{
-  border: solid 1px rgba(0, 0, 0, 0.1);
-  padding: 10px 15px;
-}
-
-.info h6{
-  font-size: 1rem;
-  font-weight: 100;
-}
-
-.info p{
-  font-size: 0.8rem;
-}
-
-.atendimento{
-  background-color: rgba(21,136,65,0.1);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-}
-
-.atendimento h6{
-  font-size: 1rem;
-  color: #158841;
-}
-
-.atendimento p{
-  font-size: 0.8rem;
-  color: #6B6661;
-}
-
-/* CONTAINER SUPORTE */
-.container-suporteDois h3{
-  margin-top: 20px;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.container-suporteDois p{
-  font-size: 1rem;
-  color: #808080;
-}
-
-.container-chat{
-  display: flex;
-  gap: 10px;
-  width: 1100px;
-}
-
-.contato{
-  border: solid 1px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
-  border-radius: 10px;
-  padding: 15px;
-  height: 515px;
-  width: 265px;
-}
-
-.contato h4{
-  margin-bottom: 10px;
-}
-
-.contatoChat{
+/* TOPO */
+.comecin {
   display: flex;
   align-items: center;
-  background-color: rgba(21,136,65,0.1);
-  border-radius: 10px;
-  border: solid 1px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding: 5px;
+  gap: 12px;
+  margin: 30px 0 20px;
 }
 
-.contatoChat p{
-  font-size: 0.7rem;
-  font-weight: 600;
-}
-
-.cor{
-  color: rgba(21, 136, 65, 0.5);
-}
-
-.contatoChat img{
+.setaVoltar img {
   width: 50px;
 }
 
-.chat{
-  display: flex;
-  flex-direction: column;
-  border: solid 1px rgba(0, 0, 0, 0.2);
-  margin-top: 19px;
-  border-radius: 10px;
-  padding: 10px;
-  width: 735px;
-  gap: 10px;
-  height: 516px;
+.ajuda h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.esquerda{
-  background-color: rgba(21,136,65,0.1);
-  align-self: flex-start;
-  border-radius: 10px;
-  padding: 10px;
-  max-width: 320px;
+.ajuda p {
+  color: #6b6661;
 }
 
-.esquerda p{
+/* CARDS */
+.container-suporte {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.suporte {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.suporte h5 {
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+.perguntas p {
+  padding: 16px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.escritas{
+  padding: 20px;
+}
+
+.escritas h3{
+  font-size: 1.25rem;
+}
+
+.escrtitas p{
+  color: #6b6661;
+}
+
+.ultimo{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.info {
+  padding: 15px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.info h6 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.info p {
+  color: #666;
   font-size: 0.9rem;
 }
 
-.direita{
-  background-color: rgba(0, 0, 0,0.05);
-  align-self: flex-end;
+.atendimento {
+  margin: 20px;
+  padding: 18px;
+  background: rgba(21, 136, 65, 0.08);
   border-radius: 10px;
-  padding: 10px;
-  max-width: 320px;
 }
 
-.direita p{
-  font-size: 0.9rem;
+.atendimento h6 {
+  color: #158841;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }
 
-hr{
-  margin-top: auto;
+/* CHAT */
+.container-suporteDois {
+  margin-top: 35px;
 }
 
-.campo-mensagem{
+.container-suporteDois h3 {
+  font-size: 2rem;
+}
+
+.container-suporteDois p {
+  color: #6b6661;
+}
+
+.container-chat {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contato,
+.chat {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.contato {
+  padding: 15px;
+}
+
+.contatoChat {
   display: flex;
   align-items: center;
-  gap: 5px;
-}
-
-.campo-mensagem input{
-  background-color: white;
-  border: solid 1px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  background: rgba(21, 136, 65, 0.08);
   padding: 10px;
-  border-radius: 5px;
-  flex: 1;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
-input::placeholder{
-  font-size: 0.9rem;
+.contatoChat img {
+  width: 50px;
 }
 
-.mic img{
-  width: 30px;
+.cor {
+  color: #158841;
 }
 
-.enviar img{
-  width: 25px;
+.chat {
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+  padding: 15px;
+  gap: 12px;
 }
 
-.campo-mensagem button{
+.esquerda,
+.direita {
+  padding: 12px;
+  border-radius: 10px;
+  max-width: 330px;
+}
+
+.esquerda {
+  background: rgba(21, 136, 65, 0.1);
+  align-self: flex-start;
+}
+
+.direita {
+  background: rgba(0, 0, 0, 0.06);
+  align-self: flex-end;
+}
+
+hr {
+  margin-top: auto;
   border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.campo-mensagem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.campo-mensagem input {
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 1000px;
+}
+
+.campo-mensagem button {
   background: none;
+  border: none;
   cursor: pointer;
 }
 
-/* POP UP SAIR*/
-/* Fundo escuro */
-.popup-sair{
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.45);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+.mic img {
+  width: 30px;
 }
 
-/* Caixa */
-.popup-conteudo-sair{
-  background: white;
-  width: 380px;
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-}
-
-/* Título */
-.popup-conteudo-sair h2{
-  color:#1980E6;
-  margin-bottom:15px;
-}
-
-/* Texto */
-.popup-conteudo-sair p{
-  color:#666;
-  margin-bottom:25px;
-}
-
-/* Botões */
-.botoes-sair{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-}
-
-.botoes-sair button{
-  padding:10px 22px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-  font-size:15px;
-}
-
-#cancelarSair{
-  background:#ddd;
-}
-
-#confirmarSair{
-  background:#E3022C;
-  color:white;
-}
-
-/* FUNDO ESCURO - MICROFONE */
-.popup{
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.45);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* QUADRO - MICROFONE */
-.popup-conteudo{
-  background: white;
-  width: 420px;
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-}
-
-/* TÍTULO - MICROFONE */
-.popup h2{
-  color:#1980E6;
-  margin-bottom:15px;
-}
-
-/* TEXTO - MICROFONE */
-#status{
-  margin:20px 0;
-  color:#666;
-  font-size:18px;
-}
-
-#textoReconhecido{
-  margin-bottom:25px;
-  font-size:20px;
-  color:#1980E6;
-  min-height:30px;
-}
-
-/* BOTÕES - MICROFONE */
-.botoesPopup{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-}
-
-.botoesPopup button{
-  padding:10px 25px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-#btnIniciar{
-  background:#1980E6;
-  color:white;
-}
-
-#btnFechar{
-  background:#ddd;
+.enviar img {
+  width: 25px;
 }
