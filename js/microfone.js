@@ -44,7 +44,7 @@ reconhecimento.onresult = (evento) => {
     window.location.href = "telaConfiguracaoIdoso.html";
   }
 
-  else if (fala.includes("solicitação") || fala.includes("pedido")) {
+  else if (fala.includes("solicitação") || fala.includes("pedido") || fala.includes("solicitações")) {
     window.location.href = "telaSolicitacaoIdoso.html";
   }
 
