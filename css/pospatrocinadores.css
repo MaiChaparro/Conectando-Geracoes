@@ -42,16 +42,22 @@ main {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .header{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 99;
   width: 100%;
   background-color: #FFFAF7;
+}
+
+.header-container{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
 
 .logo{
