@@ -15,6 +15,9 @@ body {
   height: 45px; 
   width: auto;
 }
+.logo-box a {
+  text-decoration: none;
+}
 
 .logo-site {
   display: flex;

@@ -33,7 +33,9 @@ body,html{
     align-items: center;
     gap: 10px;
 }
-
+.logo-box a {
+  text-decoration: none;
+}
 .logo-box img {
     max-height: 65px;
     object-fit: contain;

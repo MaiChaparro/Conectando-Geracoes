@@ -13,7 +13,9 @@
 
     <section class="painel-info">
       <div class="background-imagem">
+        <a href="../index.html">
         <img src="../assets/img/fotofundocad.png" alt="Duas mulheres sorrindo enquanto usam um tablet" class="img-banner">
+        </a>
       </div> <!-- fechamento class="background-imagem"-->
 
       <div class="conteudo-info">
@@ -62,7 +64,7 @@
           <label for="nome">Nome completo</label>
           <div class="input-com-icone">
             <img src="../assets/icons/iconeUserCads.svg" alt="" class="icone-input esquerda">
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
           </div>
         </div> <!-- "grupo-input campo-grande"-->
 
@@ -70,7 +72,7 @@
           <label for="email">E-mail</label>
           <div class="input-com-icone">
             <img src="../assets/icons/iconEmail.svg" alt="" class="icone-input esquerda">
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" >
             </div>
         </div>
 
@@ -114,20 +116,28 @@
           <input type="text" id="cidade" name="cidade">
         </div>
 
-        <div class="grupo-input campo-medio">
+        <!--<div class="grupo-input campo-medio">
           <label for="pessoa">Pessoa</label>
           <select id="pessoa" name="pessoa">
             <option value="" disabled selected>Voluntário ou Beneficiário</option>
             <option value="voluntario">Voluntário</option>
             <option value="beneficiario">Beneficiário</option>
           </select>
-        </div>
+        </div> -->
+        <div class="grupo-input campo-medio">
+  <label for="pessoa">Pessoa</label>
+  <select id="pessoa" name="pessoa" required> 
+    <option value="" disabled selected>Voluntário ou Beneficiário</option>
+    <option value="voluntario">Voluntário</option>
+    <option value="beneficiario">Beneficiário</option>
+  </select>
+</div>
 
         <div class="grupo-input campo-grande">
           <label for="senha">Senha</label>
           <div class="input-com-icone">
             <img src="../assets/icons/iconcadeado.svg" alt="" class="icone-input esquerda">
-          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
           <img src="../assets/icons/iconOlho.svg" alt="" class="icone-input direita">
           </div>
         </div>
@@ -136,7 +146,7 @@
           <label for="repita-senha">Repita sua senha</label>
           <div class="input-com-icone">
             <img src="../assets/icons/iconcadeado.svg" alt="" class="icone-input esquerda">
-          <input type="password" id="repita-senha" name="repita-senha" placeholder="Digite novamente a sua senha" required>
+          <input type="password" id="repita-senha" name="repita-senha" placeholder="Digite novamente a sua senha" >
           <img src="../assets/icons/iconOlho.svg" alt="" class="icone-input direita">
           </div>
         </div>
@@ -171,5 +181,6 @@
 <script>
   new window.VLibras.Widget("https://vlibras.gov.br/app");
 </script>
+<script src="../js/cadastro.js"></script>
 </body>
 </html>
