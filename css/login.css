@@ -316,6 +316,18 @@ body,html{
   }
 }
 
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+
 
 @media (max-width: 480px) {
   .form-section {

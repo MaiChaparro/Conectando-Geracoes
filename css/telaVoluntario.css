@@ -490,7 +490,17 @@ body {
     color: var(--cor-texto);
     font-weight: 500;
 }
-
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
 /*responsivo*/
 
 @media (max-width: 992px) {

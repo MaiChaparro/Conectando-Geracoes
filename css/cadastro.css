@@ -335,6 +335,19 @@ body {
 .destaque-laranja { color: #FCC02A; }
 .destaque-texto { color: #FFA800; font-weight: 600; }
 
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+
+
 @media (max-width: 992px) {
   .page-cadastro {
     flex-direction: column;

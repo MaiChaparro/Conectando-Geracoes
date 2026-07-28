@@ -429,6 +429,17 @@ body {
     font-weight: 500;
     cursor: pointer;
 }
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
 
 /*responsivo*/
 
@@ -436,19 +447,18 @@ body {
   .container {
     padding: 0 15px;
   }
+
   .missoes {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
-  
   .painel-inferior {
     flex-direction: column;
     align-items: stretch;
     gap: 30px;
   }
 
-  
   .minhas-missoes, 
   .feitos {
     max-width: 100%;
@@ -460,19 +470,16 @@ body {
     font-size: 24px;
   }
 
-  
   .missoes {
     grid-template-columns: 1fr;
   }
 
-  
   .card-minhas-missoes {
     flex-direction: column; 
     align-items: stretch;
     padding: 16px;
   }
 
-  
   .retangulo-img-idoso {
     width: 100%;
     height: 160px;
@@ -489,17 +496,29 @@ body {
     flex: 1; 
     text-align: center;
   }
+
   .card-feitos {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch; 
   }
 
   .coluna-perfil-feito {
     width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
     border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 12px;
+  }
+
+  .coluna-perfil-feito .nome-idoso {
+    margin-top: 10px; 
+    font-size: 15px;
+  }
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+  .uai {
+    bottom: 1px; 
   }
 }
-

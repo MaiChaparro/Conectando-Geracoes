@@ -287,3 +287,92 @@ body {
 .botao-editar-foto img {
   width: 16px;
 }
+
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+
+@media (max-width: 992px) {
+  .cabecalho {
+    padding: 15px 20px;
+  }
+
+  .painel-configuracao {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    padding: 12px 16px;
+  }
+
+  .logo-header {
+    height: 36px;
+  }
+  .info-usuario {
+    display: none; 
+  }
+
+  .conteudo {
+    padding: 24px 16px;
+  }
+
+  .titulo-pagina {
+    margin-bottom: 24px;
+  }
+
+  .titulo-pagina h1 {
+    font-size: 20px;
+  }
+  .painel-configuracao {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .painel-foto {
+    margin-bottom: 8px;
+  }
+
+  .foto-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .botao-excluir {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+  .uai {
+    bottom: 180px !important;
+    right: 2px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .campo-grupo input {
+    font-size: 14px;
+  }
+
+  .botao-texto {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
