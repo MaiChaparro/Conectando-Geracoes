@@ -11,21 +11,20 @@ body{
 
 /* HEADER */
 .header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
   width: 100%;
   background-color: #FFFAF7;
+  z-index: 1000;
 }
 
 .header-container{
   width: 100%;
   max-width: 1200px;
+  height: 100px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
 }
 
 .logo{
@@ -81,6 +80,16 @@ nav a.selecionado{
   cursor: pointer;
 }
 
+/* MENU HAMBURGUER*/
+.menu-hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1980E6;
+}
+
 /* DROPDOWN */
 .dropdown{
   position: relative;
@@ -132,26 +141,27 @@ nav a.selecionado{
 /* "SOBRE NÓS" - TÍTULO */
 .div-titulos{
   display: flex;
-  padding-top: 100px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-bottom: 20px;
+  padding: 80px 20px 20px;
 }
 
 .div-titulos h2{
   color: #1980E6;
   font-size: 2.5rem;
   font-weight: 600;
+  margin-top:20px;
+  line-height: 1.2;
 }
 
 .div-titulos img{
-  width: 80px;
-  margin-bottom: 20px;
+  width: 60px;
+  margin-top: 20px;
+  flex-shrink: 0;
 }
 
 /* SECTION "SOBRE NÓS" MAIN */
-
 .container-sobre{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -161,14 +171,14 @@ nav a.selecionado{
   margin: 0 auto;
 }
 
-.conteudo p{
-  font-size: 1.25rem;
-  padding-bottom: 20px;
-}
-
 .conteudo{
   max-width: 560px;
   color: #6B6661;
+}
+
+.conteudo p{
+  font-size: 1.25rem;
+  padding-bottom: 20px;
 }
 
 .conteudo h4{
@@ -188,14 +198,15 @@ nav a.selecionado{
   justify-content: center;
   text-align: center;
   color: #6B6661;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
 }
 
 .cards-pqescolher{
   display: grid;
   grid-template-columns: repeat(2, 450px);
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -225,8 +236,7 @@ nav a.selecionado{
 
 .titulo-card{
   font-size: 1.25rem;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 30px 0 20px;
 }
 
 .descricao-card{
@@ -235,33 +245,38 @@ nav a.selecionado{
 }
 
 /* SECTION "MVV" - MAIN */
-.missao-visao{
+.missao-visao, .valores{
   display: flex;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  gap: 70px;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.descricao-equipe{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .missao-visao h3{
   font-size: 2.25rem;
   font-weight: 100;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .missao-visao p{
   color: #6B6661;
-}
-
-.valores{
-  display: flex;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .valores h3{
@@ -269,7 +284,7 @@ nav a.selecionado{
   font-weight: 100;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .valores p{
@@ -279,15 +294,15 @@ nav a.selecionado{
 }
 
 .cards-mvv{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .linha{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .card-mvv{
@@ -305,15 +320,6 @@ nav a.selecionado{
 }
 
 /* SECTION "EQUIPE" - MAIN */
-.descricao-equipe{
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .descricao-equipe h3{
   font-size: 2.25rem;
   font-weight: 100;
@@ -325,14 +331,14 @@ nav a.selecionado{
   color: #6B6661;
   text-align: center;
   font-size: 1.125rem;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .linha-equipe{
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-bottom: 20px;
+  gap: 30px;
+  margin-bottom: 15px;
 }
 
 .card-equipe{
@@ -353,8 +359,6 @@ nav a.selecionado{
   border-radius: 10px;
 }
 
-
-/* adicionei aqueles dois últimos objects*/
 .foto img{
   width: 200px;
   height: 160px;
@@ -382,7 +386,7 @@ nav a.selecionado{
   justify-content: space-around;
   align-items: center;
   background-color: #1980E6;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .h3{
@@ -402,7 +406,7 @@ nav a.selecionado{
 
 .section-botoes{
   display: flex;
-  gap: 50px;
+  gap: 30px;
   margin: 20px;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -432,17 +436,18 @@ nav a.selecionado{
 /* FOOTER */
 .footer-container{
   display: grid;
-  grid-template-columns: 250px 180px 260px 180px;
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   align-items: start;
-  gap: 80px;
+  gap: 70px;
   padding: 50px;
   background-color: #D9D9D9;
-  height: 250px;
+  min-height: 250px;
 }
 
 .titulo-footer{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 6px;
   font-size: 1.125rem;
@@ -458,6 +463,8 @@ nav a.selecionado{
   font-size: 0.875rem;
   color: #6B6661;
   line-height: 22px;
+  text-align: center;
+  max-width: 250px;
 }
 
 .conectando{
@@ -512,6 +519,14 @@ nav a.selecionado{
   cursor: pointer;
 }
 
+.conectando, .links, .contatos, .redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ACESSIBILIDADE */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -522,4 +537,233 @@ div[id*="userway"],
   bottom: 200px !important; 
   position: fixed !important;
   z-index: 999999 !important;
+}
+
+/* RESPONSIVO */
+@media(max-width: 1210px){
+  .header-container{
+    padding: 0 20px;
+  }
+
+  .container-sobre{
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .cards-pqescolher{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+  .card{
+    height: auto;
+  }
+
+  .missao-visao, .valores, .descricao-equipe{
+    padding: 0 20px;
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap: 40px;
+  }
+}
+
+@media(max-width: 990px){
+  .navbar{
+    gap: 20px;
+    font-size: 0.7rem;
+  }
+
+  .container-sobre{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .conteudo{
+    max-width: 100%;
+  }
+
+  .imagem-sobre{
+    margin: auto;
+  }
+
+  .cards-pqescolher{
+    grid-template-columns: 1fr;
+  }
+
+  .missao-visao{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linha{
+    flex-wrap: wrap;
+  }
+
+  .linha-equipe{
+    flex-wrap: wrap;
+  }
+
+  .section-botoes{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 800px){
+  .header{
+    justify-content: center;
+  }
+
+  .header-container{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  .menu-hamburguer{
+    display: block;
+  }
+  
+  .navbar{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFAF7;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.ativo{
+    display: flex;
+  }
+
+  .dropdown-menu{
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: white;
+    width: 100%;
+  }
+
+  .conectese{
+    width: 220px;
+  }
+
+  .div-titulos{
+    gap: 12px;
+    padding: 60px 20px 25px;
+  }
+
+  .div-titulos h2{
+    font-size: 1.9rem;
+  }
+
+  .div-titulos img{
+    width: 45px;
+  }
+
+  .texto-pqescolher{
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .card-equipe{
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-container{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .icones{
+    justify-content: center;
+  }
+}
+
+@media(max-width: 600px){
+  .logo{
+    width: 70px;
+  }
+
+  .div-titulos{
+    gap: 10px;
+    padding: 50px 15px 15px;
+  }
+
+  .div-titulos h2{
+    font-size: 1.45rem;
+    line-height: 1.35;
+  }
+
+  .div-titulos img{
+    width: 38px;
+  }
+
+  .conteudo p{
+    font-size: 1rem;
+  }
+
+  .conectando h4{
+    font-size: 1.2rem;
+  }
+
+  .card{
+    padding: 20px;
+  }
+
+  .titulo-card{
+    font-size: 1.1rem;
+  }
+
+  .descricao-card{
+    font-size: 0.9rem;
+  }
+
+  .h3{
+    font-size: 1.8rem;
+  }
+
+  .descricao{
+    font-size: 1rem;
+  }
+
+  .section-botoes{
+    width: 100%;
+    padding: 0 20px 40px;
+  }
+
+  .button-amarelo, .button-azul{
+    width: 220px;
+    max-width: 100%;
+  }
+
+  .card-mvv{
+    flex-direction: row;
+    text-align: left;
+    gap: 10px;
+    width: 90%;
+  }
+
+  .card-mvv img{
+    padding: 0;
+  }
+
+  .footer-container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .icones{
+    justify-content: center;
+  }
 }
