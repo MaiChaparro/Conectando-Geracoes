@@ -81,6 +81,65 @@ nav a.selecionado{
   cursor: pointer;
 }
 
+/* MENU HAMBURGUER*/
+.menu-hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1980E6;
+}
+
+/* DROPDOWN */
+.dropdown{
+  position: relative;
+}
+
+.dropdown-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: black;
+}
+
+.dropdown-btn:hover{
+  color:#FCC02A;
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  min-width: 170px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 12px 18px;
+  color:#333;
+  text-decoration:none;
+  font-size:.9rem;
+}
+
+.dropdown-menu a:hover{
+  background:#f5f5f5;
+}
+
+.dropdown-menu.ativo{
+  display: block;
+}
+
+/* conteúdo */
 .main-container {
   max-width: 1100px;
   margin: 10px auto 60px auto; 
@@ -183,7 +242,7 @@ nav a.selecionado{
 .card-logo img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /
+  object-fit: contain;
 }
 
 
@@ -295,6 +354,7 @@ nav a.selecionado{
   transform: translateY(-2px);
 }
 
+/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -305,4 +365,227 @@ div[id*="userway"],
   bottom: 200px !important; 
   position: fixed !important;
   z-index: 999999 !important;
+}
+
+/* Responsivo Acessibilidade*/
+@media(max-width: 850px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 8px !important;
+    bottom: 120px !important; 
+    transform: scale(0.9);
+    transform-origin: bottom right;
+  }
+}
+
+@media(max-width: 600px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 5px !important;
+    bottom: 90px !important; 
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
+}
+
+/* RESPONSIVO */
+@media(max-width: 1210px){
+  .header-container{
+    padding: 0 20px;
+  }
+
+  .navbar{
+    gap: 22px
+  }
+
+  .main-container{
+    padding: 0 25px;
+  }
+
+  .patrocinadores-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 990px){
+  .header-container{
+    padding: 0 20px;
+  }
+
+  .navbar{
+    gap: 15px
+  }
+
+  .navbar a{
+    font-size: 0.7rem;
+  }
+
+  .conectese{
+    padding: 10px 16px;
+  }
+
+  .titulo-principal{
+    font-size: 1.8rem;
+  }
+
+  .descricao-intro{
+    font-size: 1rem;
+  }
+  
+  .patrocinadores-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .banner-cta{
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 25px;
+  }
+
+  .cta-conteudo{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 850px){
+  .header{
+    justify-content: center;
+  }
+
+  .header-container{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  .menu-hamburguer{
+    display: block;
+  }
+  
+  .navbar{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFAF7;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .navbar.ativo{
+    display: flex;
+  }
+
+  .dropdown-menu{
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: white;
+    width: 100%;
+  }
+
+  .conectese{
+    width: 220px;
+  }
+
+  .titulo-principal{
+    font-size: 1.6rem;
+  }
+
+  .descricao-intro{
+    font-size: 0.95rem;
+  }
+
+  .card-impacto{
+    width: 100%;
+    justify-content: center;
+    padding: 18px;
+  }
+
+  .texto-impacto{
+    text-align: center;
+  }
+
+  .patrocinadores-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .card-logo{
+    height: 110px;
+  }
+
+  .btn-seja-parceiro{
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media(max-width: 600px){
+  .logo{
+    width: 70px;
+  }
+  
+  .main-container{
+    padding: 0 15px 40px;
+  }
+
+  .titulo-principal{
+    font-size: 1.35rem;
+  }
+
+  .descricao-intro{
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .card-impacto{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .texto-impacto{
+    align-items: center;
+  }
+
+  .card-logo{
+    padding: 15px;
+  }
+
+  .card-log img{
+    max-width: 80%;
+  }
+
+  .btn-seja-parceiro{
+    padding: 18px;
+    font-size: 0.95rem;
+  }
+
+  .banner-cta{
+    border-radius: 15px;
+    padding: 25px 18px;
+  }
+
+  .cta-texto h3{
+    font-size: 1rem;
+  }
+
+  .cta-texto p{
+    font-size: 0.9rem;
+  }
+
+  .btn-patrocinador{
+    width: 100%;
+    text-align: center;
+  }
 }

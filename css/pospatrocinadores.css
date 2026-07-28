@@ -113,6 +113,65 @@ nav a.selecionado{
   cursor: pointer;
 }
 
+/* MENU HAMBURGUER*/
+.menu-hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1980E6;
+}
+
+/* DROPDOWN */
+.dropdown{
+  position: relative;
+}
+
+.dropdown-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: black;
+}
+
+.dropdown-btn:hover{
+  color:#FCC02A;
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  min-width: 170px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 12px 18px;
+  color:#333;
+  text-decoration:none;
+  font-size:.9rem;
+}
+
+.dropdown-menu a:hover{
+  background:#f5f5f5;
+}
+
+.dropdown-menu.ativo{
+  display: block;
+}
+
+/* conteúdo */
 .hero-section h1 {
     font-size: 36px;
     font-weight: 700;
@@ -335,6 +394,8 @@ nav a.selecionado{
     height: 18px;
     display: block;
 }
+
+/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -345,4 +406,31 @@ div[id*="userway"],
   bottom: 200px !important; 
   position: fixed !important;
   z-index: 999999 !important;
+}
+
+/* Responsivo Acessibilidade*/
+@media(max-width: 850px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 8px !important;
+    bottom: 120px !important; 
+    transform: scale(0.9);
+    transform-origin: bottom right;
+  }
+}
+
+@media(max-width: 600px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 5px !important;
+    bottom: 90px !important; 
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
 }
