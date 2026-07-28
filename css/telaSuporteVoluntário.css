@@ -227,13 +227,17 @@ hr {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 100%;
 }
 
 .campo-mensagem input {
   padding: 12px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  width: 1000px;
+  flex: 1;
+  outline: none;
+  width: 100%;
+  min-width: 0;
 }
 
 .campo-mensagem button {
@@ -257,7 +261,75 @@ div[id*="userway"],
   top: auto !important;
   left: auto !important;
   right: 6px !important;
-  bottom: 200px !important; 
+  bottom: 135px !important; 
   position: fixed !important;
   z-index: 999999 !important;
+}
+
+@media (max-width: 992px) {
+  .container-suporte {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+
+  .container-chat {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+
+  .esquerda,
+  .direita {
+    max-width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header .container {
+    min-height: 70px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .perfil-container img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .perfil-container h4 {
+    font-size: 0.95rem;
+  }
+
+  .perfil-container p {
+    font-size: 0.8rem;
+  }
+
+  .ajuda h3, 
+  .container-suporteDois h3 {
+    font-size: 1.5rem;
+  }
+
+  .setaVoltar img {
+    width: 35px;
+  }
+
+  .chat {
+    min-height: 420px;
+    padding: 12px;
+  }
+
+  .esquerda,
+  .direita {
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .campo-mensagem input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }

@@ -10,7 +10,9 @@
   <body>
     <div class="container">
       <header class="cabecalho">
+        <a href="./telaVoluntario.html">
         <img src="../assets/img/LogoOficial.png" alt="">
+        </a>
         <div class="menu-usuario-container">
           <button id="botao-perfil" class="botao-perfil">
             <img
@@ -38,7 +40,7 @@
               <img src="../assets/icons/iconPrancheta2.svg" alt="" class="icone-svg" />
               Missões
             </a>
-            <a href="#" class="item-menu">
+            <a href="./telaSuporteVoluntário.html" class="item-menu">
               <img src="../assets/icons/iconAjuda.svg" alt="" class="icone-svg" />
               Ajuda
             </a>
@@ -55,13 +57,9 @@
             </a>
             <hr class="divisor" />
 
-            <a href="login.html" class="item-menu">
-              <img
-                src="../assets/icons/iconSair.svg"
-                alt=""
-                class="icone-svg"
-              />
-              Sair
+            <a href="login.html" class="item-menu btnSair">
+          <img src="../assets/icons/iconSair.svg" alt="" class="icone-svg" />
+            Sair
             </a>
           </nav>
         </div>
@@ -350,7 +348,7 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
-
+<script src="../js/confirmarSaida.js"></script>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
   new window.VLibras.Widget("https://vlibras.gov.br/app");
