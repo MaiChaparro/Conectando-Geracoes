@@ -490,3 +490,66 @@ body {
     color: var(--cor-texto);
     font-weight: 500;
 }
+
+/*responsivo*/
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 15px;
+  }
+.cabecalho {
+    padding: 15px 0;
+  }
+
+  .subtitulo-boasvindas {
+    font-size: 14px;
+  }
+
+  .banner {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .texto-banner h2 {
+    font-size: 16px;
+  }
+
+  .texto-banner p {
+    font-size: 13px;
+  }
+
+  .icone-prancheta {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+
+  .botao-carrossel {
+    display: none;
+  }
+
+  
+  .lista-missoes {
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  /*
+  .caixa-impacto {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 15px;
+  }
+*/
+  .item-atividade {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .data-atividade {
+    align-self: flex-end;
+    font-size: 12px;
+    color: var(--cor-texto-claro);
+  }
+}
