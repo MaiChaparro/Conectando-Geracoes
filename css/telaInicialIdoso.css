@@ -72,6 +72,7 @@ body{
 }
 
 .div-nav{
+  display: block;
   background-color: white;
   width: 250px;
   height: 1080px;
@@ -128,6 +129,16 @@ body{
 }
 
 .ativo p{
+  color: #1980E6;
+}
+
+/* MENU HAMBURGUER*/
+.menu-hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
   color: #1980E6;
 }
 
@@ -590,3 +601,166 @@ body{
 #btnFechar{
   background:#ddd;
 }
+
+/* ACESSIBILIDADE - WAY */
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+
+/* Resonsivo Acessibilidade*/
+@media(max-width: 850px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 8px !important;
+    bottom: 120px !important; 
+    transform: scale(0.9);
+    transform-origin: bottom right;
+  }
+}
+
+@media(max-width: 600px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 5px !important;
+    bottom: 90px !important; 
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
+}
+
+/* RESPONSIVO */
+@media(max-width: 1210px){
+  .header-container{
+    padding: 0 20px;
+  }
+
+  .container{
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .conteudo{
+    width: 100%;
+  }
+
+  .div-nav{
+    width: 220px;
+  }
+
+  .cards{
+    gap: 15px;
+  }
+
+  .ola h2{
+    font-size: 2rem;
+  }
+
+  .ola p{
+    font-size: 1.1rem;
+  }
+}
+
+@media(max-width: 990px){
+  .div-nav{
+    width: 210%;
+  }
+
+  .navbar-lateral{
+    font-size: 1.1rem;
+  }
+
+  .navbar-lateral img{
+    width: 35px;
+  }
+
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ola h2{
+    font-size: 2rem;
+  }
+
+  .ola p{
+    font-size: 1.1rem;
+  }
+}
+
+@media(max-width: 850px){
+  .header-container{
+    padding: 15px 20px;
+  }
+
+  .logo{
+    width: 75px;
+  }
+
+  .menu-hamburguer{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #1980E6;
+  }
+
+  .div-nav{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 100px);
+    background: white;
+    box-shadow: 3px 0 10px rgba(0,0,0,.15);
+  }
+
+  .div-nav.ativo{
+    display: block;
+  }
+
+  .navbar-lateral{
+    display: none;
+  }
+
+  .navbar-lateral.ativo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .alinhamento{
+    height: 65px;
+  }
+
+  .conteudo{
+    width: 100%;
+  }
+
+  .container{
+    display: block;
+    padding: 20px;
+  }
+
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .container-companhia,.container-tecnologia,.container-saude{
+    padding: 15px;
+  }
+}
+

@@ -1,3 +1,4 @@
+/* PATROCINADORES POP UP */
 document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.querySelector(".dropdown");
   const menu = document.querySelector(".dropdown-menu");

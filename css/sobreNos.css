@@ -526,10 +526,43 @@ div[id*="userway"],
   z-index: 999999 !important;
 }
 
+/* Resonsivo Acessibilidade*/
+@media(max-width: 850px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 8px !important;
+    bottom: 120px !important; 
+    transform: scale(0.9);
+    transform-origin: bottom right;
+  }
+}
+
+@media(max-width: 600px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+
+  .uai{
+    right: 5px !important;
+    bottom: 90px !important; 
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
+}
+
 /* RESPONSIVO */
 @media(max-width: 1210px){
   .header-container{
     padding: 0 20px;
+  }
+
+  .navbar{
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .container-sobre{
@@ -558,9 +591,20 @@ div[id*="userway"],
 }
 
 @media(max-width: 990px){
+  .header-container{
+    padding: 0 20px;
+  }
+
   .navbar{
-    gap: 20px;
+    gap: 12;
+  }
+
+  .navbar a, .dropdown-btn{
     font-size: 0.7rem;
+  }
+
+  .conectese{
+    padding: 10px 16px;
   }
 
   .container-sobre{
@@ -593,9 +637,9 @@ div[id*="userway"],
     flex-wrap: wrap;
   }
 
-  .section-botoes{
-    flex-direction: column;
-    align-items: center;
+  .footer-container{
+    gap: 25px;
+    padding-inline: 40px 20px;
   }
 }
 
@@ -667,11 +711,33 @@ div[id*="userway"],
   }
 
   .footer-container{
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    height: auto;
+  }
+
+  .titulo-footer{
     justify-content: center;
   }
 
-  .icones{
+  .conectando, .links, .contatos, .redes-sociais{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }  
+
+  .conectando{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .texto-footer{
+    text-align: center;
+  }
+
+  .loc, .email, .icones{
     justify-content: center;
   }
 }
@@ -723,16 +789,6 @@ div[id*="userway"],
     font-size: 1rem;
   }
 
-  .section-botoes{
-    width: 100%;
-    padding: 0 20px 40px;
-  }
-
-  .button-amarelo, .button-azul{
-    width: 220px;
-    max-width: 100%;
-  }
-
   .card-mvv{
     flex-direction: row;
     text-align: left;
@@ -742,6 +798,28 @@ div[id*="userway"],
 
   .card-mvv img{
     padding: 0;
+  }
+
+  .h3{
+    font-size: 1.5rem;
+    padding-top: 35px;
+  }
+
+  .descricao{
+    font-size: 0.95rem;
+    padding: 0 20px;
+  }
+  
+  .section-botoes{
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px 40px;
+  }
+
+  .button-amarelo, .button-azul{
+    width: 220px;
+    max-width: 100%;
+    justify-content: center;
   }
 
   .footer-container{
