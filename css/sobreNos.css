@@ -436,13 +436,12 @@ nav a.selecionado{
 /* FOOTER */
 .footer-container{
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: start;
-  gap: 70px;
+  gap: 40px;
   padding: 50px;
   background-color: #D9D9D9;
-  min-height: 250px;
 }
 
 .titulo-footer{
@@ -469,11 +468,17 @@ nav a.selecionado{
 
 .conectando{
   width: 250px;
-}
-
-.links{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.links, .contatos, .redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .links a{
@@ -487,26 +492,16 @@ nav a.selecionado{
   text-decoration: underline;
 }
 
-.contatos{
-  display: flex;
-  flex-direction: column;
-}
-
-.loc, .tel, .email{
+.loc, .email{
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
 }
 
-.loc p, .tel p, .email p{
+.loc p, .email p{
   color: #6B6661;
   font-size: 0.875rem;
-}
-
-.redes-sociais{
-  display: flex;
-  flex-direction: column;
 }
 
 .icones{
@@ -516,17 +511,9 @@ nav a.selecionado{
 
 .icones img{
   width: 42px;
-  cursor: pointer;
 }
 
-.conectando, .links, .contatos, .redes-sociais{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* ACESSIBILIDADE */
+/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -638,7 +625,6 @@ div[id*="userway"],
     align-items: center;
     gap: 20px;
     padding: 30px 0;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
 
   .navbar.ativo{
@@ -760,7 +746,14 @@ div[id*="userway"],
 
   .footer-container{
     grid-template-columns: 1fr;
-    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .conectando, .links, .contatos, .redes-sociais{
+    width: 100%;
+    align-items: center;
   }
 
   .icones{

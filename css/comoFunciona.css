@@ -138,7 +138,7 @@ nav a.selecionado{
   display: block;
 }
 
-/* "SOBRE NÓS" - TÍTULO */
+/* "COMO FUNCIONA" - TÍTULO */
 .div-titulos{
   display: flex;
   justify-content: center;
@@ -328,6 +328,7 @@ nav a.selecionado{
   width: 42px;
 }
 
+/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -390,7 +391,6 @@ div[id*="userway"],
     align-items: center;
     gap: 20px;
     padding: 30px 0;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
 
   .navbar.ativo{

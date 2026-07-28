@@ -11,21 +11,20 @@ body{
 
 /* HEADER */
 .header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
   width: 100%;
   background-color: #FFFAF7;
+  z-index: 1000;
 }
 
 .header-container{
   width: 100%;
   max-width: 1200px;
+  height: 100px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
 }
 
 .logo{
@@ -81,6 +80,16 @@ nav a.selecionado{
   cursor: pointer;
 }
 
+/* MENU HAMBURGUER*/
+.menu-hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1980E6;
+}
+
 /* DROPDOWN */
 .dropdown{
   position: relative;
@@ -132,22 +141,24 @@ nav a.selecionado{
 /* "ESTATÍSTICAS" - TÍTULO */
 .div-titulos{
   display: flex;
-  padding-top: 100px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-bottom: 20px;
+  padding: 80px 20px 20px;
 }
 
 .div-titulos h2{
   color: #1980E6;
   font-size: 2.5rem;
   font-weight: 600;
+  margin-top:20px;
+  line-height: 1.2;
 }
 
 .div-titulos img{
-  width: 80px;
-  margin-bottom: 20px;
+  width: 60px;
+  margin-top: 20px;
+  flex-shrink: 0;
 }
 
 /* SECTION "ESTATÍSTICAS" MAIN */
@@ -277,17 +288,17 @@ nav a.selecionado{
 /* FOOTER */
 .footer-container{
   display: grid;
-  grid-template-columns: 250px 180px 260px 180px;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: start;
-  gap: 80px;
+  gap: 40px;
   padding: 50px;
   background-color: #D9D9D9;
-  height: 250px;
 }
 
 .titulo-footer{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 6px;
   font-size: 1.125rem;
@@ -303,15 +314,23 @@ nav a.selecionado{
   font-size: 0.875rem;
   color: #6B6661;
   line-height: 22px;
+  text-align: center;
+  max-width: 250px;
 }
 
 .conectando{
   width: 250px;
-}
-
-.links{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.links, .contatos, .redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .links a{
@@ -325,26 +344,16 @@ nav a.selecionado{
   text-decoration: underline;
 }
 
-.contatos{
-  display: flex;
-  flex-direction: column;
-}
-
-.loc, .tel, .email{
+.loc, .email{
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
 }
 
-.loc p, .tel p, .email p{
+.loc p, .email p{
   color: #6B6661;
   font-size: 0.875rem;
-}
-
-.redes-sociais{
-  display: flex;
-  flex-direction: column;
 }
 
 .icones{
@@ -354,9 +363,9 @@ nav a.selecionado{
 
 .icones img{
   width: 42px;
-  cursor: pointer;
 }
-/*User way*/
+
+/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -367,4 +376,163 @@ div[id*="userway"],
   bottom: 200px !important; 
   position: fixed !important;
   z-index: 999999 !important;
+}
+
+/* RESPONSIVO */
+@media(max-width: 1100px){
+  .container-estatisticas{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .estatisticasUm{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-estatisticas{
+    width: 350px;
+    height: auto;
+    min-height: 230px;
+  }
+
+  .card-estatisticasMaior{
+    margin-left: 0;
+    width: 730px;
+    height: auto;
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media(max-width: 800px){
+  .header-container{
+    padding: 20px;
+    position: relative;
+  }
+
+  .menu-hamburguer{
+    display: block;
+  }
+
+   .navbar{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFAF7;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .navbar.ativo{
+    display: flex;
+  }
+
+  .div-titulos{
+    gap: 10px;
+    padding: 100px 20px 20px ;
+  }
+
+  .div-titulos h2{
+    font-size: 1.9rem;
+  }
+
+  .div-titulos img{
+    width: 45px;
+  }
+
+  .container-estatisticas{
+    padding: 0 20px;
+  }
+
+  .estatisticasUm{
+    align-items: center;
+  }
+
+  .card-estatisticas{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .card-estatisticas p{
+    font-size: 0.95rem;
+  }
+
+  .card-estatisticasMaior{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+  }
+
+  .section-botoes{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .descricao br{
+    display: none;
+  }
+
+  .footer-container{
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .conectando, .links, .contatos, .redes-sociais{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-footer{
+    justify-content: center;
+  }
+
+  .icones{
+    justify-content: center;
+  }
+}
+
+@media(max-width: 500px){
+  .div-titulos{
+    gap: 8px;
+  }
+
+  .div-titulos h2{
+    font-size: 1.5rem;
+  }
+
+  .card-estatisticas{
+    border-radius: 20px;
+    padding: 18px;
+  }
+
+  .estatisticasUm{
+    grid-template-columns: 1fr;
+  }
+
+  .card-estatisticas h5, .card-estatisticasMaior h5{
+    font-size: 1.1rem;
+  }
+
+  .h3{
+    font-size: 1.8rem;
+  }
+
+  .button-amarelo, .button-azul{
+    width: 220px;
+  }
 }
