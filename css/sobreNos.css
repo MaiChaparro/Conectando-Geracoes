@@ -658,8 +658,8 @@ div[id*="userway"],
   }
 
   .div-titulos{
-    gap: 12px;
-    padding: 60px 20px 25px;
+    gap: 10px;
+    padding: 100px 20px 20px ;
   }
 
   .div-titulos h2{
