@@ -321,11 +321,10 @@ body{
   background-color:  rgba(0,0,0,0.1);
   border-radius: 10px;
   padding: 25px;
-  height: 175px;
 }
 
 .cardOut img{
-  width: 80px;
+  width: 110px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -711,6 +710,8 @@ div[id*="userway"],
 
   .menu-hamburguer{
     display: block;
+    position: relative;
+    top: -20px;
     background: none;
     border: none;
     font-size: 2rem;
@@ -718,14 +719,25 @@ div[id*="userway"],
     color: #1980E6;
   }
 
+  .container{
+    display: block;
+    padding: 20px;
+  }
+
+  .conteudo{
+    width: 100%;
+  }
+
   .div-nav{
+    display: none;
     position: fixed;
     top: 100px;
     left: 0;
-    width: 260px;
+    width: 200px;
     height: calc(100vh - 100px);
     background: white;
     box-shadow: 3px 0 10px rgba(0,0,0,.15);
+    z-index: 999;
   }
 
   .div-nav.ativo{
@@ -733,25 +745,14 @@ div[id*="userway"],
   }
 
   .navbar-lateral{
-    display: none;
-  }
-
-  .navbar-lateral.ativo{
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    gap: 8px;
   }
 
   .alinhamento{
     height: 65px;
-  }
-
-  .conteudo{
-    width: 100%;
-  }
-
-  .container{
-    display: block;
-    padding: 20px;
   }
 
   .cards{
@@ -764,3 +765,63 @@ div[id*="userway"],
   }
 }
 
+@media(max-width: 600px){
+  .header-container{
+    padding: 15px;
+  }
+
+  .perfil-container img{
+    width: 55px;
+    height: 55px;
+  }
+
+  .perfil-container h4{
+    font-size: 1rem;
+  }
+
+  .perfil-container p{
+    font-size: 0.9rem;
+  }
+
+  .ola h2{
+    font-size: 1.7rem;
+  }
+
+  .ola p{
+    font-size: 1rem;
+  }
+
+  .container-mic{
+    height: auto;
+    padding: 15px;
+  }
+
+  .microfone{
+    margin: 0;
+  }
+
+  .microfone p{
+    font-size: 0.95rem;
+  }
+
+  .cards{
+    grid-template-columns: 1fr;
+  }
+
+  .cardTec, .cardCompa, .cardSau, .cardCom, .cardTra, .cardCom{
+    padding: 20px;
+  }
+
+  .cardTec img, .cardCompa img, .cardSau img, .cardCom img, .cardTra img, .cardCom img{
+    width: 65px;
+  }
+
+  .situacaoCompanhia, .situacaoTecnologia, .situacaoSaude{
+    align-self: flex-end;
+  }
+
+  .ajuda-container{
+    flex-direction: column;
+    text-align: center;
+  }
+}

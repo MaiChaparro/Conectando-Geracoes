@@ -3,57 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/img/LogoOficial.png"/>
+    <link rel="shortcut icon" href="../assets/img/LogoOficial.png" />
     <link rel="stylesheet" href="../css/pospatrocinadores.css" />
     <title>Torne-se um Parceiro de Impacto Social</title>
   </head>
   <body>
-      <header class="header">
-    <div class="header-container">
-      <a href="../index.html"><div>
-        <img class="logo" src="../assets/img/Logo.png" alt="Logo" />
-      </div></a>
+    <header class="header">
+      <div class="header-container">
+        <a href="../index.html"
+          ><div>
+            <img class="logo" src="../assets/img/Logo.png" alt="Logo" /></div
+        ></a>
 
-       <nav class="navbar" aria-label="Navegação Primária">
-        <a class="nav" href="../index.html">INÍCIO</a>
-        <a class="nav" href="sobreNos.html">SOBRE NÓS</a>
-        <a class="nav" href="comoFunciona.html">COMO FUNCIONA</a>
-        <a class="nav" href="estatisticas.html">ESTATÍSTICAS</a>
-        <a class="nav" href="patrocinadores.html">PATROCINADORES</a>
-        <a class="nav" href="login.html">LOGIN</a>
-        <button class="conectese"><a href="cadastro.html">CONECTE-SE</a></button>
-      </nav>
+        <button class="menu-hamburguer" id="menuHamburguer">☰</button>
+
+        <nav class="navbar" id="navbar" aria-label="Navegação Primária">
+          <a class="nav" href="../index.html">INÍCIO</a>
+          <a class="nav" href="sobreNos.html">SOBRE NÓS</a>
+          <a class="nav" href="comoFunciona.html">COMO FUNCIONA</a>
+          <a class="nav" href="estatisticas.html">ESTATÍSTICAS</a>
+
+          <div class="dropdown">
+            <button class="nav dropdown-btn">PATROCINADORES</button>
+
+            <div class="dropdown-menu">
+              <a href="./patrocinadores.html">Patrocinadores</a>
+              <a href="./pospatrocinadores.html">Como apoiar</a>
+            </div>
+          </div>
+
+          <a class="nav" href="login.html">LOGIN</a>
+          <button class="conectese">
+            <a href="cadastro.html">CONECTE-SE</a>
+          </button>
+        </nav>
       </div>
     </header>
-    
-    <main class="container">
 
+    <main class="container">
       <section class="hero-section" id="inicio">
         <h1>Torne-se um <span>Parceiro de Impacto Social</span></h1>
-        <p>Sua empresa pode fazer a diferença. Junte-se à nossa rede para combater o isolamento social e promover a alfabetização digital através do projeto Conectando Gerações.</p>
+        <p>
+          Sua empresa pode fazer a diferença. Junte-se à nossa rede para
+          combater o isolamento social e promover a alfabetização digital
+          através do projeto Conectando Gerações.
+        </p>
         <p>Conheça as formas de apoio e faça parte dessa transformação.</p>
       </section>
 
       <section class="support-section">
         <h2 class="section-title">
-          <img src="../assets/icons/iconamarelopessoas.svg" alt="Ícone duas pessoas">
+          <img
+            src="../assets/icons/iconamarelopessoas.svg"
+            alt="Ícone duas pessoas"
+          />
           Formas de apoio
         </h2>
 
         <div class="card-grid">
-
           <article class="card card-blue">
             <div class="card-header">
               <div class="card-icon">
-                <img src="../assets/icons/iconEduc.svg" alt="Ícone de chapéu de formatura">
-              </div> <!--class="card-icon"-->
+                <img
+                  src="../assets/icons/iconEduc.svg"
+                  alt="Ícone de chapéu de formatura"
+                />
+              </div>
+              <!--class="card-icon"-->
               <h3>Apoio Acadêmico & Pesquisa</h3>
-            </div> <!-- class="card-header"-->
+            </div>
+            <!-- class="card-header"-->
             <div class="card-body">
               <p>
-                Fomento a estudos de impacto por meio de apoio financeiro ou infraestrutura para pesquisas acadêmicas voltadas à alfabetização digital, inclusão social e fortalecimento das conexões entre gerações.
+                Fomento a estudos de impacto por meio de apoio financeiro ou
+                infraestrutura para pesquisas acadêmicas voltadas à
+                alfabetização digital, inclusão social e fortalecimento das
+                conexões entre gerações.
               </p>
             </div>
           </article>
@@ -61,100 +86,162 @@
           <article class="card card-green">
             <div class="card-header">
               <div class="card-icon">
-                <img src="../assets/icons/iconComputador.svg" alt="Ícone de monitor">
+                <img
+                  src="../assets/icons/iconComputador.svg"
+                  alt="Ícone de monitor"
+                />
               </div>
               <h3>Parceria de Tecnologia</h3>
             </div>
             <div class="card-body">
-              <p>Contribua com softwares, equipamentos, plataformas digitais ou suporte técnico para fortalecer as atividades do projeto e ampliar seu alcance.</p>
+              <p>
+                Contribua com softwares, equipamentos, plataformas digitais ou
+                suporte técnico para fortalecer as atividades do projeto e
+                ampliar seu alcance.
+              </p>
             </div>
           </article>
 
           <article class="card card-yellow">
             <div class="card-header">
               <div class="card-icon">
-                <img src="../assets/icons/iconFinanceiro.svg" alt="Ícone de cifrão">
-              </div> <!--class="card-icon"-->
+                <img
+                  src="../assets/icons/iconFinanceiro.svg"
+                  alt="Ícone de cifrão"
+                />
+              </div>
+              <!--class="card-icon"-->
               <h3>Patrocínio Financeiro</h3>
-            </div> <!--class="card-header"-->
+            </div>
+            <!--class="card-header"-->
             <div class="card-body">
-              <p>Apoie financeiramente ações, eventos e projetos de inclusão digital, contribuindo para a manutenção e expansão das iniciativas do Conectando Gerações.</p>
+              <p>
+                Apoie financeiramente ações, eventos e projetos de inclusão
+                digital, contribuindo para a manutenção e expansão das
+                iniciativas do Conectando Gerações.
+              </p>
             </div>
           </article>
 
           <article class="card card-purple">
             <div class="card-header">
               <div class="card-icon">
-                <img src="../assets/icons/iconSocial.svg" alt="Ícone de pessoas">
+                <img
+                  src="../assets/icons/iconSocial.svg"
+                  alt="Ícone de pessoas"
+                />
               </div>
               <h3>Impacto Social Corporativo</h3>
-            </div> <!--class="card-header"-->
+            </div>
+            <!--class="card-header"-->
             <div class="card-body">
-              <p>Engaje colaboradores em ações de voluntariado, mentorias e atividades sociais que promovam aprendizado, inclusão e troca de experiências.</p>
+              <p>
+                Engaje colaboradores em ações de voluntariado, mentorias e
+                atividades sociais que promovam aprendizado, inclusão e troca de
+                experiências.
+              </p>
             </div>
           </article>
-
-      </div> <!-- fechamento class="cards-grid"-->
-    </section>
-
-    <section id="conecte-se" class="contact-section">
-      <div class="contact-header">
-        <img src="../assets/icons/iconChatetc.svg" alt="">
-        <h2>Solicite uma conversa com nosso time</h2>
-      </div> <!--class="contact-header"-->
-      <p class="contact-subtitle">Preencha o formulário abaixo e entraremos em contato para apresentar as possibilidades de parceria e entender como sua empresa pode fazer parte dessa missão.</p>
-
-      <form action="#" method="POST" class="contact-form">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="name">Nome do Contato </label>
-            <input type="text" id="name" name="name" placeholder="Digite seu nome" required >
-          </div>
-
-          <div class="form-group">
-            <label for="company">Nome da Empresa</label>
-            <input type="text" id="company" name="company" placeholder="Digite o nome da empresa" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">E-mail Corporativo</label>
-            <input type="text" id="company" name="company" placeholder="Digite o nome da empresa" required>
-          </div>
         </div>
+        <!-- fechamento class="cards-grid"-->
+      </section>
+
+      <section id="conecte-se" class="contact-section">
+        <div class="contact-header">
+          <img src="../assets/icons/iconChatetc.svg" alt="" />
+          <h2>Solicite uma conversa com nosso time</h2>
+        </div>
+        <!--class="contact-header"-->
+        <p class="contact-subtitle">
+          Preencha o formulário abaixo e entraremos em contato para apresentar
+          as possibilidades de parceria e entender como sua empresa pode fazer
+          parte dessa missão.
+        </p>
+
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Nome do Contato </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Nome da Empresa</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Digite o nome da empresa"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail Corporativo</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Digite o nome da empresa"
+                required
+              />
+            </div>
+          </div>
 
           <div class="form-group full-width">
-          <label for="message">Mensagem de Interesse (como deseja apoiar?)</label>
-          <textarea id="message" name="message" rows="4" placeholder="Conte-nos como sua empresa deseja colaborar com o projeto e quais iniciativas despertaram seu interesse." required></textarea>
-        </div>
+            <label for="message"
+              >Mensagem de Interesse (como deseja apoiar?)</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Conte-nos como sua empresa deseja colaborar com o projeto e quais iniciativas despertaram seu interesse."
+              required
+            ></textarea>
+          </div>
 
-        <div class="form-actions">
-          <button type="submit" class="btn-submit">
-            <span class="send-icon">
-              <img src="../assets/icons/iconEnviar.svg" alt="Ícone de enviar">
-            </span> 
-            QUERO FAZER PARTE
-          </button>
-
-        </div> <!--class="form-grid"-->
-      </form>
-
-    </section>
-
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">
+              <span class="send-icon">
+                <img
+                  src="../assets/icons/iconEnviar.svg"
+                  alt="Ícone de enviar"
+                />
+              </span>
+              QUERO FAZER PARTE
+            </button>
+          </div>
+          <!--class="form-grid"-->
+        </form>
+      </section>
     </main>
 
-<script src="../js/menuHamburguer.js"></script>
+    <script src="../js/menuHamburguer.js"></script>
 
-   <!--VLibras-->
-     <div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget("https://vlibras.gov.br/app");
-</script>
-<script src="https://cdn.userway.org/widget.js" data-account="DgsvD8kT2a"></script>
+    <!--VLibras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="DgsvD8kT2a"
+    ></script>
+
+    <script src="../js/menuDropdown.js"></script>
+    <script src="../js/menuHamburguer.js"></script>
   </body>
 </html>
