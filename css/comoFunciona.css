@@ -435,6 +435,9 @@ div[id*="userway"],
 }
 
 @media(max-width: 600px){
+  .logo{
+    width: 70px;
+  }
   .div-titulos h2{
     font-size: 1.45rem;
   }

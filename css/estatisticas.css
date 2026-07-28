@@ -506,7 +506,11 @@ div[id*="userway"],
   }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
+  .logo{
+    width: 70px;
+  }
+  
   .div-titulos{
     gap: 8px;
   }
