@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../css/telaCardsIdoso.css" />
+    <link rel="shortcut icon" href="../assets/img/Logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Idoso</title>
   </head>
@@ -42,12 +43,8 @@
 
         <div class="segurarSolicitacao">
           <div class="card-descricao">
-            <div class="cardSolicitacao">
-              <img
-                id="iconeSolicitacao"
-                src="../assets/icons/iconTech.svg"
-                alt="Ícone da solicitação"
-              />
+            <div class="cardSolicitacao" id="cardSolicitacao">
+              <img id="iconeSolicitacao" src="../assets/icons/iconTech.svg" alt="Ícone da solicitação" />
 
               <h5 id="tituloSolicitacao">Tecnologia</h5>
 
@@ -55,7 +52,18 @@
             </div>
 
             <div class="descricao">
-              <button class="trocarSolicitacao">Trocar Solicitação</button>
+              <div class="dropdown">
+                <button class="trocarSolicitacao" id="btnTrocar">Trocar Solicitação ▼</button>
+
+                <div class="menu-dropdown" id="menuDropdown">
+                  <div data-tipo="tecnologia">💻 Tecnologia</div>
+                  <div data-tipo="companhia">💬 Companhia</div>
+                  <div data-tipo="saude">❤️ Saúde</div>
+                  <div data-tipo="compras">🛒 Compras</div>
+                  <div data-tipo="transporte">🚗 Transporte</div>
+                  <div data-tipo="outros">••• Outros</div>
+                </div>
+              </div>
 
               <div class="caixa">
                 <textarea type="text" placeholder="Descreva o que você precisa" maxlength="300"></textarea>
@@ -149,5 +157,6 @@
     </div>
 
     <script src="../js/microfone.js"></script>
+    <script src="../js/telaCardsIdoso.js"></script>
   </body>
 </html>
