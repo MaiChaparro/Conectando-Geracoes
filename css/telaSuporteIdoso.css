@@ -466,3 +466,172 @@ input::placeholder{
 #btnFechar{
   background:#ddd;
 }
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 2px !important;
+  bottom: 100px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+  transform: scale(0.9);
+}
+
+.menu-hamburguer {
+  display: none; 
+}
+
+@media (max-width: 1024px) {
+  .segurarSolicitações, 
+  .conteudo, 
+  .container-chat, 
+  .chat, 
+  .suporte {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .container {
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .container-chat {
+    flex-direction: column;
+  }
+  
+  .contato {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-container {
+    position: relative; 
+  }
+
+  .menu-hamburguer {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #1980E6;
+    z-index: 1000;
+  }
+
+  .container {
+    display: block;
+    padding: 20px;
+  }
+
+  .div-nav {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    left: 20px;
+    width: 260px;
+    min-height: auto; 
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.15);
+    z-index: 999;
+  }
+
+  .div-nav.menu-aberto {
+    display: block;
+  }
+
+  .navbar-lateral {
+    min-height: auto;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .alinhamento {
+    width: 100%; 
+    height: auto;
+    padding: 12px; 
+  }
+  
+  .ativo {
+    width: 100%; 
+  }
+
+  .sair {
+    margin-top: 15px;
+  }
+
+  .container-suporte {
+    grid-template-columns: 1fr; 
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
+    padding-top: 60px; 
+  }
+  
+  .perfil-container {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .perfil-container img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .container-companhia,
+  .container-tecnologia,
+  .container-saude,
+  .container-compras {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+  
+  .companhia, .tecnologia, .saude, .compras {
+    align-items: flex-start;
+  }
+  
+  .segurar-botoes-companhia,
+  .segurar-botoes-tecnologia,
+  .segurar-botoes-saude,
+  .segurar-botoes-compras,
+  .lado-direito {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .situacaoCompanhia,
+  .situacaoTecnologia,
+  .situacaoSaude,
+  .situacaoCompras {
+    width: auto;
+    display: inline-block;
+  }
+  
+  .popup-conteudo-sair,
+  .popup-conteudo {
+    width: 90%; 
+    max-width: 420px;
+    padding: 20px;
+  }
+
+  .opcoes-container {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+}

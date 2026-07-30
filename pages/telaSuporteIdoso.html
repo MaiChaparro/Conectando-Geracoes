@@ -25,6 +25,7 @@
     </header>
 
     <main>
+      <!--
      <div class="container"> 
       <div class="div-nav">
         <nav class="navbar-lateral" aria-label="Barra de navegação lateral">
@@ -41,7 +42,28 @@
           <a href="#" class="sair alinhamento btnSair"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
         </nav>
       </div>
-        
+    -->
+      <div class="container"> 
+      
+      <button class="menu-hamburguer" id="menuHamburguer">☰</button>
+      
+      <div class="div-nav">
+        <nav class="navbar-lateral" aria-label="Barra de navegação lateral">
+          <a href="../pages/telaInicialIdoso.html" class="alinhamento ativo"><img src="../assets/icons/iconHome.svg" alt="Início">
+          <p>Início</p>
+          </a>
+
+          <a href="../pages/telaSolicitacaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconPrancheta2.svg" alt="Solicitações"/>Solicitações</a>
+
+          <a href="#" class="alinhamento abrirMicrofone"><img src="../assets/icons/iconMic.svg" alt="Microfone"/>Microfone</a>
+
+          <a href="../pages/telaSuporteIdoso.html" class="alinhamento"><img src="../assets/icons/iconAjuda.svg" alt="Ajuda"/>Ajuda</a>
+
+          <a href="../pages/telaConfiguracaoIdoso.html" class="alinhamento"><img src="../assets/icons/iconConfig.svg" alt="Configurações"/>Configurações</a>
+     
+          <a href="#" class="sair alinhamento btnSair"><img src="../assets/icons/iconSair.svg" alt="Sair"/>Sair</a>
+        </nav>
+      </div>
       <section class="conteudo">
         <div class="comecin">
           <div class="setaVoltar">
@@ -171,12 +193,25 @@
         </div>
       </div>
     </div>
+    <script src="../js/menuHamburguerIdoso.js"></script>
     <script src="../js/telaSuporte.js"></script>
     <script src="../js/confirmarSaida.js"></script>
     <script src="../js/microfone.js"></script>
     <script
       src="https://cdn.userway.org/widget.js"
-      data-account="DgsvD8kT2a"
-    ></script>
+      data-account="DgsvD8kT2a">
+    </script>
+  <!--Vlibras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
   </body>
 </html>

@@ -572,3 +572,203 @@ body{
 #btnFechar{
   background:#ddd;
 }
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 200px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+/*responsivo*/
+@media(max-width: 850px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+  .uai{
+    right: 8px !important;
+    bottom: 120px !important; 
+    transform: scale(0.9);
+    transform-origin: bottom right;
+  }
+}
+
+@media(max-width: 600px){
+  #userwayAccessibilityIcon, 
+  div[class*="userway"],
+  div[id*="userway"],
+  .uai{
+    right: 5px !important;
+    bottom: 90px !important; 
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
+}
+.menu-hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1980E6;
+}
+
+@media(max-width: 1210px){
+  .header-container{
+    padding: 0 20px;
+  }
+
+  .container{
+    gap: 30px;
+    padding: 20px;
+  }
+  .segurarSolicitações{
+    width: 100%;
+  }
+
+  .div-nav{
+    width: 220px;
+  }
+}
+
+@media(max-width: 990px){
+  .div-nav{
+    width: 210px;
+  }
+
+  .navbar-lateral{
+    font-size: 1.1rem;
+  }
+
+  .navbar-lateral img{
+    width: 35px;
+  }
+}
+
+@media(max-width: 850px){
+  .header-container{
+    padding: 15px 20px;
+  }
+
+  .menu-hamburguer{
+    display: block;
+    position: relative;
+    top: -20px;
+  }
+
+  .container{
+    display: block;
+    padding: 20px;
+  }
+
+  .segurarSolicitações{
+    width: 100%;
+  }
+  .div-nav{
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 100px);
+    background: white;
+    box-shadow: 3px 0 10px rgba(0,0,0,.15);
+    z-index: 999;
+  }
+
+  /* Classe que usa no JS */
+  .div-nav.ativo{
+    display: block;
+  }
+
+  .navbar-lateral{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 8px;
+    min-height: auto;
+  }
+
+  .alinhamento{
+    height: 65px;
+  }
+  
+  .sair {
+    margin-top: 20px; 
+  }
+}
+
+@media(max-width: 600px){
+  .header-container{
+    padding: 15px;
+  }
+
+  .perfil-container h4{
+    font-size: 1rem;
+  }
+
+  .perfil-container p{
+    font-size: 0.9rem;
+  }
+
+  .comecin h3{
+    font-size: 1.7rem;
+  }
+
+  .opcoes-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .aba {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .container-companhia,
+  .container-tecnologia,
+  .container-saude,
+  .container-compras {
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .companhia, .tecnologia, .saude, .compras {
+    align-items: flex-start;
+  }
+
+
+  .segurar-botoes-companhia,
+  .segurar-botoes-tecnologia,
+  .segurar-botoes-saude,
+  .segurar-botoes-compras,
+  .lado-direito {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .situacaoCompanhia,
+  .situacaoTecnologia,
+  .situacaoSaude,
+  .situacaoCompras {
+    width: auto;
+    display: inline-block;
+  }
+
+  .popup-conteudo-sair,
+  .popup-conteudo {
+    width: 90%; 
+    max-width: 420px;
+    padding: 20px;
+  }
+  
+  .ajuda-container{
+    flex-direction: column;
+    text-align: center;
+  }
+}
