@@ -11,19 +11,6 @@ botaoSalvar.onclick = (event) => {
   const senha = document.getElementById("senha").value;
   const confirmarSenha = document.getElementById("confirmarSenha").value;
 
-  // Verifica se há campos vazios
-  if (
-    nome === "" ||
-    email === "" ||
-    telefone === "" ||
-    cidadeEstado === "" ||
-    senha === "" ||
-    confirmarSenha === ""
-  ) {
-    alert("Preencha todos os campos.");
-    return;
-  }
-
   // Verifica se as senhas são iguais
   if (senha !== confirmarSenha) {
     alert("As senhas não coincidem.");
@@ -62,7 +49,6 @@ cancelarExcluir.addEventListener("click", () => {
 
 confirmarExcluir.addEventListener("click", () => {
     alert("Conta excluída com sucesso!");
-    // Aqui futuramente você colocará a lógica de exclusão.
 });
 
 popupExcluir.addEventListener("click", (e) => {
