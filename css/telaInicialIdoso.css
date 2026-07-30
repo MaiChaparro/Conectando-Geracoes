@@ -614,7 +614,7 @@ div[id*="userway"],
   z-index: 999999 !important;
 }
 
-/* Resonsivo Acessibilidade*/
+/* Responsivo Acessibilidade*/
 @media(max-width: 850px){
   #userwayAccessibilityIcon, 
   div[class*="userway"],
@@ -702,10 +702,6 @@ div[id*="userway"],
 @media(max-width: 850px){
   .header-container{
     padding: 15px 20px;
-  }
-
-  .logo{
-    width: 75px;
   }
 
   .menu-hamburguer{
