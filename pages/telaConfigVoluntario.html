@@ -151,7 +151,16 @@
 
   </div> 
   <!--container-->
- <script src="../js/popupVoluntario.js"></script>
+  <div id="popupSair" class="popup-sair">
+      <div class="popup-conteudo-sair">
+        <h2>Deseja realmente sair?</h2>
+        <p>Você será redirecionado para a tela de login.</p>
+        <div class="botoes-sair">
+          <button id="cancelarSair">Cancelar</button>
+          <button id="confirmarSair">Sair</button>
+        </div>
+      </div>
+    </div>
  <!--VLibras-->
      <div vw class="enabled">
   <div vw-access-button class="active"></div>
@@ -163,6 +172,8 @@
 <script>
   new window.VLibras.Widget("https://vlibras.gov.br/app");
 </script>
+<script src="../js/popupVoluntario.js"></script>
 <script src="https://cdn.userway.org/widget.js" data-account="DgsvD8kT2a"></script>
+<script src="../js/confirmarSaidaVolunt.js"></script>
 </body>
 </html>

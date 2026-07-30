@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 
                 if (tipoPessoa === "voluntario") {
-                    window.location.href = "./telaMissoesVoluntario.html"; 
+                    window.location.href = "./telaVoluntario.html"; 
                 } else if (tipoPessoa === "beneficiario") {
                     window.location.href = "./telaInicialIdoso.html"; 
                 }
