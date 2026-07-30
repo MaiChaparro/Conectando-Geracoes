@@ -156,8 +156,9 @@ body {
 
 .configuracao {
   border: solid 1px #6b6661;
-  width: 1000px;
-  height: 730px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 730px;
   border-radius: 5px;
   align-items: center;
 }
@@ -226,7 +227,8 @@ body {
 
 .quadro {
   border: solid 2px #808080;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   border-radius: 3px;
 }
 
@@ -515,13 +517,8 @@ div[id*='userway'],
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 40px;
     height: 40px;
-
-    padding: 0;
-    margin: 0;
-
     background: none;
     border: none;
     cursor: pointer;
@@ -622,16 +619,47 @@ div[id*='userway'],
 }
 
 @media (max-width: 600px) {
-  .container {
-    padding: 10px;
+  .header-container {
+    padding: 15px;
+  }
+  
+  .comecin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 15px 0 25px;
+  }
+
+  .menu-hamburguer {
+    position: absolute;
+    left: 0;
+  }
+
+  .comecin h3 {
+    font-size: 1.45rem;
+    text-align: start;
   }
 
   .configuracao {
+    width: 100%;
     padding: 15px 10px;
   }
 
+  .fotoPerfil {
+    justify-content: center;
+    margin: 10px 0 25px;
+  }
+
+  .btnEditar {
+    left: calc(45% - -30px);
+  }
+
+  /* INPUTS */
+
   .quadro-container {
-    margin: 12px 0;
+    width: 100%;
+    margin: 15px 0;
   }
 
   .agrupar {
@@ -642,13 +670,11 @@ div[id*='userway'],
   }
 
   .quadro {
-    flex: 1;
     width: 92%;
   }
 
   .quadro input {
     width: 100%;
-    font-size: 0.95rem;
   }
 
   .agrupar label {
@@ -656,6 +682,6 @@ div[id*='userway'],
   }
 
   .agrupar label img {
-    width: 26px;
+    width: 24px;
   }
 }
