@@ -464,7 +464,17 @@ div[id*="userway"],
     max-width: 100%;
   }
 }
-
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: 100px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
 @media (max-width: 768px) {
   .cabecalho-pagina h1 {
     font-size: 24px;

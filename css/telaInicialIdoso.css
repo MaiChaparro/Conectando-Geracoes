@@ -816,3 +816,14 @@ div[id*="userway"],
     text-align: center;
   }
 }
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 2px !important;
+  bottom: 100px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}

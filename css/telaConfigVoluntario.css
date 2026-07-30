@@ -376,3 +376,14 @@ div[id*="userway"],
     font-size: 12px;
   }
 }
+#userwayAccessibilityIcon, 
+div[class*="userway"],
+div[id*="userway"],
+.uai {
+  top: auto !important;
+  left: auto !important;
+  right: 2px !important;
+  bottom: 100px !important; 
+  position: fixed !important;
+  z-index: 999999 !important;
+}
