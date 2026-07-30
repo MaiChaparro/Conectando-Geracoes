@@ -54,12 +54,11 @@ body {
 }
 
 /* BARRA LATERAL */
-.conteudo {
-  justify-content: space-around;
+.conteudo{
   width: 1000px;
 }
 
-.container {
+.container{
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -67,64 +66,65 @@ body {
   width: 100%;
 }
 
-.div-nav {
+.div-nav{
+  display: block;
   background-color: white;
   width: 250px;
-  height: 800px;
+  height: 1080px;
   border-radius: 10px;
 }
 
-.navbar-lateral {
+.navbar-lateral{
   display: flex;
   flex-direction: column;
+  height: 100%;
   gap: 10px;
   font-size: 1.25rem;
   padding: 20px;
 }
 
-.alinhamento {
+.alinhamento{
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 280px;
+  width: 100%;
   height: 80px;
   border-radius: 15px;
   text-decoration: none;
-  color: #6b6661;
+  color: #6B6661;
 }
 
-.alinhamento:hover {
+.alinhamento:hover{
   transform: translateY(-2px);
   transition: 0.8s;
   cursor: pointer;
 }
 
-.alinhamento p {
-  color: #1980e6;
+.alinhamento p{
+  color: #1980E6;
 }
 
-.sair {
+.sair{
   align-items: end;
-  margin-top: 220px;
+  margin-top: auto;
   font-size: 1.5rem;
 }
 
-.navbar-lateral img {
+.navbar-lateral img{
   width: 40px;
 }
 
-.navbar-lateral a {
+.navbar-lateral a{
   text-decoration: none;
-  color: #6b6661;
+  color: #6B6661;
 }
 
-.ativo {
-  background: rgba(25, 128, 230, 0.1);
-  width: 210px;
+.ativo{
+  background: rgba(25,128,230,0.1);
 }
 
-.ativo p {
-  color: #1980e6;
+.ativo p{
+  color: #1980E6;
 }
 
 /* MENU HAMBURGUER*/
@@ -157,6 +157,7 @@ body {
 .configuracao {
   border: solid 1px #6b6661;
   width: 100%;
+  justify-content: center;
   max-width: 1000px;
   min-height: 730px;
   border-radius: 5px;
@@ -265,11 +266,13 @@ body {
 }
 
 .excluir {
-  display: flex;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .excluir button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: #e3022c;
   width: 500px;
   border: none;
@@ -430,7 +433,7 @@ div[id*='userway'],
   z-index: 999999 !important;
 }
 
-/* Responsivo Acessibilidade*/
+/* Responsivo Acessibilidade */
 @media (max-width: 850px) {
   #userwayAccessibilityIcon,
   div[class*='userway'],
@@ -466,41 +469,24 @@ div[id*='userway'],
     padding: 20px;
   }
 
-  .conteudo-configuracao {
+  .conteudo {
     width: 100%;
-  }
-
-  .configuracao {
-    width: 100%;
-    max-width: 1000px;
-  }
-}
-
-@media (max-width: 990px) {
-  .container {
-    gap: 20px;
   }
 
   .div-nav {
     width: 220px;
   }
 
-  .alinhamento {
-    width: 100%;
-    font-size: 1.05rem;
-  }
-
-  .navbar-lateral img {
-    width: 35px;
-  }
-
   .configuracao {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
   }
 
   .quadro {
-    width: 94%;
+    max-width: 100%;
+  }
+
+  .quadro input {
+    width: 100%;
   }
 
   .salvar button {
@@ -508,38 +494,83 @@ div[id*='userway'],
   }
 }
 
-@media (max-width: 850px) {
-  .header-container {
-    padding: 15px;
+@media (max-width: 990px) {
+  .div-nav {
+    width: 210px;
   }
 
-  .menu-hamburguer {
+  .navbar-lateral {
+    font-size: 1.1rem;
+  }
+
+  .navbar-lateral img {
+    width: 35px;
+  }
+
+  .conteudo {
+    width: 100%;
+  }
+
+  .configuracao {
+    max-width: 100%;
+  }
+
+  .quadro {
+    width: 100%;
+  }
+
+  .quadro input {
+    width: 100%;
+  }
+
+  .salvar button {
+    width: 100%;
+  }
+
+  .excluir button {
+    width: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-container {
+    padding: 15px 20px;
+  }
+
+  .menu-hamburguer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     background: none;
     border: none;
+    font-size: 2rem;
     cursor: pointer;
-  }
+    color: #1980E6;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
 
   .container {
     display: block;
-    padding: 15px;
+    padding: 20px;
+  }
+
+  .conteudo {
+    width: 100%;
   }
 
   .div-nav {
     display: none;
     position: fixed;
-    top: 90px;
+    top: 100px;
     left: 0;
-    width: 240px;
-    height: 100vh;
+    width: 200px;
+    height: calc(100vh - 100px);
     background: white;
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
-    border-radius: 0;
     z-index: 999;
+    border-radius: 0 10px 10px 0;
   }
 
   .div-nav.ativo {
@@ -547,66 +578,72 @@ div[id*='userway'],
   }
 
   .navbar-lateral {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 8px;
+    min-height: auto;
+    font-size: 1.1rem;
+  }
+
+  .alinhamento {
+    width: 100%;
+    height: 65px;
   }
 
   .sair {
     margin-top: auto;
   }
 
-  .setaVoltar {
+  .setaVoltar{
     display: none;
   }
 
-  .comecin {
+  .comecin{
     display: flex;
     align-items: center;
-    gap: 16px;
-    margin: 20px 0;
-  }
-
-  .comecin h3 {
-    font-size: 1.8rem;
-    margin: 0;
-  }
+    gap: 10px;
+    margin-bottom: 10px;
+}
 
   .configuracao {
     width: 100%;
-    height: auto;
     padding: 20px;
+    min-height: auto;
   }
 
   .fotoPerfil {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px;
-    position: relative;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .fotoPerfil .foto {
+    margin: 0;
   }
 
   .btnEditar {
-    position: absolute;
-    right: 10px;
-    bottom: 0;
+    right: calc(50% - 55px);
   }
 
   .quadro-container {
-    width: 100%;
-    margin: 15px 0;
+    margin: 10px 0;
   }
 
   .agrupar {
-    display: flex;
-    align-items: center;
     width: 100%;
+    align-items: center;
   }
 
   .quadro {
-    flex: 1;
+    width: 100%;
+  }
+
+  .quadro input {
+    width: 100%;
   }
 
   .salvar {
-    margin: 0;
+    margin-left: 0;
   }
 
   .salvar button {
@@ -614,7 +651,12 @@ div[id*='userway'],
   }
 
   .excluir {
-    margin: 20px 0 0;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .excluir button {
+    width: auto;
   }
 }
 
@@ -622,66 +664,50 @@ div[id*='userway'],
   .header-container {
     padding: 15px;
   }
-  
-  .comecin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 15px 0 25px;
+
+  .perfil-container h4 {
+    font-size: 1rem;
   }
 
-  .menu-hamburguer {
-    position: absolute;
-    left: 0;
+  .perfil-container p {
+    font-size: 0.9rem;
   }
 
   .comecin h3 {
-    font-size: 1.45rem;
-    text-align: start;
+    font-size: 1.7rem;
   }
 
   .configuracao {
-    width: 100%;
-    padding: 15px 10px;
+    padding: 15px;
   }
 
   .fotoPerfil {
-    justify-content: center;
-    margin: 10px 0 25px;
+    flex-direction: column;
   }
 
   .btnEditar {
-    left: calc(45% - -30px);
-  }
-
-  /* INPUTS */
-
-  .quadro-container {
-    width: 100%;
-    margin: 15px 0;
+    right: calc(50% - 55px);
   }
 
   .agrupar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 8px;
   }
 
-  .quadro {
-    width: 92%;
+  .agrupar img {
+    width: 30px;
   }
 
   .quadro input {
-    width: 100%;
+    font-size: 1rem;
   }
 
-  .agrupar label {
-    flex-shrink: 0;
+  .salvar button {
+    font-size: 1rem;
   }
 
-  .agrupar label img {
-    width: 24px;
+  .popup-conteudo,
+  .popup-conteudo-sair {
+    width: 90%;
+    max-width: 420px;
   }
 }
