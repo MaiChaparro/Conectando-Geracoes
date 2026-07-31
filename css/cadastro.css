@@ -335,6 +335,81 @@ body {
 .destaque-laranja { color: #FCC02A; }
 .destaque-texto { color: #FFA800; font-weight: 600; }
 
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-titulo {
+  margin-bottom: 10px;
+}
+
+.modal-descricao {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fechar-modal:hover {
+  color: #333;
+}
+
+.area-upload {
+  border: 2px dashed #f6a723;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fcf8f2;
+  cursor: pointer;
+}
+
+.area-upload input[type="file"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-modal-enviar {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.msg-escondida {
+  display: none;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],

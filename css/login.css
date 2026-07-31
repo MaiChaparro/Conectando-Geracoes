@@ -116,7 +116,7 @@ body,html{
   cursor: pointer;
   color: #4B5563;
 }
-/*esse aqi é pra deixar quadrado em vez de circulo*/
+
 .radio-item input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;

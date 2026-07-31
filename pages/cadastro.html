@@ -16,7 +16,7 @@
         <a href="../index.html">
         <img src="../assets/img/fotofundocad.png" alt="Duas mulheres sorrindo enquanto usam um tablet" class="img-banner">
         </a>
-      </div> <!-- fechamento class="background-imagem"-->
+      </div> 
 
       <div class="conteudo-info">
         <h2>Faça parte de uma comunidade que <span class="destaque-laranja">transforma vidas.</span></h2>
@@ -42,7 +42,7 @@
             <p>Envie <strong class="destaque-texto">solicitações de ajuda</strong> quando quiser.</p>
           </li>
         </ul>
-      </div> <!-- fechamento class="conteudo-info"-->
+      </div> 
     </section>
 
     <section class="painel-formulario">
@@ -66,7 +66,7 @@
             <img src="../assets/icons/iconeUserCads.svg" alt="" class="icone-input esquerda">
           <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
           </div>
-        </div> <!-- "grupo-input campo-grande"-->
+        </div> 
 
         <div class="grupo-input campo-grande">
           <label for="email">E-mail</label>
@@ -116,14 +116,6 @@
           <input type="text" id="cidade" name="cidade">
         </div>
 
-        <!--<div class="grupo-input campo-medio">
-          <label for="pessoa">Pessoa</label>
-          <select id="pessoa" name="pessoa">
-            <option value="" disabled selected>Voluntário ou Beneficiário</option>
-            <option value="voluntario">Voluntário</option>
-            <option value="beneficiario">Beneficiário</option>
-          </select>
-        </div> -->
         <div class="grupo-input campo-medio">
   <label for="pessoa">Pessoa</label>
   <select id="pessoa" name="pessoa" required> 
@@ -166,24 +158,34 @@
       </footer>
     </section>
 
-
+    <div id="modal-voluntario" class="modal-overlay">
+  <div class="modal-content">
+    <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+    <h2 class="modal-titulo">Validação de Estudante</h2>
+    <p class="modal-descricao">Para se cadastrar como voluntário, precisamos validar sua matrícula. Envie uma foto da sua carteirinha ou comprovante.</p>
+    
+    <div class="area-upload">
+      <input type="file" id="arquivo-carteirinha" accept="image/*, .pdf">
+    </div>
+    
+    <button type="button" id="btn-validar-doc" class="btn-cadastrar btn-modal-enviar" onclick="simularValidacao()">Enviar Documento</button>
+    <p id="msg-validacao" class="msg-escondida"></p>
+  </div>
+</div>
   </main>
 
-   <!--VLibras-->
      <div vw class="enabled">
   <div vw-access-button class="active"></div>
   <div vw-plugin-wrapper>
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
-
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
   new window.VLibras.Widget("https://vlibras.gov.br/app");
 </script>
-
 <script src="https://cdn.userway.org/widget.js" data-account="DgsvD8kT2a"></script>
-
 <script src="../js/cadastro.js"></script>
+<script src="../js/validacaoVoluntario.js"></script>
 </body>
 </html>
