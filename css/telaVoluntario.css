@@ -87,7 +87,7 @@ body {
     margin-left: 4px;
 }
 
-/* Menu Pop-up  */
+
 .menu-suspenso {
     display: none; 
     position: absolute;
@@ -123,8 +123,6 @@ body {
 .item-menu:hover {
     background-color: #f5f5f5;
 }
-
-/*tamanho dos icones*/
 .icone-menu-suspenso {
     width: 16px;
     height: 16px;
@@ -553,8 +551,6 @@ div[id*="userway"],
   color: white;
 }
 
-/*responsivo*/
-
 @media (max-width: 992px) {
   .container {
     padding: 0 15px;
@@ -596,13 +592,6 @@ div[id*="userway"],
     padding-bottom: 10px;
     -webkit-overflow-scrolling: touch;
   }
-  /*
-  .caixa-impacto {
-    flex-direction: column;
-    gap: 25px;
-    padding: 25px 15px;
-  }
-*/
   .item-atividade {
     flex-direction: column;
     align-items: flex-start;

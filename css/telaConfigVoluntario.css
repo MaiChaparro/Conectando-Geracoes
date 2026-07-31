@@ -1,4 +1,3 @@
-/*mAnrope*/
 * {
     margin: 0;
     padding: 0;
@@ -297,7 +296,6 @@ body {
   z-index: 9999;
 }
 
-/* Caixa */
 .popup-conteudo-sair{
   background: white;
   width: 380px;
@@ -306,19 +304,17 @@ body {
   text-align: center;
 }
 
-/* Título */
 .popup-conteudo-sair h2{
   color:#1980E6;
   margin-bottom:15px;
 }
 
-/* Texto */
+
 .popup-conteudo-sair p{
   color:#666;
   margin-bottom:25px;
 }
 
-/* Botões */
 .botoes-sair{
   display:flex;
   justify-content:center;
