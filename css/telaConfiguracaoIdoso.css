@@ -54,11 +54,11 @@ body {
 }
 
 /* BARRA LATERAL */
-.conteudo{
+.conteudo {
   width: 1000px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -66,7 +66,7 @@ body {
   width: 100%;
 }
 
-.div-nav{
+.div-nav {
   display: block;
   background-color: white;
   width: 250px;
@@ -74,7 +74,7 @@ body {
   border-radius: 10px;
 }
 
-.navbar-lateral{
+.navbar-lateral {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -83,7 +83,7 @@ body {
   padding: 20px;
 }
 
-.alinhamento{
+.alinhamento {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -91,40 +91,40 @@ body {
   height: 80px;
   border-radius: 15px;
   text-decoration: none;
-  color: #6B6661;
+  color: #6b6661;
 }
 
-.alinhamento:hover{
+.alinhamento:hover {
   transform: translateY(-2px);
   transition: 0.8s;
   cursor: pointer;
 }
 
-.alinhamento p{
-  color: #1980E6;
+.alinhamento p {
+  color: #1980e6;
 }
 
-.sair{
+.sair {
   align-items: end;
   margin-top: auto;
   font-size: 1.5rem;
 }
 
-.navbar-lateral img{
+.navbar-lateral img {
   width: 40px;
 }
 
-.navbar-lateral a{
+.navbar-lateral a {
   text-decoration: none;
-  color: #6B6661;
+  color: #6b6661;
 }
 
-.ativo{
-  background: rgba(25,128,230,0.1);
+.ativo {
+  background: rgba(25, 128, 230, 0.1);
 }
 
-.ativo p{
-  color: #1980E6;
+.ativo p {
+  color: #1980e6;
 }
 
 /* MENU HAMBURGUER*/
@@ -537,7 +537,7 @@ div[id*='userway'],
     padding: 15px 20px;
   }
 
-  .menu-hamburguer{
+  .menu-hamburguer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -545,11 +545,11 @@ div[id*='userway'],
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #1980E6;
+    color: #1980e6;
     width: 40px;
     height: 40px;
     padding: 0;
-}
+  }
 
   .container {
     display: block;
@@ -595,16 +595,16 @@ div[id*='userway'],
     margin-top: auto;
   }
 
-  .setaVoltar{
+  .setaVoltar {
     display: none;
   }
 
-  .comecin{
+  .comecin {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-}
+  }
 
   .configuracao {
     width: 100%;
@@ -665,12 +665,22 @@ div[id*='userway'],
     padding: 15px;
   }
 
+  .logo {
+    width: 65px;
+  }
+
+  .perfil-container img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
   .perfil-container h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .perfil-container p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .comecin h3 {
