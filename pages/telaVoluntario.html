@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="shortcut icon" href="../assets/img/LogoOficial.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/telaVoluntario.css">
-    <title>Conectando Gerações - voluntário</title>
+    <link rel="shortcut icon" href="../assets/img/LogoOficial.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/telaVoluntario.css" />
+    <title>Conectando Gerações - Voluntário</title>
   </head>
   <body>
     <div class="container">
       <header class="cabecalho">
         <a href="./telaVoluntario.html">
-        <img src="../assets/img/LogoOficial.png" alt="">
+          <img src="../assets/img/LogoOficial.png" alt="Logo Conectando Gerações" />
         </a>
         <div class="menu-usuario-container">
           <button id="botao-perfil" class="botao-perfil">
@@ -36,11 +36,11 @@
               <img src="../assets/icons/PerfilVoluntarioIdoso.svg" alt="" class="icone-svg" />
               Perfil
             </a>
-           <a href="./telaMissoesVoluntario.html" class="item-menu">
+            <a href="./telaMissoesVoluntario.html" class="item-menu">
               <img src="../assets/icons/iconPrancheta2.svg" alt="" class="icone-svg" />
               Missões
             </a>
-            <a href="./telaSuporteVoluntário.html" class="item-menu">
+            <a href="./telaSuporteVoluntario.html" class="item-menu">
               <img src="../assets/icons/iconAjuda.svg" alt="" class="icone-svg" />
               Ajuda
             </a>
@@ -57,9 +57,9 @@
             </a>
             <hr class="divisor" />
 
-            <a href="login.html" class="item-menu btnSair">
-          <img src="../assets/icons/iconSair.svg" alt="" class="icone-svg" />
-            Sair
+            <a href="./login.html" class="item-menu btnSair">
+              <img src="../assets/icons/iconSair.svg" alt="" class="icone-svg" />
+              Sair
             </a>
           </nav>
         </div>
@@ -72,20 +72,19 @@
             Que tal transformar o dia de alguém hoje?
           </p>
 
-          <a href="../pages/telaMissoesVoluntario.html" class="banner">
+          <a href="./telaMissoesVoluntario.html" class="banner">
             <div class="banner-conteudo">
               <div class="icone-prancheta">
-                 <img src="../assets/icons/pranchetaVerde.svg" alt="" />
+                <img src="../assets/icons/pranchetaVerde.svg" alt="" />
               </div>
-            <div class="texto-banner">
-              <h2>Ver mural de missões</h2>
-              <p>Veja as oportunidades de ajudar perto de você</p>
-                </div>
+              <div class="texto-banner">
+                <h2>Ver mural de missões</h2>
+                <p>Veja as oportunidades de ajudar perto de você</p>
               </div>
+            </div>
 
-              <img src="../assets/icons/setaLateralBanner.svg" alt="" class="seta-banner" />
-              </a>
-          
+            <img src="../assets/icons/setaLateralBanner.svg" alt="" class="seta-banner" />
+          </a>
         </section>
 
         <section>
@@ -93,189 +92,147 @@
             <h2>Missões disponíveis</h2>
             <a href="#" class="link-verde">Ver todos</a>
           </div>
+
           <div class="container-carrossel">
-            <button class="botao-carrossel esquerda" aria-label="Anterior" id="btn-esquerda" >
+            <button class="botao-carrossel esquerda" aria-label="Anterior" id="btn-esquerda">
               <img src="../assets/icons/IconSetaEsc.svg" alt="<">
             </button>
-          <div class="lista-missoes" id="lista-missoes">
-            <article class="cartao-missao">
-              <span class="tag tag-tecnologia">Tecnologia</span>
 
-              <div class="conteudo-cartao">
-                <div class="info-missao">
-                  <h3>Ajuda com celular</h3>
-                  <p>Idoso precisa de ajuda para aprender a usar aplicativos de mensagens</p>
+            <div class="lista-missoes" id="lista-missoes">
+              <article class="cartao-missao">
+                <span class="tag tag-tecnologia">Tecnologia</span>
+                <div class="conteudo-cartao">
+                  <div class="info-missao">
+                    <h3>Ajuda com celular</h3>
+                    <p>Idoso precisa de ajuda para aprender a usar aplicativos de mensagens</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/fotoIdosa.jpg" alt="Foto de Dona Maria" class="foto-idoso">
+                    <p class="nome-idoso">Dona Maria<br>72 anos</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="../assets/img/fotoIdosa.jpg" alt="" class="foto-idoso">
-                  <p class="nome-idoso">Dona Maria<br>72 anos</p>
+
+                <div class="detalhes-local">
+                  <span><img src="../assets/icons/iconLugar.svg" alt=""> Santana</span>
+                  <span><img src="../assets/icons/relogioTempo.svg" alt=""> 1h - 1h30</span>
+                  <span><img src="../assets/icons/IconDistancia.svg" alt=""> 2 km de você</span>
                 </div>
-              </div>
+              <button class="botao-aceitar" data-id="dona-maria">Aceitar missão</button>
+              </article>
 
-              <div class="detalhes-local">
-                <span>
-                  <img src="../assets/icons/iconLugar.svg" alt=""> Santana
-                </span>
-                <span>
-                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h - 1h30
-                </span>
-                <span>
-                  <img src="../assets/icons/IconDistancia.svg" alt=""> 2 km de você
-                </span>
-              </div>
-              <button class="botao-aceitar">Aceitar missão</button>
-            </article>
-
-            <article class="cartao-missao">
-              <span class="tag tag-companhia">Companhia</span>
-
-              <div class="conteudo-cartao">
-                <div class="info-missao">
-                  <h3>Companhia para conversar</h3>
-                  <p>Idosa gostaria de conversar sobre livros e jardinagem</p>
+              <article class="cartao-missao">
+                <span class="tag tag-companhia">Companhia</span>
+                <div class="conteudo-cartao">
+                  <div class="info-missao">
+                    <h3>Companhia para conversar</h3>
+                    <p>Idosa gostaria de conversar sobre livros e jardinagem</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/Dona-Clara.jpg" alt="Foto de Dona Clara" class="foto-idoso">
+                    <p class="nome-idoso">Dona Clara<br>65 anos</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="../assets/img/Dona-Clara.jpg" alt="" class="foto-idoso">
-                  <p class="nome-idoso">Dona Clara<br>65 anos</p>
+
+                <div class="detalhes-local">
+                  <span><img src="../assets/icons/iconLugar.svg" alt=""> Moema</span>
+                  <span><img src="../assets/icons/relogioTempo.svg" alt=""> 1h30 - 2h</span>
+                  <span><img src="../assets/icons/IconDistancia.svg" alt=""> 5 km de você</span>
                 </div>
-              </div>
+               <button class="botao-aceitar" data-id="dona-clara">Aceitar missão</button>
+              </article>
 
-              <div class="detalhes-local">
-                <span>
-                  <img src="../assets/icons/iconLugar.svg" alt=""> Moema
-                </span>
-                <span>
-                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h30 - 2h
-                </span>
-                <span>
-                  <img src="../assets/icons/IconDistancia.svg" alt=""> 5 km de você
-                </span>
-              </div>
-              <button class="botao-aceitar">Aceitar missão</button>
-            </article>
-
-            <article class="cartao-missao">
-              <span class="tag tag-consulta">Consulta</span>
-
-              <div class="conteudo-cartao">
-                <div class="info-missao">
-                  <h3>Consulta médica</h3>
-                  <p>Idoso precisa de ajuda acompanhamento médico</p>
+              <article class="cartao-missao">
+                <span class="tag tag-consulta">Consulta</span>
+                <div class="conteudo-cartao">
+                  <div class="info-missao">
+                    <h3>Consulta médica</h3>
+                    <p>Idoso precisa de ajuda acompanhamento médico</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/FotoAntonio2.png" alt="Foto de Seu Antônio" class="foto-idoso">
+                    <p class="nome-idoso">Seu Antônio<br>70 anos</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="../assets/img/FotoAntonio2.png" alt="" class="foto-idoso">
-                  <p class="nome-idoso">Seu Antônio<br>70 anos</p>
+
+                <div class="detalhes-local">
+                  <span><img src="../assets/icons/iconLugar.svg" alt=""> Saúde</span>
+                  <span><img src="../assets/icons/relogioTempo.svg" alt=""> 2h</span>
+                  <span><img src="../assets/icons/IconDistancia.svg" alt=""> 3 km de você</span>
                 </div>
-              </div>
+                <button class="botao-aceitar" data-id="seu-antonio">Aceitar missão</button>
+              </article>
 
-              <div class="detalhes-local">
-                <span>
-                  <img src="../assets/icons/iconLugar.svg" alt=""> Saúde
-                </span>
-                <span>
-                  <img src="../assets/icons/relogioTempo.svg" alt=""> 2h
-                </span>
-                <span>
-                  <img src="../assets/icons/IconDistancia.svg" alt=""> 3 km de você
-                </span>
-              </div>
-              <button class="botao-aceitar">Aceitar missão</button>
-            </article>
-
-            <article class="cartao-missao">
-              <span class="tag tag-tecnologia">Tecnologia</span>
-
-              <div class="conteudo-cartao">
-                <div class="info-missao">
-                  <h3>Ajuda com celular</h3>
-                  <p>Idoso precisa de ajuda para aprender a usar aplicativos de mensagens</p>
+              <article class="cartao-missao">
+                <span class="tag tag-tecnologia">Tecnologia</span>
+                <div class="conteudo-cartao">
+                  <div class="info-missao">
+                    <h3>Ajuda com celular</h3>
+                    <p>Idoso precisa de ajuda para aprender a usar aplicativos de mensagens</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/SeuCarlos.jpg" alt="Foto de Seu Carlos" class="foto-idoso">
+                    <p class="nome-idoso">Seu Carlos<br>73 anos</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="../assets/img/SeuCarlos.jpg" alt="" class="foto-idoso">
-                  <p class="nome-idoso">Seu Carlos<br>73 anos</p>
+
+                <div class="detalhes-local">
+                  <span><img src="../assets/icons/iconLugar.svg" alt=""> Tatuapé</span>
+                  <span><img src="../assets/icons/relogioTempo.svg" alt=""> 2h</span>
+                  <span><img src="../assets/icons/IconDistancia.svg" alt=""> 4 km de você</span>
                 </div>
-              </div>
+                <button class="botao-aceitar" data-id="seu-carlos">Aceitar missão</button>
+              </article>
 
-              <div class="detalhes-local">
-                <span>
-                  <img src="../assets/icons/iconLugar.svg" alt=""> Tatuapé
-                </span>
-                <span>
-                  <img src="../assets/icons/relogioTempo.svg" alt=""> 2h
-                </span>
-                <span>
-                  <img src="../assets/icons/IconDistancia.svg" alt=""> 4 km de você
-                </span>
-              </div>
-              <button class="botao-aceitar">Aceitar missão</button>
-            </article>
-
-            <article class="cartao-missao">
-              <span class="tag tag-compras">Compras</span>
-
-              <div class="conteudo-cartao">
-                <div class="info-missao">
-                  <h3>Ajuda para comprar remédio </h3>
-                  <p>Idosa precisa de ajuda para poder comprar remédios na farmácia</p>
+              <article class="cartao-missao">
+                <span class="tag tag-compras">Compras</span>
+                <div class="conteudo-cartao">
+                  <div class="info-missao">
+                    <h3>Ajuda para comprar remédio</h3>
+                    <p>Idosa precisa de ajuda para poder comprar remédios na farmácia</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/DonaJoana.png" alt="Foto de Dona Joana" class="foto-idoso">
+                    <p class="nome-idoso">Dona Joana<br>67 anos</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="../assets/img/DonaJoana.png" alt="" class="foto-idoso">
-                  <p class="nome-idoso">Dona Joana<br>67 anos</p>
+
+                <div class="detalhes-local">
+                  <span><img src="../assets/icons/iconLugar.svg" alt=""> Perdizes</span>
+                  <span><img src="../assets/icons/relogioTempo.svg" alt=""> 1h30</span>
+                  <span><img src="../assets/icons/IconDistancia.svg" alt=""> 8 km de você</span>
                 </div>
-              </div>
+                <button class="botao-aceitar" data-id="dona-joana">Aceitar missão</button>
+              </article>
 
-              <div class="detalhes-local">
-                <span>
-                  <img src="../assets/icons/iconLugar.svg" alt="">    perdizes 
-                </span>
-                <span>
-                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h30 
-                </span>
-                <span>
-                  <img src="../assets/icons/IconDistancia.svg" alt=""> 8 km de você
-                </span>
-              </div>
-              <button class="botao-aceitar">Aceitar missão</button>
-            </article>
-
-          <article class="cartao-missao">
-              <span class="tag tag-companhia">Companhia</span>
-
-              <div class="conteudo-cartao">
-                <div class="info-missao">
-                  <h3>Companhia para conversar</h3>
-                  <p>Idoso gostaria de conversar sobre pesca </p>
+              <article class="cartao-missao">
+                <span class="tag tag-companhia">Companhia</span>
+                <div class="conteudo-cartao">
+                  <div class="info-missao">
+                    <h3>Companhia para conversar</h3>
+                    <p>Idoso gostaria de conversar sobre pesca</p>
+                  </div>
+                  <div>
+                    <img src="../assets/img/SeuHugo.png" alt="Foto de Seu Hugo" class="foto-idoso">
+                    <p class="nome-idoso">Seu Hugo<br>74 anos</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="../assets/img/SeuHugo.png" alt="" class="foto-idoso">
-                  <p class="nome-idoso">Seu Hugo<br>74 anos</p>
+
+                <div class="detalhes-local">
+                  <span><img src="../assets/icons/iconLugar.svg" alt=""> Casa Verde</span>
+                  <span><img src="../assets/icons/relogioTempo.svg" alt=""> 1h</span>
+                  <span><img src="../assets/icons/IconDistancia.svg" alt=""> 4 km de você</span>
                 </div>
-              </div>
+               <button class="botao-aceitar" data-id="seu-hugo">Aceitar missão</button>
+              </article>
+            </div>
 
-              <div class="detalhes-local">
-                <span>
-                  <img src="../assets/icons/iconLugar.svg" alt=""> Casa Verde 
-                </span>
-                <span>
-                  <img src="../assets/icons/relogioTempo.svg" alt=""> 1h
-                </span>
-                <span>
-                  <img src="../assets/icons/IconDistancia.svg" alt=""> 4 km de você
-                </span>
-              </div>
-              <button class="botao-aceitar">Aceitar missão</button>
-            </article>
-          </div>
-
-          <button class="botao-carrossel direita" aria-label="Próximo" id="btn-direita">
+            <button class="botao-carrossel direita" aria-label="Próximo" id="btn-direita">
               <img src="../assets/icons/Vector (15).svg" alt=">">
             </button>
-
-        </section>
+          </div> </section>
 
         <section class="secao-impacto">
           <h2 class="titulo-impacto">Meu Impacto</h2>
-
           <div class="caixa-impacto">
             <div class="item-impacto">
               <div class="icone-impacto">
@@ -339,8 +296,8 @@
           </ul>
         </section>
       </main>
-      <br>
-    </div> 
+    </div>
+
     <div id="popupSair" class="popup-sair">
       <div class="popup-conteudo-sair">
         <h2>Deseja sair?</h2>
@@ -351,19 +308,22 @@
         </div>
       </div>
     </div>
+
     <script src="../js/confirmarSaidaVolunt.js"></script>
-     <div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget("https://vlibras.gov.br/app");
-</script>
-<script src="https://cdn.userway.org/widget.js" data-account="DgsvD8kT2a"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="https://cdn.userway.org/widget.js" data-account="DgsvD8kT2a"></script>
     <script src="../js/popupVoluntario.js"></script>
     <script src="../js/carrosselVol.js"></script>
+    <script src="../js/botoesMissoes.js"></script>
   </body>
 </html>

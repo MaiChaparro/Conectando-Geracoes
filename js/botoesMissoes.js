@@ -2,30 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const botoesAceitar = document.querySelectorAll('.botao-aceitar');
 
     botoesAceitar.forEach((botao) => {
-        const idMissao = botao.getAttribute('data-id');
-        if (idMissao && localStorage.getItem(`missao_${idMissao}`) === 'aceita') {
-            botao.classList.add('aceita-amarelo');
-            botao.textContent = 'Missão Aceita';
-        }
-
         botao.addEventListener('click', function () {
-            const estaAceito = this.classList.contains('aceita-amarelo');
+           
+            const estaAceito = this.classList.contains('missao-aceita');
 
             if (estaAceito) {
-                this.classList.remove('aceita-amarelo');
+               
+                this.classList.remove('missao-aceita');
                 this.textContent = 'Aceitar missão';
-
-                if (idMissao) {
-                    localStorage.setItem(`missao_${idMissao}`, 'disponivel');
-                }
             } else {
-            
-                this.classList.add('aceita-amarelo');
+               
+                this.classList.add('missao-aceita');
                 this.textContent = 'Missão Aceita';
-
-                if (idMissao) {
-                    localStorage.setItem(`missao_${idMissao}`, 'aceita');
-                }
             }
         });
     });
@@ -37,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
             perfilSuspenso.classList.toggle('mostrar');
         });
-
         document.addEventListener('click', (e) => {
             if (!perfilSuspenso.contains(e.target) && !botaoPerfil.contains(e.target)) {
                 perfilSuspenso.classList.remove('mostrar');
@@ -45,13 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-  
     const listaMissoes = document.getElementById('lista-missoes');
     const btnEsquerda = document.getElementById('btn-esquerda');
     const btnDireita = document.getElementById('btn-direita');
 
     if (listaMissoes && btnEsquerda && btnDireita) {
-        const distanciaScroll = 280;
+        const distanciaScroll = 280; 
 
         btnEsquerda.addEventListener('click', () => {
             listaMissoes.scrollBy({ left: -distanciaScroll, behavior: 'smooth' });
@@ -61,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
             listaMissoes.scrollBy({ left: distanciaScroll, behavior: 'smooth' });
         });
     }
-
 
     const btnSair = document.querySelector('.btnSair');
     const popupSair = document.getElementById('popupSair');

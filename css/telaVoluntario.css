@@ -389,17 +389,27 @@ body {
 }
 
 .botao-aceitar {
-    background-color: var(--cor-primaria);
+    background-color: #1e8e3e; 
     color: white;
     border: none;
     border-radius: 6px;
     padding: 10px;
-    font-weight: 100;
+    font-weight: 600; 
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.3s, transform 0.1s;
 }
+
 .botao-aceitar:hover {
-    background-color: #116a32;
+    background-color: #177030; 
+}
+
+
+.botao-aceitar.missao-aceita {
+    background-color: #e0a803;
+}
+
+.botao-aceitar.missao-aceita:hover {
+    background-color: #c49302; 
 }
 
 .secao-impacto {
