@@ -338,6 +338,14 @@ body {
   color:white;
 }
 
+#confirmarExcluir {
+  background: #e3022c;
+  color: white;
+}
+
+#cancelarExcluir {
+  background: #ddd;
+}
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],

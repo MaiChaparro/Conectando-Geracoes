@@ -32,15 +32,11 @@
           </button>
 
           <nav id="perfil-suspenso" class="menu-suspenso">
-            <a href="#" class="item-menu">
-              <img src="../assets/icons/PerfilVoluntarioIdoso.svg" alt="" class="icone-svg" />
-              Perfil
-            </a>
            <a href="./telaMissoesVoluntario.html" class="item-menu">
               <img src="../assets/icons/iconPrancheta2.svg" alt="" class="icone-svg" />
               Missões
             </a>
-            <a href="./telaSuporteVoluntário.html" class="item-menu">
+            <a href="./telaSuporteVoluntario.html" class="item-menu">
               <img src="../assets/icons/iconAjuda.svg" alt="" class="icone-svg" />
               Ajuda
             </a>
@@ -87,7 +83,7 @@
             <div class="campo-grupo">
               <label for="email">E-mail</label>
               <div class="campo-com-acao">
-                <input type="email" id="email" value="gmail.com">
+                <input type="email" id="email" value="joaovictor@gmail.com">
                 <button type="button" class="botao-acao-icone" aria-label="Editar e-mail">
                   <img src="../assets/icons/iconLapis.svg" alt="">
                 </button>
@@ -129,10 +125,10 @@
 
             <button type="submit" class="botao-salvar">Salvar Alterações</button>
 
-            <button type="button" class="botao-excluir">
-              <img src="../assets/icons/iconLixeira.svg" alt="">
-              Excluir conta
-            </button>
+          <button type="button" class="botao-excluir" id="btnExcluirConta">
+        <img src="../assets/icons/iconLixeira.svg" alt="">
+         Excluir conta
+        </button> 
           </form>
 
           <section class="painel-foto">
@@ -158,6 +154,19 @@
         </div>
       </div>
     </div>
+<div id="popupExcluir" class="popup-sair">
+  <div class="popup-conteudo-sair">
+    <h2>⚠️ Excluir conta</h2>
+    <p>
+      Esta ação é permanente.<br>
+      Todos os seus dados serão removidos.
+    </p>
+    <div class="botoes-sair">
+      <button id="cancelarExcluir">Cancelar</button>
+      <a href="../index.html"><button id="confirmarExcluir">Excluir</button></a>
+    </div>
+  </div>
+</div>
      <div vw class="enabled">
   <div vw-access-button class="active"></div>
   <div vw-plugin-wrapper>
@@ -171,5 +180,6 @@
 <script src="../js/popupVoluntario.js"></script>
 <script src="https://cdn.userway.org/widget.js" data-account="DgsvD8kT2a"></script>
 <script src="../js/confirmarSaidaVolunt.js"></script>
+<script src="../js/confirmarExclusao.js"></script>
 </body>
 </html>
