@@ -109,10 +109,8 @@ body {
   color: #1980e6;
 }
 
-.sair {
-  align-items: end;
-  margin-top: auto;
-  font-size: 1.5rem;
+.sair img{
+  margin-left: 5px;
 }
 
 .navbar-lateral img {
@@ -184,6 +182,11 @@ body {
   margin-top: 25px;
   margin-bottom: 10px;
   font-weight: 100;
+}
+
+.subtextos a{
+  text-decoration: none;
+  color: black;
 }
 
 .container-cards {

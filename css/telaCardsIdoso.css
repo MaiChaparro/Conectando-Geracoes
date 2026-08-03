@@ -310,6 +310,62 @@ body {
   border-radius: 10px;
 }
 
+/* POPUPS DE ENVIAR E CANCELAR */
+.popup-sair {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-conteudo-sair {
+  background: white;
+  width: 420px;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.popup-conteudo-sair h2 {
+  margin-bottom: 15px;
+}
+
+.popup-conteudo-sair p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.botoes-sair {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botoes-sair button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#okEnviar {
+  background: #1980e6;
+  color: white;
+}
+
+#continuar {
+  background: #ddd;
+}
+
+#confirmarCancelar {
+  background: #e3022c;
+  color: white;
+}
+
 /* QUADRO AZUL AJUDA */
 .segurarQuadroAzul {
   display: flex;

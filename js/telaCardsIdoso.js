@@ -95,3 +95,112 @@ document.addEventListener('click', (e) => {
     menuDropdown.classList.remove('ativo');
   }
 });
+
+// BOTÕES
+const formulario = document.querySelector('.informacoes-container');
+
+const popupCancelar = document.getElementById('popupCancelar');
+const popupEnviar = document.getElementById('popupEnviar');
+const btnCancelar = document.getElementById('cancelar');
+const okEnviar = document.getElementById('okEnviar');
+const continuar = document.getElementById('continuar');
+const confirmarCancelar = document.getElementById('confirmarCancelar');
+
+formulario.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const descricao = document.getElementById('descricao').value.trim();
+  const nome = document.getElementById('nome').value.trim();
+  const idade = document.getElementById('idade').value.trim();
+  const data = document.getElementById('data').value;
+  const hora = document.getElementById('hora').value;
+  const endereco = document.getElementById('endereço').value.trim();
+  const bairro = document.getElementById('bairro').value.trim();
+  const cep = document.getElementById('cep').value.trim();
+  const numero = document.getElementById('numero').value.trim();
+
+  // Descrição
+  if (descricao.length < 10) {
+    alert('Descreva melhor o que você precisa.');
+    return;
+  }
+
+  // Nome
+  if (!/^[A-Za-zÀ-ÿ\s'-]+$/.test(nome)) {
+    alert('Digite um nome válido.');
+    return;
+  }
+
+  // Idade
+  if (!idade || idade < 60 || idade > 120) {
+    alert('Digite uma idade válida (60 a 120 anos).');
+    return;
+  }
+
+  // Data
+  const hoje = new Date().toISOString().split('T')[0];
+
+  if (data < hoje) {
+    alert('Escolha uma data de hoje em diante.');
+    return;
+  }
+
+  // Hora
+  if (hora === '') {
+    alert('Selecione um horário.');
+    return;
+  }
+
+  // Endereço
+  if (endereco === '') {
+    alert('Digite o endereço.');
+    return;
+  }
+
+  // Bairro
+  if (bairro === '') {
+    alert('Digite o bairro.');
+    return;
+  }
+
+  // CEP
+  const cepNumeros = cep.replace(/\D/g, '');
+
+  if (cepNumeros.length !== 8) {
+    alert('Digite um CEP válido.');
+    return;
+  }
+
+  // Número
+  if (numero === '' || Number(numero) <= 0) {
+    alert('Digite o número do endereço.');
+    return;
+  }
+
+  // Tudo certo
+  popupEnviar.style.display = 'flex';
+});
+
+// Fechar popUp
+okEnviar.addEventListener('click', () => {
+  popupEnviar.style.display = 'none';
+
+  formulario.reset();
+
+  window.location.href = '../pages/telaInicialIdoso.html';
+});
+
+// CANCELAR
+btnCancelar.addEventListener('click', () => {
+  popupCancelar.style.display = 'flex';
+});
+
+// Continuar editando
+continuar.addEventListener('click', () => {
+  popupCancelar.style.display = 'none';
+});
+
+// Confirmar cancelamento
+confirmarCancelar.addEventListener('click', () => {
+  window.location.href = '../pages/telaInicialIdoso.html';
+});
