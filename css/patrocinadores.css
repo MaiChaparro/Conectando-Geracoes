@@ -211,6 +211,17 @@ nav a.selecionado {
   margin-bottom: 40px;
 }
 
+.img-conecta {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  transform: scale(1.5); 
+}
+
+a.card-logo {
+  text-decoration: none;
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: 2fr 1.5fr 2fr 1.5fr;

@@ -17,7 +17,7 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER */
+
 .header {
   background: #fafafa;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -56,7 +56,7 @@ body {
   color: #6b6661;
 }
 
-/* TOPO */
+
 .comecin {
   display: flex;
   align-items: center;
@@ -77,7 +77,6 @@ body {
   color: #6b6661;
 }
 
-/* CARDS */
 .container-suporte {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -143,7 +142,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* CHAT */
+
 .container-suporteDois {
   margin-top: 35px;
 }
@@ -263,7 +262,6 @@ hr {
   z-index: 9999;
 }
 
-/* Caixa */
 .popup-conteudo-sair{
   background: white;
   width: 380px;
@@ -272,19 +270,18 @@ hr {
   text-align: center;
 }
 
-/* Título */
 .popup-conteudo-sair h2{
   color:#1980E6;
   margin-bottom:15px;
 }
 
-/* Texto */
+
 .popup-conteudo-sair p{
   color:#666;
   margin-bottom:25px;
 }
 
-/* Botões */
+
 .botoes-sair{
   display:flex;
   justify-content:center;
