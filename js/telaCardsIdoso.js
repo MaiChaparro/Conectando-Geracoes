@@ -1,4 +1,3 @@
-// Cards da tela Inicial para a tela Cards
 const dados = {
   tecnologia: {
     titulo: 'Tecnologia',
@@ -60,7 +59,6 @@ if (tipo && dados[tipo]) {
     dados[tipo].cor;
 }
 
-// Abrir opções -> Trocar solicitação
 const btnTrocar = document.getElementById('btnTrocar');
 const menuDropdown = document.getElementById('menuDropdown');
 
@@ -68,7 +66,6 @@ btnTrocar.addEventListener('click', () => {
   menuDropdown.classList.toggle('ativo');
 });
 
-// Escolher uma opção -> Trocar solicitação
 const titulo = document.getElementById('tituloSolicitacao');
 const descricao = document.getElementById('descricaoSolicitacao');
 const icone = document.getElementById('iconeSolicitacao');
@@ -89,14 +86,12 @@ document.querySelectorAll('#menuDropdown div').forEach((opcao) => {
   });
 });
 
-// Fechar ao clicar fora -> Trocar solicitação
 document.addEventListener('click', (e) => {
   if (!btnTrocar.contains(e.target) && !menuDropdown.contains(e.target)) {
     menuDropdown.classList.remove('ativo');
   }
 });
 
-// BOTÕES
 const formulario = document.querySelector('.informacoes-container');
 
 const popupCancelar = document.getElementById('popupCancelar');
@@ -119,25 +114,21 @@ formulario.addEventListener('submit', (event) => {
   const cep = document.getElementById('cep').value.trim();
   const numero = document.getElementById('numero').value.trim();
 
-  // Descrição
   if (descricao.length < 10) {
     alert('Descreva melhor o que você precisa.');
     return;
   }
 
-  // Nome
   if (!/^[A-Za-zÀ-ÿ\s'-]+$/.test(nome)) {
     alert('Digite um nome válido.');
     return;
   }
 
-  // Idade
   if (!idade || idade < 60 || idade > 120) {
     alert('Digite uma idade válida (60 a 120 anos).');
     return;
   }
 
-  // Data
   const hoje = new Date().toISOString().split('T')[0];
 
   if (data < hoje) {
@@ -145,25 +136,21 @@ formulario.addEventListener('submit', (event) => {
     return;
   }
 
-  // Hora
   if (hora === '') {
     alert('Selecione um horário.');
     return;
   }
 
-  // Endereço
   if (endereco === '') {
     alert('Digite o endereço.');
     return;
   }
 
-  // Bairro
   if (bairro === '') {
     alert('Digite o bairro.');
     return;
   }
 
-  // CEP
   const cepNumeros = cep.replace(/\D/g, '');
 
   if (cepNumeros.length !== 8) {
@@ -171,17 +158,14 @@ formulario.addEventListener('submit', (event) => {
     return;
   }
 
-  // Número
   if (numero === '' || Number(numero) <= 0) {
     alert('Digite o número do endereço.');
     return;
   }
 
-  // Tudo certo
   popupEnviar.style.display = 'flex';
 });
 
-// Fechar popUp
 okEnviar.addEventListener('click', () => {
   popupEnviar.style.display = 'none';
 
@@ -190,17 +174,14 @@ okEnviar.addEventListener('click', () => {
   window.location.href = '../pages/telaInicialIdoso.html';
 });
 
-// CANCELAR
 btnCancelar.addEventListener('click', () => {
   popupCancelar.style.display = 'flex';
 });
 
-// Continuar editando
 continuar.addEventListener('click', () => {
   popupCancelar.style.display = 'none';
 });
 
-// Confirmar cancelamento
 confirmarCancelar.addEventListener('click', () => {
   window.location.href = '../pages/telaInicialIdoso.html';
 });

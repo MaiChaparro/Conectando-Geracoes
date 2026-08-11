@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
       menuSuspenso.classList.toggle('mostrar');
     });
     document.addEventListener('click', (event) => {
-      if (!menuSuspenso.contains(event.target) && !botaoPerfil.contains(event.target)) {
+      if (
+        !menuSuspenso.contains(event.target) &&
+        !botaoPerfil.contains(event.target)
+      ) {
         menuSuspenso.classList.remove('mostrar');
       }
     });
