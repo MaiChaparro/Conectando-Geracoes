@@ -9,7 +9,6 @@ body {
   background: #fafafa;
 }
 
-/* HEADER */
 .header {
   display: flex;
   justify-content: center;
@@ -57,7 +56,6 @@ body {
   font-weight: 100;
 }
 
-/* CONTEÚDO MAIN */
 .segurarMic {
   display: flex;
   justify-content: center;
@@ -92,7 +90,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* CARD DESCRIÇÃO */
 .segurarSolicitacao {
   display: flex;
   justify-content: center;
@@ -108,7 +105,6 @@ body {
   gap: 20px;
 }
 
-/* CARD AZUL */
 .cardSolicitacao {
   display: flex;
   flex-direction: column;
@@ -135,7 +131,6 @@ body {
   color: #6b6661;
 }
 
-/* Trocar a Solicitação */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -183,7 +178,6 @@ body {
   color: white;
 }
 
-/* DESCRIÇÃO */
 .caixa {
   border: solid 1px #6b6661;
   padding: 10px;
@@ -203,7 +197,6 @@ body {
   overflow-y: auto;
 }
 
-/* INFORMAÇÕES CONTAINER (eu nao sei pq ta sobrepondo no outro */
 .segurarDados {
   display: flex;
   justify-content: center;
@@ -310,7 +303,6 @@ body {
   border-radius: 10px;
 }
 
-/* POPUPS DE ENVIAR E CANCELAR */
 .popup-sair {
   display: none;
   position: fixed;
@@ -366,7 +358,6 @@ body {
   color: white;
 }
 
-/* QUADRO AZUL AJUDA */
 .segurarQuadroAzul {
   display: flex;
   justify-content: center;
@@ -404,7 +395,6 @@ body {
   font-size: 1rem;
 }
 
-/* FUNDO ESCURO - MICROFONE */
 .popup {
   position: fixed;
   inset: 0;
@@ -415,7 +405,6 @@ body {
   z-index: 9999;
 }
 
-/* QUADRO - MICROFONE */
 .popup-conteudo {
   background: white;
   width: 420px;
@@ -424,13 +413,11 @@ body {
   text-align: center;
 }
 
-/* TÍTULO - MICROFONE */
 .popup h2 {
   color: #1980e6;
   margin-bottom: 15px;
 }
 
-/* TEXTO - MICROFONE */
 #status {
   margin: 20px 0;
   color: #666;
@@ -444,7 +431,6 @@ body {
   min-height: 30px;
 }
 
-/* BOTÕES - MICROFONE */
 .botoesPopup {
   display: flex;
   justify-content: center;
@@ -467,7 +453,6 @@ body {
   background: #ddd;
 }
 
-/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon,
 div[class*='userway'],
 div[id*='userway'],
@@ -480,7 +465,6 @@ div[id*='userway'],
   z-index: 999999 !important;
 }
 
-/* Responsivo Acessibilidade*/
 @media (max-width: 850px) {
   #userwayAccessibilityIcon,
   div[class*='userway'],
@@ -505,7 +489,6 @@ div[id*='userway'],
   }
 }
 
-/* RESPONSIVO */
 @media (max-width: 1210px) {
   .header-container {
     padding: 0 20px;

@@ -9,7 +9,6 @@ body{
   background: #FFFAF7;
 }
 
-/* HEADER */
 .header{
   position: fixed;
   width: 100%;
@@ -80,7 +79,6 @@ nav a.selecionado{
   cursor: pointer;
 }
 
-/* MENU HAMBURGUER*/
 .menu-hamburguer{
   display: none;
   border: none;
@@ -90,7 +88,6 @@ nav a.selecionado{
   color: #1980E6;
 }
 
-/* DROPDOWN */
 .dropdown{
   position: relative;
 }
@@ -138,7 +135,6 @@ nav a.selecionado{
   display: block;
 }
 
-/* "COMO FUNCIONA" - TÍTULO */
 .div-titulos{
   display: flex;
   justify-content: center;
@@ -161,7 +157,6 @@ nav a.selecionado{
   flex-shrink: 0;
 }
 
-/* SECTION "COMO FUNCIONA" MAIN */
 .descricao-comoFunciona{
   font-size: 1.25rem;
   color: #6B6661;
@@ -194,7 +189,6 @@ nav a.selecionado{
   height: auto;
 }
 
-/* SECTION AZUL - MAIN */
 .section-containerazul{
   display: flex;
   flex-direction: column;
@@ -248,20 +242,19 @@ nav a.selecionado{
   cursor: pointer;
 }
 
-/* FOOTER */
 .footer-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 250px 180px 260px 180px;
   justify-content: center;
   align-items: start;
-  gap: 40px;
+  gap: 80px;
   padding: 50px;
   background-color: #D9D9D9;
+  height: 250px;
 }
 
 .titulo-footer{
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 6px;
   font-size: 1.125rem;
@@ -277,23 +270,15 @@ nav a.selecionado{
   font-size: 0.875rem;
   color: #6B6661;
   line-height: 22px;
-  text-align: center;
-  max-width: 250px;
 }
 
 .conectando{
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
-.links, .contatos, .redes-sociais{
+.links{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .links a{
@@ -307,16 +292,26 @@ nav a.selecionado{
   text-decoration: underline;
 }
 
-.loc, .email{
+.contatos{
+  display: flex;
+  flex-direction: column;
+}
+
+.loc, .tel, .email{
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
 }
 
-.loc p, .email p{
+.loc p, .tel p, .email p{
   color: #6B6661;
   font-size: 0.875rem;
+}
+
+.redes-sociais{
+  display: flex;
+  flex-direction: column;
 }
 
 .icones{
@@ -326,9 +321,9 @@ nav a.selecionado{
 
 .icones img{
   width: 42px;
+  cursor: pointer;
 }
 
-/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -341,7 +336,6 @@ div[id*="userway"],
   z-index: 999999 !important;
 }
 
-/* Resonsivo Acessibilidade*/
 @media(max-width: 850px){
   #userwayAccessibilityIcon, 
   div[class*="userway"],
@@ -368,7 +362,6 @@ div[id*="userway"],
   }
 }
 
-/* RESPONSIVO */
 @media(max-width: 1210px){
   .header-container{
     padding: 0 20px;

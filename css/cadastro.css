@@ -15,6 +15,7 @@ body {
   height: 45px; 
   width: auto;
 }
+
 .logo-box a {
   text-decoration: none;
 }
@@ -26,12 +27,12 @@ body {
   position: absolute;
   left: 0;
 }
+
 .page-cadastro {
   display: flex;
   min-height: 100vh;
   width: 100%;
 }
-
 
 .painel-info {
   flex: 1;
@@ -114,7 +115,6 @@ body {
   line-height: 1.4;
 }
 
-
 .painel-formulario {
   flex: 1.4;
   padding: 40px 60px;
@@ -183,7 +183,6 @@ body {
   gap: 6px;
 }
 
-
 .campo-grande { width: calc(50% - 7.5px); }
 .campo-medio { width: calc(33.333% - 10px); }
 .campo-pequeno { width: calc(16.666% - 12.5px); }
@@ -212,7 +211,6 @@ body {
 .grupo-input select:focus {
   border-color: #FCC02A;
 }
-
 
 .input-com-icone {
   position: relative;
@@ -255,7 +253,6 @@ body {
   position: relative;
   width: 100%;
 }
-
 
 .acoes-formulario {
   width: 100%;
@@ -330,7 +327,6 @@ body {
 .footer-login a:hover {
   text-decoration: underline;
 }
-
 
 .destaque-laranja { color: #FCC02A; }
 .destaque-texto { color: #FFA800; font-weight: 600; }
@@ -409,7 +405,6 @@ body {
   font-size: 16px;
 }
 
-
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -421,7 +416,6 @@ div[id*="userway"],
   position: fixed !important;
   z-index: 999999 !important;
 }
-
 
 @media (max-width: 992px) {
   .page-cadastro {

@@ -9,7 +9,6 @@ body{
   background: #FFFAF7;
 }
 
-/* HEADER */
 .header{
   display: flex;
   justify-content: space-around;
@@ -82,7 +81,6 @@ nav a.selecionado{
   cursor: pointer;
 }
 
-/* MENU HAMBURGUER*/
 .menu-hamburguer{
   display: none;
   border: none;
@@ -92,7 +90,6 @@ nav a.selecionado{
   color: #1980E6;
 }
 
-/* DROPDOWN */
 .dropdown{
   position: relative;
 }
@@ -140,7 +137,6 @@ nav a.selecionado{
   display: block;
 }
 
-/* MAIN */
 .banner-container{
   position: relative;
   width: 100%;
@@ -192,7 +188,6 @@ nav a.selecionado{
   cursor: pointer;
 }
 
-/* SECTION AZUL*/
 .section-containerazul{
   display: flex;
   flex-direction: column;
@@ -245,7 +240,6 @@ nav a.selecionado{
   cursor: pointer;
 }
 
-/* FOOTER */
 .footer-container{
   display: grid;
   grid-template-columns: 250px 180px 260px 180px;
@@ -328,7 +322,6 @@ nav a.selecionado{
   cursor: pointer;
 }
 
-/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon, 
 div[class*="userway"],
 div[id*="userway"],
@@ -341,7 +334,6 @@ div[id*="userway"],
   z-index: 999999 !important;
 }
 
-/* Resonsivo Acessibilidade*/
 @media(max-width: 850px){
   #userwayAccessibilityIcon, 
   div[class*="userway"],
@@ -368,7 +360,6 @@ div[id*="userway"],
   }
 }
 
-/* RESPONSIVO */
 @media(max-width: 1210px){
   .header-container{
     padding: 0 20px;

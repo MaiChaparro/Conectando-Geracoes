@@ -27,9 +27,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex: 1; 
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -173,7 +175,6 @@ nav a.selecionado {
   display: block;
 }
 
-
 .hero-section h1 {
   font-size: 36px;
   font-weight: 700;
@@ -270,9 +271,11 @@ nav a.selecionado {
   border-left: 5px solid var(--blue-color);
   border-top: 5px solid var(--blue-color);
 }
+
 .card-blue h3 {
   color: var(--blue-color);
 }
+
 .card-blue .card-icon {
   background-color: #e8f2fc;
 }
@@ -281,9 +284,11 @@ nav a.selecionado {
   border-left: 5px solid var(--green-color);
   border-top: 5px solid var(--green-color);
 }
+
 .card-green h3 {
   color: var(--green-color);
 }
+
 .card-green .card-icon {
   background-color: #e7f3ec;
 }
@@ -292,9 +297,11 @@ nav a.selecionado {
   border-left: 5px solid var(--yellow-color);
   border-top: 5px solid var(--yellow-color);
 }
+
 .card-yellow h3 {
   color: var(--yellow-color);
 }
+
 .card-yellow .card-icon {
   background-color: #fdf7e7;
 }
@@ -303,12 +310,15 @@ nav a.selecionado {
   border-left: 5px solid var(--purple-color);
   border-top: 5px solid var(--purple-color);
 }
+
 .card-purple h3 {
   color: var(--purple-color);
 }
+
 .card-purple .card-icon {
   background-color: #f4e8f7;
 }
+
 .contact-section {
   background-color: var(--bg-light);
   border-radius: 24px;
@@ -408,6 +418,7 @@ nav a.selecionado {
   height: 18px;
   display: block;
 }
+
 .footer-container{
   display: grid;
   grid-template-columns: 2fr 1.5fr 2fr 1.5fr;

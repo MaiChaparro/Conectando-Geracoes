@@ -9,7 +9,6 @@ body {
   background: #fafafa;
 }
 
-/* HEADER */
 .header {
   display: flex;
   justify-content: center;
@@ -58,7 +57,6 @@ body {
   color: #6b6661;
 }
 
-/* BARRA LATERAL */
 .conteudo {
   width: 1000px;
 }
@@ -130,7 +128,6 @@ body {
   color: #1980e6;
 }
 
-/* MENU HAMBURGUER*/
 .menu-hamburguer {
   display: none;
   border: none;
@@ -140,7 +137,6 @@ body {
   color: #1980e6;
 }
 
-/* CONTEÚDO */
 .ola h2 {
   font-size: 2.25rem;
 }
@@ -208,7 +204,6 @@ body {
   transition: 0.3s;
 }
 
-/* CARD AZUL */
 .cardTec {
   background-color: rgba(25, 128, 230, 0.1);
   border-radius: 10px;
@@ -235,7 +230,6 @@ body {
   cursor: pointer;
 }
 
-/* CARD AMARELO */
 .cardCompa {
   background-color: rgba(252, 192, 42, 0.1);
   border-radius: 10px;
@@ -256,7 +250,6 @@ body {
   color: #6b6661;
 }
 
-/* CARD VERMELHO */
 .cardSau {
   background-color: rgba(227, 2, 44, 0.1);
   border-radius: 10px;
@@ -277,7 +270,6 @@ body {
   color: #6b6661;
 }
 
-/* CARD ROXO */
 .cardCom {
   background-color: rgba(99, 38, 120, 0.1);
   border-radius: 10px;
@@ -298,7 +290,6 @@ body {
   color: #6b6661;
 }
 
-/* CARD VERDE */
 .cardTra {
   background-color: rgba(21, 136, 65, 0.1);
   border-radius: 10px;
@@ -319,7 +310,6 @@ body {
   color: #6b6661;
 }
 
-/* CARD CINZA */
 .cardOut {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -342,8 +332,6 @@ body {
   color: #6b6661;
 }
 
-/* SOLICITAÇÕES */
-/* COMPANHIA */
 .container-companhia {
   display: flex;
   justify-content: space-between;
@@ -388,7 +376,6 @@ body {
   font-size: 1rem;
 }
 
-/* TECNOLOGIA */
 .container-tecnologia {
   display: flex;
   justify-content: space-between;
@@ -420,7 +407,6 @@ body {
   font-size: 1rem;
 }
 
-/* SAÚDE */
 .container-saude {
   display: flex;
   justify-content: space-between;
@@ -452,7 +438,6 @@ body {
   font-size: 1rem;
 }
 
-/* QUADRO AZUL AJUDA */
 .quadroAzulAjuda {
   background-color: rgba(25, 128, 230, 0.1);
   border-radius: 20px;
@@ -483,8 +468,6 @@ body {
   font-size: 1rem;
 }
 
-/* POP UP SAIR*/
-/* Fundo escuro */
 .popup-sair {
   position: fixed;
   inset: 0;
@@ -495,7 +478,6 @@ body {
   z-index: 9999;
 }
 
-/* Caixa */
 .popup-conteudo-sair {
   background: white;
   width: 380px;
@@ -504,19 +486,16 @@ body {
   text-align: center;
 }
 
-/* Título */
 .popup-conteudo-sair h2 {
   color: #1980e6;
   margin-bottom: 15px;
 }
 
-/* Texto */
 .popup-conteudo-sair p {
   color: #666;
   margin-bottom: 25px;
 }
 
-/* Botões */
 .botoes-sair {
   display: flex;
   justify-content: center;
@@ -540,7 +519,6 @@ body {
   color: white;
 }
 
-/* FUNDO ESCURO - MICROFONE */
 .popup {
   position: fixed;
   inset: 0;
@@ -551,7 +529,6 @@ body {
   z-index: 9999;
 }
 
-/* QUADRO - MICROFONE */
 .popup-conteudo {
   background: white;
   width: 420px;
@@ -560,13 +537,11 @@ body {
   text-align: center;
 }
 
-/* TÍTULO - MICROFONE */
 .popup h2 {
   color: #1980e6;
   margin-bottom: 15px;
 }
 
-/* TEXTO - MICROFONE */
 #status {
   margin: 20px 0;
   color: #666;
@@ -580,7 +555,6 @@ body {
   min-height: 30px;
 }
 
-/* BOTÕES - MICROFONE */
 .botoesPopup {
   display: flex;
   justify-content: center;
@@ -603,7 +577,6 @@ body {
   background: #ddd;
 }
 
-/* ACESSIBILIDADE - WAY */
 #userwayAccessibilityIcon,
 div[class*='userway'],
 div[id*='userway'],
@@ -616,7 +589,6 @@ div[id*='userway'],
   z-index: 999999 !important;
 }
 
-/* Responsivo Acessibilidade*/
 @media (max-width: 850px) {
   #userwayAccessibilityIcon,
   div[class*='userway'],
@@ -641,7 +613,6 @@ div[id*='userway'],
   }
 }
 
-/* RESPONSIVO */
 @media (max-width: 1210px) {
   .header-container {
     padding: 0 20px;
