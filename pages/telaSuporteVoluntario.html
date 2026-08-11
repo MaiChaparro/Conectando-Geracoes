@@ -9,22 +9,57 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="../pages/telaVoluntario.html">
-          <img class="logo" src="../assets/img/Logo.png" alt="Logo" />
+    <header class="cabecalho">
+        <a href="./telaVoluntario.html">
+          <img src="../assets/img/LogoOficial.png" alt="Logo Conectando Gerações" />
         </a>
+        <div class="menu-usuario-container">
+          <button id="botao-perfil" class="botao-perfil">
+            <img
+              src="../assets/img/fotoJoao.png"
+              alt="Foto de João"
+              class="foto-usuario"
+            />
+            <div class="info-usuario">
+              <strong>João Victor</strong> <br />
+              <small>Voluntário</small>
+            </div>
+            <img
+              src="../assets/icons/iconSetabaixo.svg"
+              alt=""
+              class="seta-baixo"
+            />
+          </button>
 
-        <div class="perfil-container">
-          <img src="../assets/img/fotoJoao.png" alt="Foto de perfil" />
+          <nav id="perfil-suspenso" class="menu-suspenso">
+            <a href="./telaMissoesVoluntario.html" class="item-menu">
+              <img src="../assets/icons/iconPrancheta2.svg" alt="" class="icone-svg" />
+              Missões
+            </a>
+            <a href="./telaSuporteVoluntario.html" class="item-menu">
+              <img src="../assets/icons/iconAjuda.svg" alt="" class="icone-svg" />
+              Ajuda
+            </a>
 
-          <div>
-            <h4>João Victor</h4>
-            <p>Voluntário</p>
-          </div>
+            <a href="./telaConfigVoluntario.html" class="item-menu item-destaque">
+              <span class="icone-texto">
+                <img
+                  src="../assets/icons/iconConfig.svg"
+                  alt=""
+                  class="icone-svg"
+                />
+                Configurações
+              </span>
+            </a>
+            <hr class="divisor" />
+
+            <a href="./login.html" class="item-menu btnSair">
+              <img src="../assets/icons/iconSair.svg" alt="" class="icone-svg" />
+              Sair
+            </a>
+          </nav>
         </div>
-      </div>
-    </header>
+      </header>
 
     <main>
       <div class="container">

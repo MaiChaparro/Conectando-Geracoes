@@ -46,9 +46,11 @@ body {
   object-fit: cover;
   background-color: #dcdcdc;
 }
+
 .menu-usuario-container {
     position: relative;
 }
+
 .info-usuario {
   text-align: left;
 }
@@ -57,10 +59,12 @@ body {
   font-size: 14px;
   color: #2b2b2b;
 }
+
 .info-usuario small {
   font-size: 12px;
   color: #777777;
 }
+
 .seta-baixo {
   width: 12px;
 }
@@ -95,9 +99,11 @@ body {
     font-size: 14px;
     transition: background-color 0.2s;
 }
+
 .item-menu:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
 .divisor {
   border: none;
   border-top: 1px solid #eeeeee;

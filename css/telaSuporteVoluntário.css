@@ -15,47 +15,104 @@ body {
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.header {
-  background: #fafafa;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.header .container {
+.cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 90px;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
 }
 
-.logo {
-  width: 90px;
+.logo-header {
+  height: 45px;
 }
 
-.perfil-container {
+.botao-perfil {
   display: flex;
   align-items: center;
   gap: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.perfil-container img {
-  width: 70px;
-  height: 70px;
+.foto-usuario {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: #dcdcdc;
 }
 
-.perfil-container h4 {
-  font-size: 1.1rem;
-  font-weight: 500;
+.menu-usuario-container {
+  position: relative;
 }
 
-.perfil-container p {
-  color: #6b6661;
+.info-usuario {
+  text-align: left;
 }
 
+.info-usuario strong {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.info-usuario small {
+  font-size: 12px;
+  color: #777777;
+}
+
+.seta-baixo {
+  width: 12px;
+}
+
+.menu-suspenso {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  min-width: 240px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.menu-suspenso.mostrar {
+  display: block;
+}
+
+.item-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.item-menu:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.divisor {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 4px 0;
+}
 
 .comecin {
   display: flex;
@@ -98,19 +155,19 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.escritas{
+.escritas {
   padding: 20px;
 }
 
-.escritas h3{
+.escritas h3 {
   font-size: 1.25rem;
 }
 
-.escrtitas p{
+.escrtitas p {
   color: #6b6661;
 }
 
-.ultimo{
+.ultimo {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -141,7 +198,6 @@ body {
   margin-bottom: 8px;
   font-size: 1.1rem;
 }
-
 
 .container-suporteDois {
   margin-top: 35px;
@@ -252,17 +308,17 @@ hr {
 .enviar img {
   width: 25px;
 }
-.popup-sair{
+.popup-sair {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.45);
+  background: rgba(0, 0, 0, 0.45);
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
 
-.popup-conteudo-sair{
+.popup-conteudo-sair {
   background: white;
   width: 380px;
   border-radius: 15px;
@@ -270,61 +326,59 @@ hr {
   text-align: center;
 }
 
-.popup-conteudo-sair h2{
-  color:#1980E6;
-  margin-bottom:15px;
+.popup-conteudo-sair h2 {
+  color: #1980e6;
+  margin-bottom: 15px;
 }
 
-
-.popup-conteudo-sair p{
-  color:#666;
-  margin-bottom:25px;
+.popup-conteudo-sair p {
+  color: #666;
+  margin-bottom: 25px;
 }
 
-
-.botoes-sair{
-  display:flex;
-  justify-content:center;
-  gap:15px;
+.botoes-sair {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.botoes-sair button{
-  padding:10px 22px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-  font-size:15px;
+.botoes-sair button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-#cancelarSair{
-  background:#ddd;
+#cancelarSair {
+  background: #ddd;
 }
 
-#confirmarSair{
-  background:#E3022C;
-  color:white;
+#confirmarSair {
+  background: #e3022c;
+  color: white;
 }
 
-#userwayAccessibilityIcon, 
-div[class*="userway"],
-div[id*="userway"],
+#userwayAccessibilityIcon,
+div[class*='userway'],
+div[id*='userway'],
 .uai {
   top: auto !important;
   left: auto !important;
   right: 6px !important;
-  bottom: 135px !important; 
+  bottom: 135px !important;
   position: fixed !important;
   z-index: 999999 !important;
 }
 
 @media (max-width: 992px) {
   .container-suporte {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .container-chat {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -359,7 +413,7 @@ div[id*="userway"],
     font-size: 0.8rem;
   }
 
-  .ajuda h3, 
+  .ajuda h3,
   .container-suporteDois h3 {
     font-size: 1.5rem;
   }
